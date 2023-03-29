@@ -104,29 +104,7 @@
   },
   {
     "levelSet": "test_LEVELS",
-    "levels": [
-      {
-        "id": 0,
-        "iterations": 936,
-        "time": 0.898,
-        "solution": "rrllllldrrrrrdsssuruuuuuuu",
-        "won_level": true
-      },
-      {
-        "id": 1,
-        "iterations": 338,
-        "time": 0.233,
-        "solution": "rrllllldrrddllssuuuuuluulrrrdd",
-        "won_level": true
-      },
-      {
-        "id": 2,
-        "iterations": 9021,
-        "time": 10.001,
-        "solution": "",
-        "won_level": false
-      }
-    ]
+    "levels": []
   },
   {
     "levelSet": "user_milk_biy_LEVELS",

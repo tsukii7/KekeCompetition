@@ -12,7 +12,7 @@ app.use('favicon.ico', express.static('favicon.ico'));
 //import http server
 const http = require('http');
 const server = http.createServer(app);
-let PORT = 8080;
+let PORT = 8086;
 
 //import socket io library for communication
 const { Server } = require("socket.io");

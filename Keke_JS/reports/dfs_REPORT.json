@@ -225,5 +225,31 @@
         "won_level": false
       }
     ]
+  },
+  {
+    "levelSet": "test_LEVELS",
+    "levels": [
+      {
+        "id": 0,
+        "iterations": 436,
+        "time": 0.944,
+        "solution": "ddddddddddddddddddddluldddddddddddddddddddllddddddddddddddddddduullllludddllllddlllluulllluddldlllddllllluulllrrduddddduddududududdlrudddrdrlruddlrluudrurddududrdddddddddddddddddduuldsusududuurdrddddduudddddddddddddruudrdddddddddddddddduduuudddlduddudduduudluddululddlduudlurdddduuuludududdulruudduddudlududulsrdrrrdrrldsluuluudusdrdduudddluulllduurruddulrdulddllllurrrurddruurdr",
+        "won_level": true
+      },
+      {
+        "id": 1,
+        "iterations": 74,
+        "time": 0.078,
+        "solution": "ddlldluluuluuduuudrdddddulddddduldddduduuudlllluullllrddrdr",
+        "won_level": true
+      },
+      {
+        "id": 2,
+        "iterations": 3445,
+        "time": 10.002,
+        "solution": "ddddllluuuluuurrdddddldrluuuluuurrddrdddrdlluluuluuurrddrdrruuluddddddlluluuluuurrrdddrruuudddldddlluluuluuurrrrdddrruuuuldddldrldddlluluuluuurrdrrurrddrdllldddlluluuluuurrddrddlddrulurdlluuluuurrddrrddllddrruuudddlluluuluuurrddrrdrudldddlluluuluuurrdrrrdruddlldddlluluuluuurrdrrururddllddrrrullldludddlluuluuurrdrddrruullddddlluuluuurrddddluluuurrddrdrdddlludrruulldluuudddrdrruuluuuulll",
+        "won_level": false
+      }
+    ]
   }
 ]
