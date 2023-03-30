@@ -2,6 +2,8 @@
 // Version 2.0
 // Code by Milk 
 
+// Outline:
+// initQueue() -> iterSolve(){ queue.shift() getChildren() getNextState() stateSet.push() queue.push() queue.sort() }
 
 //get imports (NODEJS)
 var simjs = require('../js/simulation')

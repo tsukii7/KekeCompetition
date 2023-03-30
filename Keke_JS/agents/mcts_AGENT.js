@@ -9,18 +9,20 @@
 // MCTS_run() { root.mctsSearch() root.bestAction() } -> action
 
 // todo: implement a timer to stop the search after a certain amount of time
-// todo: stateSet 去重
+// todo: stateSet 对 actionHistory 去重
 // todo: 优化搜索参数及评估权重
+// todo: 自适应搜索深度和迭代次数
 var simjs = require('../js/simulation');					//access the game states and simulation
 let possActions = ["space", "right", "up", "left", "down"];
 
-const MCTS_ITERATIONS = 1000;
-const ROLLOUT_DEPTH = 200;
+let MCTS_ITERATIONS = 7000;
+let ROLLOUT_DEPTH = 200;
 const DEFAULT_DISTANCE = 10;
 const HUGE_NEGATIVE = -10000000.0;
 const HUGE_POSITIVE = 10000000.0;
 const EPISILON = 1e-6;
 const MAXIMUM = 1e9;
+const ALPHA = 0.05;
 const C = 5;
 
 let stateSet = [];
@@ -59,9 +61,11 @@ function newState(kekeState, map) {
 
 
 function initAgent(init_state) {
+    MCTS_ITERATIONS = 300;
+    ROLLOUT_DEPTH = 50;
+
     solution = null;
     curIteration = 0;
-    stateSet = [];
     currentNode = new SingleTreeNode(simjs.map2Str(init_state.orig_map), [], null, false, false);
     stateSet.push(currentNode.mapRep);
     rootMap = init_state['orig_map'];
@@ -74,6 +78,10 @@ function iterSolve(init_state) {
     // Do the search within the available time.
     // todo: add time constraints to the search
     // solution = null;
+    // ROLLOUT_DEPTH *= 1+ALPHA;
+    // MCTS_ITERATIONS *= 1+ALPHA;
+    // console.log("MCTS_ITERATIONS: " + MCTS_ITERATIONS);
+    // console.log("ROLLOUT_DEPTH: " + ROLLOUT_DEPTH);
     totalIters += mctsSearch(currentNode);
     totalSteps++;
 
@@ -84,13 +92,15 @@ function iterSolve(init_state) {
     // todo: compare two ways
     // Determine the best action to take and return it (in two ways).
     currentNode = bestAction(currentNode);
+    stateSet.push(currentNode.mapRep);
+    // console.log(currentNode.mapRep)
     //  currentNode = mostVisitedAction();
-    if (currentNode.died){
+    if (currentNode.died) {
         // currentNode = new SingleTreeNode(simjs.map2Str(init_state.orig_map), [], null, false, false);
         initAgent(init_state);
-    }else if (currentNode.won){
+    } else if (currentNode.won) {
         return currentNode.actionHistory;
-    }else {
+    } else {
         currentNode = new SingleTreeNode(currentNode.mapRep, currentNode.actionHistory, null, currentNode.won, currentNode.died);
     }
 
@@ -117,9 +127,9 @@ function applyActions(newActions) {
             didwin = false;
             break;
         }
-        if (didwin){
-            solution = newActions.slice(0,a+1);
-            return {state, didwin };
+        if (didwin) {
+            solution = newActions.slice(0, a + 1);
+            return {state, didwin};
         }
     }
     return {state, didwin};
@@ -167,7 +177,7 @@ function heuristic2(g1, g2) {
     for (let i = 0; i < allD.length; i++) {
         avg += allD[i];
     }
-    if (allD.length === 0){
+    if (allD.length === 0) {
         return DEFAULT_DISTANCE;
     }
     return avg / allD.length;
@@ -192,7 +202,7 @@ function mctsSearch(root) {
         }
         // simulation
         let delta = rollOut(selected);
-        if (delta === MAXIMUM){
+        if (delta === MAXIMUM) {
             return numIters;
         }
         // backpropagation
@@ -306,11 +316,11 @@ function rollOut(selected) {
         died = rollerState['players'].length === 0
         didwin = res['won'] && !died;
 
-        if (didwin ){
+        if (didwin) {
             solution = actions;
             return MAXIMUM;
         }
-        if (died){
+        if (died) {
             break;
         }
         depth++;
@@ -330,6 +340,11 @@ function value(rollerState, didwin, died) {
     }
     if (died) {
         delta += HUGE_NEGATIVE;
+    }
+    let map = simjs.doubleMap2Str(rollerState.obj_map, rollerState.back_map);
+    if ( stateSet.indexOf(map) !== -1) {
+        delta += HUGE_NEGATIVE;
+        // console.log("already visited this state");
     }
 
     delta = delta > MAXIMUM ? MAXIMUM : delta;

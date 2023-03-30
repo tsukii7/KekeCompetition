@@ -251,5 +251,1298 @@
         "won_level": false
       }
     ]
+  },
+  {
+    "levelSet": "full_biy_LEVELS",
+    "levels": [
+      {
+        "id": 1,
+        "iterations": 5477,
+        "time": 10.002,
+        "solution": "uuddrrudlluuudddrruuddlluuuuddddrruuldluddrruuudddlluuudddrruuuruuddlluuudddrrulruulddddlddruuuruullddddluuruurddlddrdluluuruururuddddldlddruudlluuruurrddldluruuldddrddlulu",
+        "won_level": false
+      },
+      {
+        "id": 4,
+        "iterations": 2,
+        "time": 0.001,
+        "solution": "ddr",
+        "won_level": true
+      },
+      {
+        "id": 6,
+        "iterations": 5306,
+        "time": 10.002,
+        "solution": "luluuddrdludrlulurulddlrdrllulurudldrdrlllulurudlrudddlluruuruddddlrulluuruddrdrudlllluluuruldrdrrdddduulluluurudlruurrrddddddlddruulluluuuddlurdluuddrrdluluurulldrddrddulllrrruulluurudddrruulddddduulluluuuddlurdluuddrrdluluurrdrdrdulluuldddluurrddrddldrluduldrduullluludrdlururdddldlllrrddruulllulluuuddlrdluuddrrdluluuuuddrdllrrddlruuddduulluluuuddlurdluuddrrdluluurulldrddruddlllrrruruldddduulluluuuddlurdluuddrrdluluurdddrrdduulllulluuuddlrdluuddrruuulldldrruudddllrrddlllrrdrurduuldddduulllulluuuddlrdluuddrrdluluuuuddrdrudlllluluuruldrruuluddddrruuruulddddlluluuuddlurdluuddrrdluluurulldrddrudddrudluulllulluludrdluruullddrdrrdrdrudldduulluluuuddlurdluuddrrdluluurdddulluluuruldrdlluruudrdddrdlldrruulluluuuddlurddluuruldrdrddllduluuuuuddlrdrrdduulu",
+        "won_level": false
+      },
+      {
+        "id": 8,
+        "iterations": 13,
+        "time": 0.004,
+        "solution": "ddldrrlll",
+        "won_level": true
+      },
+      {
+        "id": 10,
+        "iterations": 9,
+        "time": 0.003,
+        "solution": "ddduuurrdr",
+        "won_level": true
+      },
+      {
+        "id": 12,
+        "iterations": 2,
+        "time": 0.002,
+        "solution": "ddl",
+        "won_level": true
+      },
+      {
+        "id": 15,
+        "iterations": 3355,
+        "time": 10.005,
+        "solution": "ddddllluuuluuurrdddddldrluuuluuurrddrdddrdlluluuluuurrddrdrruuluddddddlluluuluuurrrdddrruuudddldddlluluuluuurrrrdddrruuuuldddldrldddlluluuluuurrdrrurrddrdllldddlluluuluuurrddrddlddrulurdlluuluuurrddrrddllddrruuudddlluluuluuurrddrrdrudldddlluluuluuurrdrrrdruddlldddlluluuluuurrdrrururddllddrrrullldludddlluuluuurrdrddrruullddddlluuluuurrddddluluuurrddrdrdddlludrruulldluuddrdrruuluulldluuddrdr",
+        "won_level": false
+      },
+      {
+        "id": 19,
+        "iterations": 74,
+        "time": 0.055,
+        "solution": "ddlldluluuluuduuudrdddddulddddduldddduduuudlllluullllrddrdr",
+        "won_level": true
+      },
+      {
+        "id": 20,
+        "iterations": 1105,
+        "time": 1.382,
+        "solution": "uruddulllurdrrdduurullddldlddluulddlrdluurrdrdr",
+        "won_level": true
+      },
+      {
+        "id": 21,
+        "iterations": 6133,
+        "time": 10.001,
+        "solution": "ddddlldldlluuddrruuddlruuudddlluuuuddddrruuulddrruuulddddlluuudddrruuuuuldddlddrulurdruddlluuuruuulddduuurrddddlddludrrudlluuddrruudrruulldddlluuudddrruuuldddrruuuuuuldldduurrddddddlldudrruuluuldduuudddrdrruuluuur",
+        "won_level": false
+      },
+      {
+        "id": 22,
+        "iterations": 112,
+        "time": 0.119,
+        "solution": "ddlludrruuluuldduuuuuuurrdddddddddrrurrdrudlllllluuluuuuuuurrddddddrruuuuudddddlldddrrurrdrrudllllllluuluuuuuur",
+        "won_level": true
+      },
+      {
+        "id": 24,
+        "iterations": 10000,
+        "time": 8.958,
+        "solution": "dddldduuudurddldddurdrllduruuuuuudddddrrrduldluldddlldurlduuuuuurrdddddulluurrrrdddddruldduldllddruuuuuudddddrdldludludluddrurdlluudddludruuuudddddluuurddrdurudulululddduuluurrddddddluululurrrrdddddrldllllruuulluuurldrdrddrddllludrrdululuulluurlrdrddrdrddlulullddlruuuuldurrddddlldruuddrduuudddruuuudddlluluuruuuddddddlruuuuuurrdd",
+        "won_level": false
+      },
+      {
+        "id": 25,
+        "iterations": 2951,
+        "time": 10.004,
+        "solution": "dddddlllluldlluldluuuuuurddddddrrdrruulullulluuurrdrdddddllluuuuuurrddddrrdrddrruuuldddllulllluuuuuurrddddrruuuulddddddrdrruuludddrruuuullddddrruuuuululldddddlllluuuuuurrddddddrruuuuuulddddrrdrddrruuulululuuululddddddddllluuuuuurrddddddrruuuuuuulddddddldlluuuuuurrdddrrdrdddrruuuuluurrdrddldddlllulllulldrrrrlllluuuuuurrddddrruuuuuurrdddddddddludrruullddrruuululldldrrdruddrruuulldddrruuuululldldrrdddrruuuulddldrdruuudddlllullllluuuuuurrddddrruuuuuurrddddrrrdldluddddllullllluuuuuurrddddrruuuuuurrddddrddrruulldludddddrruuuuuulldddddlllllluuuuuurrddddrruuuurddlddddlllluuuuuurrururrddrdrddlldludddlllluuuuuurrddrrddddrdr",
+        "won_level": false
+      },
+      {
+        "id": 26,
+        "iterations": 14,
+        "time": 0.006,
+        "solution": "ddlddddrudrurdr",
+        "won_level": true
+      },
+      {
+        "id": 27,
+        "iterations": 1888,
+        "time": 10.005,
+        "solution": "dddlllllluuuuddddrruuuldddrruuudddllluuurdrdrdrruululuddddrruuuuulldddddrruuuuuululuurrdrdrddddrruuuuldddddldldlllululuuudddrdrdrruululuulddddrdrruuluuuuluuurrddrddddrruuuulddddddldlllululuuruuruuurrdrddddddlddrudlllululuuruuruuurrdddddlddrrddlllululuuruuruuurrdddddrrdrdllddlllululuuruuruuurrdddddddlddrruldluuddrruuulldddrruuuululldddlluuruuruuurrdddddddddlludrruulldludrdrruuluullldrrrdrudddllululuuruuruuurrddddldrddddllululuuruuruuurrddrrdrddlllldluddddrruuuuulldddddrruuuuuululuurrdrdrddddr",
+        "won_level": false
+      },
+      {
+        "id": 29,
+        "iterations": 0,
+        "time": 0,
+        "solution": "r",
+        "won_level": true
+      },
+      {
+        "id": 30,
+        "iterations": 122,
+        "time": 0.074,
+        "solution": "dddrruuuululluuuuuurrddddrdddddddlluuluuuuuuuuurrdddrddddddddlluuluuuuuuuuurrddrdddddddddruu",
+        "won_level": true
+      },
+      {
+        "id": 31,
+        "iterations": 24,
+        "time": 0.013,
+        "solution": "ddddllllludrludlrrudllluu",
+        "won_level": true
+      },
+      {
+        "id": 32,
+        "iterations": 11,
+        "time": 0.005,
+        "solution": "ddddldrlluu",
+        "won_level": true
+      },
+      {
+        "id": 33,
+        "iterations": 1717,
+        "time": 10.005,
+        "solution": "ddddddddllllllldllludrludlrruuddllluuddrluuudddlruuudddlluulddluuldrdduruudddrruuuldddlluluuldrdluulrddduluuluuuuuuudddddrrddddluluuluuuuuuuddddrruuuuudddrddddlddluluuluuuuuuuddddddrruuuuuuudddddrrddddllulluuldduuuuuuuurlddddddddduuulldurddrdlrdduuuuuuuuurldddddddddldrlluulddluuldduuuuuuuurlddddddrrdrdddllludluruululldrdduluuuuduuurrdddddrdddrdduuluuluuuurrdddrddddldddlludlluuldduuuuuuuurrdddddddddluuullduuuuuurrdddddddlduruululuurrrrddddrrdddddllludllluulddluuuuuuuurrdddddddrddlluuulldlddrrudululuuuuurrddddrdrdddrdduuluulullluuurrrrddrdrdddddlddlludllluulddluuuuuuuurrdddddddrddlluuulldlddrrudululuuuuurrddddrruuuurddddddddddlludllluulddluuuuuuuurrdddddddrddlluuulldlddrruululuuurrrrrrddddddddlddlludllluulddluuuuuuuurrdddddddrddlluuulldlddrrudululuuuuurrddddrruuuurrdddddddddlddlludllluulddluuuuuuuurrdddddddrddlluuulldlddrruululuuurrrrrrrddlddddddlddlludllluulddluuuuuuuurrdddddddrddlluuulldlddrrudululuuuuurrddddrruuuurrdrddlddddddlddlludllluulddluuuuuuuurrdddddddrddlluuulldlddrruululuuurrrrrrrrddldldddddldlluulddlluulddluuuuuuuurlddddddrruuuuuurrddddddddddlullddrrudululldlluduuuuuuurrdddddrruuuuurrdddddddrdddllllullluldluuuuuuuurrdddddddrdrdduulululldlddrrudululuuuuurrddddrdrddddllllululluuuuuuudddlruurrrddrdrddddddululuuluuurrrudururldddddddddlddlllullluldluuuuuuuurrdddddddrdrdduulululldlddrrudululuuuuurrddddrdrddddllllululluuuuuuudddlruurrrddrdrddrrldddlddlllullluldluuuuuuuurrdddddddrdrdduulululldlddrrudululuuuuurrddddrdrddddllllululluuuuuuudddlruurrrddrdrruuluurrdrddlddldddddldlluldlullluldluuuuuuuurlddddddrdrruuluuuuurrddddrddddddlullludlllullldu",
+        "won_level": false
+      },
+      {
+        "id": 34,
+        "iterations": 25,
+        "time": 0.009,
+        "solution": "llluuurrddldrlluuuruuurr",
+        "won_level": true
+      },
+      {
+        "id": 35,
+        "iterations": 82,
+        "time": 0.047,
+        "solution": "dldllluurrdldrlluurrrdrrdllluururrdddrudlllluururrdrddrr",
+        "won_level": true
+      },
+      {
+        "id": 36,
+        "iterations": 494,
+        "time": 0.828,
+        "solution": "ddddddddddddddddddddluldddddddddddddddddddllddddddddddddddddddduullllludddlllllllllluulllllulldlllllllllluulllllruudllddlllllluruurdddddudududududududdlruruddduduuddudrludrlrlurlruuddlrudrdududududrdddddddddddddddddduuldudududuuudududududduuudddudlluudduruudddullududuurrudluduudddlduududrdrdduruduuduuldddludrrrdduduruddddddddddddddddddurdddduudududududududdruuuuuudududududududduddllldsudurrududuuuddlduludluuududluurudllldduduuldldururdrr",
+        "won_level": true
+      },
+      {
+        "id": 37,
+        "iterations": 1679,
+        "time": 10.003,
+        "solution": "ddddddddddddddduddrdddddddddddddddduldlrdddddddddddddddludrludrludrludrludrrdrudlrudlrudlrudlrrurdrludrludrludrlurdruulddllllulludrludrludrludruuldrddrludrluurludrrddlludrludrludrludrlullurdlurdlurdluulddddddddddddduuuddudduudddddddddduululuuudduudddrludrluuuuurddrdddruldruluudddlrudrruuudduudddlrudrluullluldruuurdddrrulllluurdurrddrululdllurrdrurdddrrduuddddddldllulluuuluuuuurrddddrddrruuuluuurrddrddddddlldllulluuuluuuuurrddddrddrruuuluuurrddrddddrddllldlludrludrludrludrlullurdlurdlurdlurlulddduudddddddddddduuuludrdddrududududurulududllluudduudduuuuuddduudruldrulduurrddduudddduuddudruuurdddllrruuddudruuddruudddddlludrrrddlldrllludrludulludurdlurdlurrrrddllrludruurddrulrrudldulurrulddldddllduurudddurlddduddrddduldduuuduuullllluudduudduuddudrluuuuurdduldrulduuddruurddddduudduulurddduuddrruudduuuddldrddldduldluddurrrdddluddulddluddrrruudduuluudddddddllddludddudddrrrdudddslluudddduuldlrududdddddddddddddddluddurululuduuudldluulduuudlduulldurdddrddduudldrruduuuudddruuduuuuddluduurrdddrddddddddddddduuldrrrudduuudddluduududuuuldduudlrululurrrdr",
+        "won_level": false
+      },
+      {
+        "id": 38,
+        "iterations": 86,
+        "time": 0.071,
+        "solution": "ddddddddddddddddddddluldddddddddddddddddddllddddddddddddddddddduullllludddlllllllllluur",
+        "won_level": true
+      },
+      {
+        "id": 39,
+        "iterations": 436,
+        "time": 0.965,
+        "solution": "ddddddddddddddddddddluldddddddddddddddddddllddddddddddddddddddduullllludddllllddlllluulllluddldlllddllllluulllrrduddddduddududududdlrudddrdrlruddlrluudrurddududrdddddddddddddddddduuldsusududuurdrddddduudddddddddddddruudrdddddddddddddddduduuudddlduddudduduudluddululddlduudlurdddduuuludududdulruudduddudlududulsrdrrrdrrldsluuluudusdrdduudddluulllduurruddulrdulddllllurrrurddruurdr",
+        "won_level": true
+      },
+      {
+        "id": 40,
+        "iterations": 3915,
+        "time": 9.919,
+        "solution": "drudlluuuurrddlddruuudddlluuuurrddddrrlllluuuuruurrdddddldlluuuuruurrdddrdddllluluuuruurrdddddrruuddldllluluuuruurrddrddddllluluuuruurrdrl",
+        "won_level": true
+      },
+      {
+        "id": 41,
+        "iterations": 1882,
+        "time": 10.004,
+        "solution": "ddlllllurrrdrudrruululddldruuurrdddlllluldurrdrruuurdddddddddlllllluuuurddddluuuurrddddrruuuulldluddddrruuuurrruullllulldrrrrrluuurrddddddddldllllluuuurrddrruurrdrdrddllllllulldrrlluuuurrddrruurrr",
+        "won_level": false
+      },
+      {
+        "id": 42,
+        "iterations": 2726,
+        "time": 10.004,
+        "solution": "ddddddllllluduuuurldddddluuuurdddddlluduuuuuuuddddddlruddluudduuuururdddddddlludduuudurrrdddddllludduuudddrruululuurrdrdrdldddddllluduuuuuuuddddddrduduuuuuuurdddddddluuuuuuurrdrrurrdlllldddddrrdrruuluurrdrluudddddlllluludluuuuuuddddduluduuuuudddrrdddlulduuuuurudddddddlulduduuuuurudddddddruululuurrrdddddrduuuurdddrdduuurlddddllllllrluldluuuuuuudddddlrldduuuuuuudddrdlrdrruulurrdrudddddlllllluldlluldluuuuuuddddudluudrdduluuuulddrurudrdddduruurdddruuruuddddllllllluuuuuuddddduluuuuudddurrdudllduuuuuddddrudddluldrdullduduuuuuurlddddddrduldluuluuuuuddddduluuuuruddddddulluuuuurldddrdrdrddllluuullluuurldlrrdlldddduuuulldrrddurddrruuululurdddddlllluldluuuuuuddddudluudrdduluuuulddrurudrdddduruuuuudrlddddddlllulduuldrdluulrludrddrruuulululldrrdddrddlrdllulduuluduuuuuddddrruuuurrrlldddddlluuluuruudddddrdduuuululrrdddddlluuuuuudddrdrddrluuuuurrdddddrrudlluuuurddddlllluuuuururrddddddrdulluuurrrrddrdlddlululldldulduuulrrddudlluluurrrdrrddddddrullllduuuuluuudddrddrrduruuluuluuddrddrrdrdurldduululluuurudrrrddddddllulduldudluuuuurrdddddrruuuuurlddddddlluluuuurrrrddddddlludluluuuuuudddddrdlluuuuurrdddddrruuuurddddlllluuuuurrrdddddllluluuururddddddlrulduuuuurrdrrrddddlllluulurrrrrrdddlluuuurrrlldddldlluluuurrrrddrddlllluuuuddddrruuuurrddrddlllluuuuddddlruuurrrrrrddddddllludlluluuuuurrrrlr",
+        "won_level": false
+      },
+      {
+        "id": 43,
+        "iterations": 2257,
+        "time": 10.001,
+        "solution": "ddddlddlddlddlludrudrrluuddlruuudddlluuuuddddrruuuldddrruuuldddlluuudddrruuuuddddlluuuuddddrruuuuudddddlluuuurudddddrruuuuudddddllluuuuuudddddduuuuurudddddrduuuuuddddlluuuuruldddddduuuurrdddddllluduuuurudldddddduuuuurldddddrruuuuuddddllluuulrdrrrdrdldlululuuruurddddddldluuuuuuddddlduruuuulddddrruuuuulldddddduuuuururddddddldldluuuuuuddddlduruuuulddddrruuuuulldddrruuuudddrdrdldluuuuruudddrruuuddlddlldldruuluururuldrdddddluluururrrdddrluuruurulddddlddldldldldluuuuuuddddlddrruduluuuldddrruuuulldddrruuuddrrduuuldddddldldldluuuuuuddddlddrruduluuuldddrruuuudddrrdllldruuulluuddrruuudrdrduuuruddrdurlddlddldluluuurdlddddddlluduuuuruldddddduuuuurlddddrdluuuurrddddllluuurrddrdluuuuuudlrddddrruuuurlddddlluururrdddlldldlllluuruldrdrruulullrrddddlllluuruldrdrruurrrulddldldlllluuruldrdrruurrulddldldrrldlduuuuuruddddrduuuruululdddddddldldluuuuuuddddlddrruduluuuldddrruuuudddrrduuuuulddddddld",
+        "won_level": false
+      },
+      {
+        "id": 44,
+        "iterations": 0,
+        "time": 0.001,
+        "solution": "r",
+        "won_level": true
+      },
+      {
+        "id": 45,
+        "iterations": 1074,
+        "time": 10.001,
+        "solution": "ddddddddddldddldddlllllludddulddddlulddddlludddulddddlududduddddudldddludlludduldudddudddduldudddudddduludduddddudrlddduudddluddddududdrldduddududrldddludduduuddddduddududurdddddlluddduuddduduldddududduduudduddulddddlududduudddududdrdddddddududduudddluudddrddddddlududduududduudrddddludldudududluluuldduududdrdluuuudruddlddddddddddududuuuudrldddrddudluuulrrdddddudduuddlullddduduudulddududuudrddlluuuddudduddududuluudduddudduldurdddududuldrrddlludduuuddduddduruuddddlduurudldddddddddddduduuuddduddrdddddluuduuddudrddddluuduuddudduduudldduuudluudrluudlruldddddddddddluuduldrddluudrldduluudllruudldluudlddduluudrldruuudllluudrulddulrrddruuudrdddlllluduudrrduruulludluudrrudlldddddddddddduudrdrdddlluudrdluudrdrdddllluudrddluudrldluuudlrluudlluudrlluuddddddluuuuurldddddurdllllluldludulduduluduuldduuuldddurrddrrudululluludrruudllddddddddddduuuudruudrrdddddllluuulddduluudrddduuudlrdddluuuudrldddrrldluuldlduuudlddluuudduddudrddduuuddludrdluuludlrddluuuddludduudluuddrluruddddduuudduruldddduuudlulddduuludrdrduuulllllddduuudrddduuudrlddrruuluudlluuldddddruuludrruudlllrul",
+        "won_level": false
+      },
+      {
+        "id": 46,
+        "iterations": 36,
+        "time": 0.063,
+        "solution": "ddddduuuduudddrddddluduuuulddddr",
+        "won_level": true
+      },
+      {
+        "id": 47,
+        "iterations": 2,
+        "time": 0.001,
+        "solution": "ddr",
+        "won_level": true
+      },
+      {
+        "id": 48,
+        "iterations": 2,
+        "time": 0.001,
+        "solution": "ddr",
+        "won_level": true
+      },
+      {
+        "id": 49,
+        "iterations": 2,
+        "time": 0.001,
+        "solution": "ddr",
+        "won_level": true
+      },
+      {
+        "id": 50,
+        "iterations": 80,
+        "time": 0.07,
+        "solution": "ddlldluluuluuduuudrdddddulddddduldddduduuudlllluullllrdurddddr",
+        "won_level": true
+      },
+      {
+        "id": 51,
+        "iterations": 1754,
+        "time": 10.003,
+        "solution": "dddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddudddddululddddrudduddlddddddddddddrdduudddduldddddddddrudddlduldddddddddddrudduddlddddddddddddrdduudddduldddddddddrudddlduldddddddddddrudduddlddddddddddddrdduudddduldddddddddrudddlduldddddddddddrudduddlddddddddddddrdduudddduldddddddddrudddlduldddruludlllluulddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddduruduldduddududududududududduddududududududududduddududududududududduddududududududududduddududududududududduddududududududududduddududududududududduddududududududududduddududududududududduddududududududududduddududududududududduddududududullrdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddudddruudududdududududududdudududdududududududdudududdududududududdudududdududududududdudududdududududududdudududdududududududdudududdududududududdudududdududududududdudududdududududududdudududdududududududdudududdududududududdudududdududududdrddudddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+        "won_level": false
+      },
+      {
+        "id": 52,
+        "iterations": 231,
+        "time": 0.327,
+        "solution": "ddddddddddddddddddddddddddddddddddddddddddddllddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddduudldlddddldddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddullddr",
+        "won_level": true
+      },
+      {
+        "id": 53,
+        "iterations": 3358,
+        "time": 10.001,
+        "solution": "dddlllllludrudrrudllurdrudrudrruuludddlluuddrruulddrruuuluddddlluuddrruuuuldddldrluuudddrrlluuurulddddrruuuuudddddlluuuulluluurrdrdddddldruuuulluluurrdrrdddddldrluuuulluluurrdrrdrddddrrdllllluruuulluluurrdrrdrdddddrruuuulddddllluuuulluluurrdrrdrddddldrlluuuulluluurrdrrdrdddrdrdlllluuuulluluurrdrrdrdddddrruuuuuulddddddllluuuulluluurrrdddddddrruuuuurulddddddlluuuulluluurrrdddddduuulluluurrdrrddddddrruuuuuulddddddrruuuuuuuldddddddlluluuulluluurrdrrddddddrruuuuuuuldddddlddrudrruullddrruuulullddluulluluurrdddrdddrdrudrruullddrruuulullddrddrruuululuurulldddddldrdrudrruullddrruuululldldrluulluluurdddrrddrrddrruuuldllddrrrulruulullllluluurrdddrdrrdrruuluuulllddddddrdrudrruullddrruuululldldrluulluurrurrdddd",
+        "won_level": false
+      },
+      {
+        "id": 54,
+        "iterations": 1697,
+        "time": 3.527,
+        "solution": "uuuuddddrruuurrrulddddlllluuuuddddrruuurruulluld",
+        "won_level": true
+      },
+      {
+        "id": 55,
+        "iterations": 56,
+        "time": 0.049,
+        "solution": "uuuuddddrluuuuuddddrruurrdddllulluuuurdddldrluuuururd",
+        "won_level": true
+      },
+      {
+        "id": 56,
+        "iterations": 29,
+        "time": 0.008,
+        "solution": "uuuuruurrddddddrruuuuuuurr",
+        "won_level": true
+      },
+      {
+        "id": 57,
+        "iterations": 2820,
+        "time": 10.003,
+        "solution": "ddrruuululuuudddddddrruuuuuuddddddlluuuuuuurdddddddrruuuuuuudddddddllluuuuuuururdddddddldrlluuuuuuururrdddddddldrllluuuuuuururrddddddrdrdlllluluuuuuururrddddddddrruuuuuuuulddddddddrruuddllllluluuuuuururrddddddddrruuuuuuuuldddddrrdddllllluluuuuuururrddddddddrruuuuuuuululdddddddlddrudlluluuuuuururrdddrdrddllddlluluuuuuururrddddlddlddrruldludrruuullldrrrdruddllluluuuuuururrdddddrdddllluluuuuuururrdddrrdddldrdruuudddllllluluuuuuururrddddrruurrddldluddddlllluluuuuuururrdddrrdddddlllluluuuuuururrdrrrdrdlldludddddllluluuuuuururrddrddddddllluluuuuuururrurrddrdlldluddddddlluluuuuuurrrdddddddrruuuuuuulldddddddlluluuuuuururddddlddddrruuuldludddrruuuululldrddddrruuuuruululldld",
+        "won_level": false
+      },
+      {
+        "id": 58,
+        "iterations": 26,
+        "time": 0.007,
+        "solution": "dddrruuuuluurrdrddr",
+        "won_level": true
+      },
+      {
+        "id": 59,
+        "iterations": 3312,
+        "time": 10.002,
+        "solution": "lldddddllddddduullllludddddddduulllllrdddurddduuududduuludldudludddddduulluuuddddddddduullllurddddurdduuuudddddlddddddlulllllluulllllldrrdudrdruddddddlulruduudrudrddduluduuldddddddddllddddddlullllllurrdudullulllllluulllllldrsrlrlrddurdrddurudddddluurudrddrdddddduludsuulluddddddllddddddlldddddduulllllluulllllduurudududddrdudulurruddddrdduluuuluddddddlddddddlulllllluulllllldrrdudrdruddddddlulruduudrudrddduluduulllduullllrdrruudlrulddddddlddddddlulllluuuuddlllldrrdudrdruddddddlulruduudrududuudluusudluldullllrrrrudddddddddddllddddddlldddddduullllllruuddududdrududuuuuudllrrudurdduururddlddldsururuurddddduulldrdudruduruulluurrdddlddddddllddddddllddddddlldddddduulllllluulllllduuruuuuudrddudrdluuurduudddddurrdrdruddlldddddlddddddlldddddllddddduulllllruudduddrududuuuuudllrrurddduuurddddduduuruuddlrruudddudrduuddddllddddddldddddddllddddddlldddddduullllllruuddudrdd",
+        "won_level": false
+      },
+      {
+        "id": 60,
+        "iterations": 316,
+        "time": 0.36,
+        "solution": "ddddddlludluduludduuuuuddddduduurddddduldludluudrdduudluulddrlduuudddluurdddluuuudddlduuluduudrddduluduuuudddudrdddduldullduuduuuuddddurdlduuudddrddluldlluduldluduuuuudddudlduuduruurddddddlluduuuuuddddulduuudrddluuuudddruddddluldudrddulldduduulurrrdddddllluddulududurddduduluudrdddddluldudduuudddrdddrl",
+        "won_level": true
+      },
+      {
+        "id": 61,
+        "iterations": 26,
+        "time": 0.007,
+        "solution": "dddddddrruuuuuuurrdddddddrr",
+        "won_level": true
+      },
+      {
+        "id": 62,
+        "iterations": 11,
+        "time": 0.004,
+        "solution": "dddddddrruuu",
+        "won_level": true
+      },
+      {
+        "id": 63,
+        "iterations": 25,
+        "time": 0.015,
+        "solution": "lulddduullldduuddruuuuur",
+        "won_level": true
+      },
+      {
+        "id": 64,
+        "iterations": 208,
+        "time": 0.195,
+        "solution": "lulddlldrruullldduuddruuuruu",
+        "won_level": true
+      },
+      {
+        "id": 65,
+        "iterations": 193,
+        "time": 0.264,
+        "solution": "dddddrruuuurrudllluddlluddruddrdddlluludlululdurudlrddddluudrlduruudllruudlldddurudlrdddduudrdddluuuldruuldddlrddullduuuulldddruurddddlluduldluuudrdlduruudrdddluuuldddluuullrrdddduurrdddurrdr",
+        "won_level": true
+      },
+      {
+        "id": 66,
+        "iterations": 2226,
+        "time": 10.001,
+        "solution": "dddddddddddduullllllllllllddrdurdddddddddduurdudududurdddludddddddddddddruudrdddddddddduuusdldududuurddrdddduududrddduurddddddddddddluududurududurddddddurdddddddduludududsuuduuudruddduududududldlududuruulllllluuuuuuuuuuuuurulldulllldulllluldddddddddddduulddddddddddddlddddlllllllllluulllllllllddlluullurududududurrdddddddddddddudullllllllduldurdrddlluuuuuuurrrluduudrrllllrrrrudlllluuuuurullldulldluuuuuuuuurrudududuuluuddluldduduudddddddddddddddduulddddddddddddddldurrdurddududdlududuuuddrudddddlluuuuuuuuurullldulllllldluuuuurrududululdddddddddduduuldddddddddddddddlddddllllllllllllllluullllllllllllllddlluululrrrrrrrrrrrrudurrdurddududdudddlddduuulllllllllllrrddddddlluuuuuuuuuuuuuuuurrudududuuduududuurldrululrldulllludududlrrdrluduuuldlduduluulddddddddddddddddddrullllllllllllllllllrrdldlduddddddduduruurdlrdudduudruuddduuuldrrdddlllluuuuuuuurrudududuulldluuuuuurullldululdddddddddduuldddddddddddddddddrulllllllllllllllllrddruddduduuludddlddduurddurddrrddududulrluurduurddllllluduudududududududududuudududuududududrrudududuluuudududduddududuuddududuuluududuuddlldddlllllllllllllllllllllllllluullllllllllllddlllllllludlurududududududdlududulrdudlurdudududuruldlrurudddududulrdududrddlududrrludududuruududdduddudludurududdududrludrlrrlrududludrllrrududuudduuduudludluduuldudduduudduduudldrduduuurddddddllludududududududuudududududuuudududrddududuuuddududuululldddlllllllllllllllllllllllllluullddlllllllllllllllllludluruddludududududududulrlldulrdrduduuuddududuuulldududd",
+        "won_level": false
+      },
+      {
+        "id": 67,
+        "iterations": 61,
+        "time": 0.041,
+        "solution": "lldlllludrudrudlluuddrruuddlluuudddrruulddrruuruuuulldl",
+        "won_level": true
+      },
+      {
+        "id": 68,
+        "iterations": 61,
+        "time": 0.038,
+        "solution": "lldlllludrudrudlluuddrruuddlluuudddrruulddrruuruuuulldl",
+        "won_level": true
+      },
+      {
+        "id": 69,
+        "iterations": 5304,
+        "time": 10.002,
+        "solution": "ddddduuurrdddldrluluuurrddlddrrlluludrdrruulululdduurrddddrrllluuluurrdrdrdldlluuluurrdrruuluurrdrdddddllldlluuluurrdrrdrdrrdllullullddrluuluurrdrddldludrrlluuddrruuululdldrddrruulruuuuurrddddddrrdll",
+        "won_level": false
+      },
+      {
+        "id": 70,
+        "iterations": 3356,
+        "time": 10.001,
+        "solution": "ddrrddrulullluuuurdddldrluuuurrdddrddrudrruullddrruurdldlllululldrluuuurrdddrddrruulldlulldrluuuurrddlddrlluuuurrdddldrlluuuurrddrddurrddldluudrudrruulldlllluuuurrdddldrlluuuurrddrdrrddldluulurdruluddllluuu",
+        "won_level": false
+      },
+      {
+        "id": 71,
+        "iterations": 3973,
+        "time": 10.004,
+        "solution": "dddlddddrllullluuuuddddrruuuuddddrdrrudllullluurudddrrdrruuddllullluuurrdrruuluurrdrdddldddllullluuurruruurrddddddldrllullluuurrdrrddlllluuurruruurrddddddllllluuurrdrruuluurrdrdddrddllldlullluuurrdrdldlluuurruruurrdddddrdlldlullluuurrdrdldlluuurruruurrdddrrddldlldlullluuurrdrdldrdrulllluuurrdrruuluurrdrddddllldludlluuurruruurrddddllldlulurrdrulurddddrruuuuulddldrddlllluuurruruurrdddddlldllluuurruruurrdd",
+        "won_level": false
+      },
+      {
+        "id": 72,
+        "iterations": 1438,
+        "time": 10.013,
+        "solution": "dddldludddludduddudluddulduddluduuuddlduddrddddluldlulduuduldduldudulududuuuurdddddddlududldudulddluddulddudddrdddddudludldudduldudddrdddddludldudulddulduddududrulldddudrddddduldulddudlduduuudddurddddulduduudldduduldludulddludduluduuuuudddrdddddudludulduddrdddlududrdddludulddudduldddudludrddddluduldluduldudduuldddrdddddulduudldduuuddulddudrddluduldudrdddluudrdddulludludurdddluduulddduduuudddurddddluduldulduduudlddduuddudduldduludduuudddrddddludluduldduludrdddluudrddludulduddluduuudduluuuuudddddddulduduuluuuudddddrddddduddludrddddludldudulddudludduldudduldudluluuuuuddddduluudrdddddludduldududluuududurdddddduldduduldudduulddduduldduddududdurddddduddludluddudluduudldduduudulddrddddudluuldrddddudludrddluldludlulddulduduuldrdddudluludddrdddddludulddudluddduuldrddddddudddrdddddlludlduddulddluddlulddludddrddddduddludlduddulddduuddldududludddrdddddludludulddudludluduldrdlddudludrddddudlduduldulludduludduldrdddddlududrdddludulddudduldddulduddrddluldududrddddlludulddluludluduludluluuuuudddddulrdddduudrddddluduldduduuuldddddudululddduldluduudrddduduldudulduddluduulddddrdddddludludluulduuuuddddrddluududlduudrddddludululudrdddludludduuldddudddrdddddluduldduuldludrddldduulddduddrdddddludllduudldduduldluddrddddudlulddududrdddudludulddududrddddludulddluduuldddduduuldddludrddddduddluduludddududrdllududrddddudldudulddulduddurddddduldulduduldlludrdddluldudluuudddurddddudluuulddddduuldduudlduludrdddluduuulddddluludrddddduduuldludlud",
+        "won_level": false
+      },
+      {
+        "id": 73,
+        "iterations": 1433,
+        "time": 10.006,
+        "solution": "dddldludddludduddudluddulduddluduuuddlduddrddddluldlulduuduldduldudulududuuuurdddddddlududldudulddluddulddudddrdddddudludldudduldudddrdddddludldudulddulduddududrulldddudrddddduldulddudlduduuudddurddddulduduudldduduldludulddludduluduuuuudddrdddddudludulduddrdddlududrdddludulddudduldddudludrddddluduldluduldudduuldddrdddddulduudldduuuddulddudrddluduldudrdddluudrdddulludludurdddluduulddduduuudddurddddluduldulduduudlddduuddudduldduludduuudddrddddludluduldduludrdddluudrddludulduddluduuudduluuuuudddddddulduduuluuuudddddrddddduddludrddddludldudulddudludduldudduldudluluuuuuddddduluudrdddddludduldududluuududurdddddduldduduldudduulddduduldduddududdurddddduddludluddudluduudldduduudulddrddddudluuldrddddudludrddluldludlulddulduduuldrdddudluludddrdddddludulddudluddduuldrddddddudddrdddddlludlduddulddluddlulddludddrddddduddludlduddulddduuddldududludddrdddddludludulddudludluduldrdlddudludrddddudlduduldulludduludduldrdddddlududrdddludulddudduldddulduddrddluldududrddddlludulddluludluduludluluuuuudddddulrdddduudrddddluduldduduuuldddddudululddduldluduudrddduduldudulduddluduulddddrdddddludludluulduuuuddddrddluududlduudrddddludululudrdddludludduuldddudddrdddddluduldduuldludrddldduulddduddrdddddludllduudldduduldluddrddddudlulddududrdddudludulddududrddddludulddluduuldddduduuldddludrddddduddluduludddududrdllududrddddudldudulddulduddurddddduldulduduldlludrdddluldudluuudddurddddudluuulddddduuldduudlduludrdddluduuulddddluludrddddduduuldl",
+        "won_level": false
+      },
+      {
+        "id": 74,
+        "iterations": 1199,
+        "time": 10.009,
+        "solution": "dddddddldllududdlduddludddrddludldlududdudlduduldluddluduldludduldluddrddddlduddrdlludludludrdludrdluddrdludrldrddluldudrdludlluldlluduldduldulduduudldulrddllduudrddldudluuuddduldulduuduldrdldduudldudullduddurdddlludluuldduuuddululurddddlludluduudddududrddllulddluludrdudldddludulddluddluduudldrdddlldrddludludludulduddlulrdlruuddrdddlluddrdddlludludulldrdddlluldluluudrdldudlrdddudlululudrddlluduldduldudrdddludrrddllludrddulddudluldduldudlullrddlludulrdddudllddududlududrddldudlduludulluluuuurdddddlludrdluudluludrdlululuddduldulduduudldulrddlluuudddudrddluldluduldudurdddldudullrddlddluddluduldudrddlddudrdddldulduduldduldluuldrddludluudlluudldduddududrdddluduldduddullddududrdluldudluluudlrddlluduuldrddludulddrdddluddrddudludldlludludluullllduuldddrddlluudrddludrddlululududurdddudludluuldduuuudddulludrddluldulddrdddludluddurddddluddullrdddudlulduudrddludlulduudrdldluduludlrddluuldlrdddulludrddludluldduduulddudrdddluddluldulrddludlulluuddudrduuduldurddddllulurdddudlrddudludluudludulduuddrddluduldudurdddluludludurddudlludlrddudllulduduldduuuldudlrdddrdddllluduudulddduludurdddduduldludlluduldudurdddudludludrddludludulddrddulldulddrdludrddlludludrdludruldddluldlulduludrddulludluudluuddu",
+        "won_level": false
+      },
+      {
+        "id": 75,
+        "iterations": 144,
+        "time": 0.336,
+        "solution": "dddlllluuullddllllurdrrudlluuddrudrrruuddlluurlddrruuudrruuluuldddddullddrrlluurruuuurrddddrddd",
+        "won_level": true
+      },
+      {
+        "id": 76,
+        "iterations": 90,
+        "time": 0.058,
+        "solution": "dddlullldddduulddddddlldddddddurrlududuluuuruddurrr",
+        "won_level": true
+      },
+      {
+        "id": 77,
+        "iterations": 4661,
+        "time": 10.001,
+        "solution": "dlllllluuurrdrrurddldlllluuurrrrruuurrddddddllllllrrruulllldrdrrrruuuuuurrddddlddllllluluurrdrrurdllllddrrrrruldludrruullllullddrdrrrruullluldldrdrudrrrruldlllluurldrdrrrruulllluldurrdrruuuurrddddddlllllluuddrrrrruldlllluluurdddrrrruldrruululldllurdlldrrdrrrruulluldrruuuurrddddddlllllluluurrrdlddrrrruldlllluluurrrrdlllddrrrruldrruuludddrruuuululdddlddrul",
+        "won_level": false
+      },
+      {
+        "id": 78,
+        "iterations": 4,
+        "time": 0.001,
+        "solution": "uur",
+        "won_level": true
+      },
+      {
+        "id": 79,
+        "iterations": 39,
+        "time": 0.019,
+        "solution": "dlluuuulldulduldurrrruulllu",
+        "won_level": true
+      },
+      {
+        "id": 80,
+        "iterations": 0,
+        "time": 0.001,
+        "solution": "l",
+        "won_level": true
+      },
+      {
+        "id": 81,
+        "iterations": 4415,
+        "time": 10.003,
+        "solution": "uuurrdlddrlluuurrddldrlluuurrdrrurrrddlllullduldulduurrddrllluurrrrdrdlllulldrluurrrrdrdrudllllulldrrlluurrrdrdrrrudlllllulldrluurrrrdrdrruuddlllllulldrrrllluurrrrdrdrruulddllllulldrrrrlllluurrrrrdlluuuuu",
+        "won_level": false
+      },
+      {
+        "id": 82,
+        "iterations": 7634,
+        "time": 10.001,
+        "solution": "dlllllluuurrdrrurddldlllluuurrrrruuurrddddddllllllrrruulllldrdrrrruuuuuurrddddlddllllluluurrdrrurdllllddrrrrruldludrruullllullddrdrrrruullluldldrdrudrrrruldlllluurldrdrrrruulllluldurrdrruuuurrddddddlllllluuddrrrrruldlllluluurdddrrrruldrruululldllurdlldrrdrrrruulluldrruuuurrddddddlllllluluurrrdlddrrrruldlllluluurrrrdllu",
+        "won_level": false
+      },
+      {
+        "id": 83,
+        "iterations": 3168,
+        "time": 10.003,
+        "solution": "ddddddddrruuuldddlluuuuuuuurrdddrdddddllluuuuuuuurrdrrddddddldllluuuuuuuurrdddddldddrruuuululldddduuuuuuurrddddddddrrllluluuuuuuurrddddddrruuuuuurrddddddddllllulluuuuuuurrdddddrdrddrruuululuuuurrddlddddddlllulluuuuuuurrdrrdddddlddrudllulluuuuuuurrdddrruuurrddddddllddllulluuuuuuurrdddddrdlddrruldluuddrruuulldddrruuuululldldrrdrudddrruuuullddddrruuuuululldldrrdruddddllulluuuuuuurrdddrrdddddllulluuuuuuurrdrrurrdddllldludddddrruuuuuullddddddrruuuuuuululldldrrdruddddddrruuuuuuullddddddllluuuuuurrrdrudddddddllulluuuuuuurrrrrdruddddddddllllulluuuuuuurrdddddrruuuuu",
+        "won_level": false
+      },
+      {
+        "id": 84,
+        "iterations": 32,
+        "time": 0.12,
+        "solution": "dddddddddlddddddldlududdrdllulluu",
+        "won_level": true
+      },
+      {
+        "id": 85,
+        "iterations": 0,
+        "time": 0.001,
+        "solution": "r",
+        "won_level": true
+      },
+      {
+        "id": 86,
+        "iterations": 1309,
+        "time": 10.009,
+        "solution": "lddddrlullludrudrudlluuddrruuddlluuudddrruulddrrdrudrllullluuddrruuudddlluuudddrruuuldddrrdrruuldlllluuudddrruuuuddddrdrruullddrruuulddlllluuururuddddldrlluuururrdddldlluuururrdrdrddlllluluururrddddrruuurdlddlllluluururrrddddrrllllluluururrddrrurudddldlllluluururrdrrrulddddrllllluluururrddrruulddddrruuuuudddddllllluluururrddddrruuuulddddrruuurrulddlddllllluluururrddddrruuuulddddrruuuuddddllllluluururrddddrruuuulddddrruuururuuuldddlddddllllluluururrddddrruuuullddddrruuuurrrddllddllllluluururddddrruuuuldrrdddlllluluururddddrruuuulddrruurrdldddllllluluururddddrruuuullddddrruuuurrdrrdllddllllluluurrdrrurdlddllluluurrurrrrr",
+        "won_level": false
+      },
+      {
+        "id": 87,
+        "iterations": 1183,
+        "time": 10.001,
+        "solution": "ddlllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll",
+        "won_level": false
+      },
+      {
+        "id": 88,
+        "iterations": 1848,
+        "time": 7.643,
+        "solution": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddrrdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddrrdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddrrdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddrrdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddrrddddddddddddddddddddddddddddddddddddddddddddddddddddddddddduurduddddddllllllllllluddddddddddddddddddddddddddddduddddddddddddddddddddddddddddurdrudddddddddddddddddddddddduddddudddddddddddddddddddddddulrdduruldududududududdudududduddduuduldududududududdudududduldduululddddddddddddddddddddddddddddddddddddddddddddddddddddddddrrdrddddddddddddddddddddddddddddddddddddddddddddddddddddddddddrdulllllllllllllllllllllllllllllllllllllllllllllllllllllllllluurddddddddddddddddddddddddddddddddddddddddddddddddddddddddddrdulllllllllllllllllllllllllllllllllllllllllllllllllllllllllluldlul",
+        "won_level": true
+      },
+      {
+        "id": 89,
+        "iterations": 123,
+        "time": 0.095,
+        "solution": "dddrdddrrudlluuuluuuurrdddrdddldrlluuuluuuurrdddrddrrdlldlluuuluuuurrdddrdrdrdrdlllulululuuuurrdddrdrdddrruuuulu",
+        "won_level": true
+      },
+      {
+        "id": 90,
+        "iterations": 1682,
+        "time": 10.006,
+        "solution": "ddddllluldddddduuuuuuurrddlldddddrdrluluuuuuuurrddrruulddllldddddrdrudrlluluuuuuuurrddlldddddrdrruuldlludrdrruullddrruuulddlluudruluuuruuruurrdddluddrruuullulddldrrdruuddllluururrdddrruuuulddlddrudlllluurrrrdruddllllu",
+        "won_level": false
+      },
+      {
+        "id": 91,
+        "iterations": 3525,
+        "time": 10.002,
+        "solution": "lllllluuddrrudlluuudddddllllluuurddldrluuurrdlddrlluuurrddldrlluuurrdrudlddrllluuurrdrdldlluuurrrudddldrllluuurrdrruuludddddrlllluuurrdrrdldllluuurrruullulddddrruuuruullluurrrdddddlddlluuuuurrddrdddlddrudllluuurrdrdrudldllluuurrruullulddddrruuuruullluurrrrdrddddluddldllluuuuurrddrddddrruuuldddrruuuulullddullulddddrruuurdddllluuuuurrddrddddrruullddrruuulullluldrrdrudddllluuuuurrddrrddludddrruuuullddddrruuuuululldldrlulddddrruuuruudddddllluuuuurrddrddddrruuuuulldllulddddrruuuruullluurrdldrrdddddllluuuuurrddrddddrruuuuuldlddddrruuuruulullldllddddrruuuruurdddllddlluuuuurrddrddddrldllluuurrruullulddddrruuuruullluurrrrdrddddldrlldllluuuuurrddrddddrruuuuuurrddddddlllldllluuurrruulluldd",
+        "won_level": false
+      },
+      {
+        "id": 92,
+        "iterations": 1044,
+        "time": 3.151,
+        "solution": "dddddlulluuuuuurrrddddddldrlulluuuuuurrrdddddldlludrudrruululddldrluuddrrdrullluuudddrruuuuruulllddddduuuuurrrddddddlluluuuuurrrddddrdrdrruuluuuldddddlllluluuuuurrrdddddldrlluluuuuurrrddddrdrdlllulluuuuurrrddddrddrruuuluuldddddllulluuuuurrrdddddldrlulluuuuurrrddddrdrdlluldulluuurrddddrruuuuuldddlddrudrruullddrruuulullddlluuuurrrdddrddllu",
+        "won_level": true
+      },
+      {
+        "id": 93,
+        "iterations": 4055,
+        "time": 10.003,
+        "solution": "dddddduuuuuurrdddddlddrluluuuuuurrddddddldrluluuuuuurrdddddrdrrdllullluuuuuurrddddlddrrdrruulululldddrrdrruululuulullddduuuurrddddddrdrruuluuuuurdddddlddrllulluuluuuurrdddrdrdrrdldllulluuluuuurrdddrdrrurrddddllulldrluulldrluuluuuurrdddrddrddludrrllulluuluuuurrdddrddlluluuuurrdddrrdrddrrdllruululldldrdrudrllulluuluuuurrdddrdrrdllddrruuulullddluluuuurrdddrdrddrrrdlluululllluuuurrddrrurr",
+        "won_level": false
+      },
+      {
+        "id": 94,
+        "iterations": 12,
+        "time": 0.049,
+        "solution": "dddddddldddlr",
+        "won_level": true
+      },
+      {
+        "id": 95,
+        "iterations": 1097,
+        "time": 10.001,
+        "solution": "uuuuuurddddddddluuuuuuuurrdddddddldrlluuuuuuuurrddddddrdrruuluuuuuldddddddldrllluuuuuuuurrddddddddrrlllluuuuuuuurrddddddrruuuuuulddddddddrrllllluuuuuuuurrddddddddrruuuuuuuulddddddddllluu",
+        "won_level": false
+      },
+      {
+        "id": 96,
+        "iterations": 8241,
+        "time": 10.001,
+        "solution": "dddduuuuurrddddddrruuuuuululdddddlddrudrruullddrruuululldldrrdruddlluluuuuurrdddrdddlluluuuuurrdrrdddldrdruuddlllluluuuuurrddrruurrdddlllldludddrruuuulldludddrdrruuluuululldrddddrdrruuluuuuldldrrrdruddddllluluuuuurrdrrdrudddddlllluluuuuurrddd",
+        "won_level": false
+      },
+      {
+        "id": 97,
+        "iterations": 5419,
+        "time": 10.002,
+        "solution": "dddddldlluuudddrruuddlluuuuddddrruulddrrllluuddrruuudddlluuudddrruuuldddrruuuulddddlluuudddrruuuuudddddrrlllluuurrdrruulullddddldrluuuruuurdddddldrlluuuruuurrdddddldrllluuuruuurrddddrruuuullddddddrlllluuuruuurddddrruuuuuldddddlddrudllluuuruuurrdrdrddllddllluuurrdlddrruldluulurdrudrruululldrdruddddllluuuruurrdddrruuuulddldrdruu",
+        "won_level": false
+      },
+      {
+        "id": 98,
+        "iterations": 29,
+        "time": 0.026,
+        "solution": "dddrrrdullluuurrdrdddrdddlllul",
+        "won_level": true
+      },
+      {
+        "id": 99,
+        "iterations": 3,
+        "time": 0,
+        "solution": "drr",
+        "won_level": true
+      },
+      {
+        "id": 100,
+        "iterations": 3745,
+        "time": 10.004,
+        "solution": "dddllulddduldlllluldlluuddllluudulrrddddduudddurdrududrlluurudluduuldulddrurululdudulllrrddrdudluuddrlrrllllllluurrrurrdrrdrdllllllulldrluurrrurrdddrruuurdlddlllllulldrrrllluurrrurrdddrrrullulldldrrrrurdlllllllluurrrurrdrrur",
+        "won_level": false
+      },
+      {
+        "id": 101,
+        "iterations": 2044,
+        "time": 10.005,
+        "solution": "ddlludulduduuuuudddulddduuudddrrrrrdddlldllldduddudlududdduuuddduduluddduuudddruddlrluduluddduurddddlulduduuluuddduuldudrddurlddrrrrllllludurudrdrdllludurudrruudlllddddddduudrdrddlluuuuudddduldduululuudrruulludluruldrrdddddduuuulldddddduululrrududllruudddlduluduruldddddrdllulduuuuldrrrrrrlllddllludurulddddddduuuluudruduldrdrdddddludluuuudduruldddddduuluuduruldddduulrrrrddlllluudrruudrruudllllddddddduduuuuddduuludrulddrrdddddlurddldlulduluuuudddudululdrruullduruddulluurdudrruudrduuurrrllldddduullludrrluulldddddduduuuuudddduruuuldddddduuuduuuuddddlrldulluudruuldddduudlurduuldddurdrdddllluluduuuuuddddrrddllrddullduuuuuudddldddurduuuuuldddrdddduuuuuuuddddddldlululuduuluurdddluuuuddduurlddduduuuuddurulddddduuuuudddllurrduullddddduuuurlddddduuuuudddulrrdddlrddluldulrdluuuuudddddrullrdddulrduduuuuuuddddrrudrddluuluurudrdldddddldluldudllulduduuuudduudrdrdduduuullddddduuuuudddduullrrurrrlddddulddlddlulduuuuuudddldddudluduuuuuddldduruldddurdldduuuldlrddrduduuulldrdldddduulduuuuldddrdrrdldludrlduuudldlrrrddullrudrddrddullduuuuuuuddddddluulduudrrdururdddurrdlldllllluudrdrddlluuuuudddduldluluduruldddduuuuddluudruludrdrddddduullulrudulrruddrdddddldlduuuuuuuddddddldullduudrluudldluuldrrdduruudrddrrrddlddldldlllluduuuuuudddddldluduldluddulududruldddddduuduldruduldrrddddddulrddluluuudluddduuuddrduruudllddddddudduludrrudululdddudduddududuuuuuddddrddlududluldudurddluuuurddddduulddududulrulddduuulddduuddduuddurlddududuluurluddlrrdrddduddlrdddulldluurddlduuluudddlruulddddddudulrdlrdduuuduuuuuddddddlduduuuldrrdddududuullddrrddddduduululurldudruldddrruuuuddddrrdddlllululuuudddudluuuuddduuuuddduluurudrdrdldduuuulldddduuuulddddduuuuruddddddrulduuuuudddluruuudddlurddduuuuuldddddduuuuuuddddulurdddduuduuulddddrddululuuurdddddduludluuurddddlluuuuuudddluldrlrrduudrrdddduduudrdddddldulddlullduudrruludlrluudrrurlddurrdddldurrluuudrddddldlldlllluuuuuuuddddddldudluuuuuudddddrdluudrruululudlruldddddduduuuuuldddduruuulddddduulrluuudddlrdrdudlluuuuudddrrdduuduuulldddrddddlul",
+        "won_level": false
+      },
+      {
+        "id": 102,
+        "iterations": 3,
+        "time": 0.001,
+        "solution": "dddr",
+        "won_level": true
+      },
+      {
+        "id": 103,
+        "iterations": 6218,
+        "time": 10.002,
+        "solution": "llluuuuuuurrdddddrudddllluuuuuuurrdddrddddllluuuuuuurrdrrddddlddllluuuuuuurrdddrruuurrddddldddlllluluuuuuurrdddddrddrudllluluuuuuurrdddddrrddllluluuuuuurrddddrrdddllluluuuuuurrddrruurrddddldllddlluluuuuuurrdddrrddlddrudrudlllluluuuuuurrdddddrruuulldlddllluluuuuuurrdddrruuurrddddrudlldlddrudlllluluuuuuurrdddddrruuuuurrdrddddduulldlddruuddlllluluuuuuurrddddrruuuurrddddldddlllluluuuuuurrdddrrddlddrurulddllluluuuuuurrddddrdlddruuddlluluuuuuurrdddrrdldddlluluuuuuurrdddddlddrudrruulldluddrruuulldddrrr",
+        "won_level": false
+      },
+      {
+        "id": 104,
+        "iterations": 6934,
+        "time": 10.003,
+        "solution": "dduuurrddddddrruuuldddrrudllluululuuurrdddddululuuurrddrdrdddrruulddllulululuuurrddrdrdlddrruldrruululldlluluuurrdrrurddddddlludrruullddrruuululldldrluluuurrddrddldrdrudrruulullllluuurrdrrrrdrdddldlllulululuuurrddrdrdlddrruldludrruulldludrdrruulullddrdrruuluululldldrrrdrudddrruuuullddddrruuuuululldldrrddddrruuuuuldddllddrruuuurulldludddddrruuuuuulluldlddddrdrdrruululuulddddrdrruu",
+        "won_level": false
+      },
+      {
+        "id": 105,
+        "iterations": 3526,
+        "time": 10.001,
+        "solution": "ddddrruuddllulluluuruurrddddddrruuudddllulluluuruurrdddldldrluluuruurrdddddlluluuruurrdddrdrruuldddlllluluuruurrdrdddldlluluuruurrddrrdrddldlullluluuruurrdrrddddllurdllluluuruurrddrrdddldrlullluluuruurrdddrrdrruulurulldddddlllluluuruurrurdddddldlluluuruurrddrrdrddldlullluluuruurrdrrdrddlldludlluluuruurrddrdlddlluurrrddllluluuruurrdrrddldrdlllluluuruurrddrruurrdddldldrlllu",
+        "won_level": false
+      },
+      {
+        "id": 106,
+        "iterations": 3142,
+        "time": 10.003,
+        "solution": "ddddrluuuurrddddlluuuurrddlddrruuululldddduuuurrddddrruuudddlllluuuurrrrddddrruulddllllluuuurrdrrddldllluuuurrdrrrdrddllllulldrluuuurrddrrdrruuulddddlllulldrrlluuuurrddrdrdrruuluulddddllulldrrrllluuuurrddrrdrruulullddddrlllluuuurrddddrruuuulddrrdrdllllulldrluuurrdrrdrruulullldddldrrrrllllluuuurddddrruuuulddrruurrddd",
+        "won_level": false
+      },
+      {
+        "id": 107,
+        "iterations": 4388,
+        "time": 10.003,
+        "solution": "dddllllluluuddrdrruuluuurdddddlluluuudddrdrruuluuuruurdddddlddlluluuururrdrrdrdddllllulluuururrdddrdldrllulluuururrdddrrdrdlllullluuururrddrdrddrruuululuuurrddldddddlllullluuururruurrdddddlddrudllullluuururruurrddrdrddllddllullluuururrddrdlddrruldludrruuullldrrrdruddlllullluuururrddrruuuurrddddlldludddrruuuulldluddddrruuuuulldlulurdddddrdrruuluuuuuldddddldlluuuruurrddrdrdddlludrruullddrruuululldldrrdruddrruuulldddrruuuulululldlddrrrdddrruuuulddldrdruuudddlllullluuuruurrddrruuurrdddldluddddllullluuuruurrdrrdddddllullluuuruurrurrrdrdllllddddllluuuruurddlddruddlluuurrdddrdrruuluulldluddr",
+        "won_level": false
+      },
+      {
+        "id": 108,
+        "iterations": 8707,
+        "time": 10.001,
+        "solution": "dddddldrluuuuuuurrddldddddrlluuuuuuurrddrddddldlluuuuuuurrdddlddlddrudrudlluuuuuuurrdddlluuurrdrdrdddddllluluuuuuurrddddllddrulurrlluuuurrddrdddullluuuurrddrrdrddddlluuudddrruuuullddddrruuuuululldldrrddddrruuuuuldddlddrulurdruddlluuurrdruuddddllluuullluuuurrddrruurrdrdldludddddlluuullluuuurrdrrurrdldluddddddrruuuuuuullddddlllluuuurrrrrdddddddlluuullluuuurrddr",
+        "won_level": false
+      },
+      {
+        "id": 109,
+        "iterations": 12,
+        "time": 0.01,
+        "solution": "dddduuuurrddr",
+        "won_level": true
+      },
+      {
+        "id": 110,
+        "iterations": 21,
+        "time": 0.009,
+        "solution": "dddddlluuuuuuurrrdrddd",
+        "won_level": true
+      },
+      {
+        "id": 111,
+        "iterations": 1010,
+        "time": 0.728,
+        "solution": "ddddddlllludrudrruuulddldrlluuddrruulddrrlluuuuuuuldurrdddddddrrlllludrruuluuuuuldurrdddddrruuuuurrdddddddllllluuuuuuurrdddddddrrur",
+        "won_level": true
+      },
+      {
+        "id": 112,
+        "iterations": 56,
+        "time": 0.018,
+        "solution": "dddddddddrruuuuuuuuuurrddddddddd",
+        "won_level": true
+      },
+      {
+        "id": 113,
+        "iterations": 124,
+        "time": 0.087,
+        "solution": "dddddllluuddrruuddlluuudddrruulddrruuuldddlluuddrruuuuldddldrluuudddrrlluuuuddddrruuuuuururrddddldddllluluuuruurrddddddrrr",
+        "won_level": true
+      },
+      {
+        "id": 114,
+        "iterations": 5390,
+        "time": 10.002,
+        "solution": "llddddrruurrlddlllluuuuuuurrdddrruuurrddddddlldlllluuuuuuurrdddrruuurrddddddrdlllllulluuuuuurrdddrruuurrdddddddlluldludrruullddrruuruldddllulluurdldrluuuuuurrdddrruuurrddddlldddlludrruuuulllldrdrddrruuruldddllulluurrdddrruuldluddrruurruldddlllulluurrdrudddrruurruldddllllulluuuuuurrdddrlddddrruurruldddlllulluuuuuurrdddrrllldddrdrruuruldddllulluuuuuurrddrruurrdddlddddlllulluuuuuurrddrrddddldrllulluuuuuurrdddrrddrdrdllulllluurddrdrlulluurrdddrrllulluuuuuurrddddrdddrrlllulluuuuuurrddddrdrrrdrdluurullddllllluuuuuurrdddrruuurrddr",
+        "won_level": false
+      },
+      {
+        "id": 115,
+        "iterations": 18,
+        "time": 0.005,
+        "solution": "dddrrlluuuuuuurrddd",
+        "won_level": true
+      },
+      {
+        "id": 116,
+        "iterations": 4,
+        "time": 0.001,
+        "solution": "ddddl",
+        "won_level": true
+      },
+      {
+        "id": 117,
+        "iterations": 3269,
+        "time": 10.001,
+        "solution": "dllluuuuudddddrrudlluuuuuruurrdddddlddlluuuuuruurrddddrddrruuuurdldddlldlllluuuuuruurrdddddllddrruuulullddduuuuruurrddddddrruuuurruldddddlldllluluuuuruurrddddddldrlluluuuuruurrdddddrdrruuluuruldddddlldlluluuuuruurrddddddllluuuuruurrddddrdrruuluuldddddlllluuuuruurrdddddldlluuuuruurrdddrdrddllldluluuuuruurrddddddrruuuuurrulddddddlllllluurdldrdrulluuuuruurrddddddludlluuuuruurrddddlddlluuuuruurrdddrdddrruuuuurulddddddlllllluurddrruuulddulluuruurrddddrdrruuluurrulddddddllllruululuuurrdddddrdrruuluuurrullddddddllldluluurdldrdrulluuuururrddddrdrruuluuuulddddddlllluuuurrdddldrlluuuururrddddrdlldluudrruululldrrddlluuuururrdddldrdruuddlllluuuururrddrdddlllluuuururrrurrdddlldludddllluuuururrrdldlulurrdddddrruuuuuuldldddd",
+        "won_level": false
+      },
+      {
+        "id": 118,
+        "iterations": 3149,
+        "time": 9.136,
+        "solution": "ddrruuuuudddddlllluuuuuuurrddddldddrlluuuuuuurrdddddlddrlluuuuuuurrddddddldrlluuuuuuurrdddddrdrruuluurddddllldlluuuuuuurrdrddlddddlluuuuuuurrdrrdddddrrdllludrruuluuulddlddlluuuuuurrddrrdrddddrruuuuuldddddllullluluuuuurrddddrdldrlluluuuuurrddddrrddllluluuuuurrddddrruuurddddldllluluuuuurrdddrruurulddddddrdrullllluluuuuurrddddrruuuulddddddrrdrruuldllllluluuuuurrddddddrruuuuuulddddrrdldllluluuuurrddrrurrddrddlldrruululldldlluluuuuurrdddddrruuuuullddddddrrllluluuuurrdddrruurrdddddludrruullddrruuululldlddlluluuuuurddddddrruuuuuullddddddrruuuuuurrdddddldllluluuuururrdddddldrrllluluuuururrddddrrdrddluuddrruuulldddrruuuululldldrrdruddllllluluuuururrdddrrurrdlldludddllluluuuururrddrddddrdrruuluuulldluddddlluluuuururrrdldlulurrr",
+        "won_level": true
+      },
+      {
+        "id": 119,
+        "iterations": 522,
+        "time": 2.141,
+        "solution": "luuurddluuruuluuurrdrdddlddldrlluurudrrlluuddrruuuulldddddldrluuruuluuurrdrddddrdrdrlulullluuluuurrdrddrddllluuluuurrdrddrrdddulllluuluuurrdrddrrrddldrlulllluuluuurrdrddrrrdrdldrllulllluuluuurrdrddrrrdrudddllulllluuluuurrdrrrrddddldrlulllluuluuurrdrddrrrdrdrdllullllluuluuurrdrddrrruurddddldrlullllluuluuurrdrddrrruururrddddddldddddlddrllulllu",
+        "won_level": true
+      },
+      {
+        "id": 120,
+        "iterations": 532,
+        "time": 10.02,
+        "solution": "dddddddddddddldrluuuuuuudddddddrrlluuuuuuuuddddddddrruuuuuuudddddddlluuuuuuuuudddddddddrruuuuuuuuddddddddlluuuuuuuuuuddddddddddrruuuuuuuuudddddddddlluuuuuuuuuuudddddddddddrruuuuuuuuuuddddddddddlluuuuuuuuuuuuddddddddddddrruuuuuuuuuuudddddddddddlluuuuuuuuuuuuudddddddddddddrruuuuuuuuuuuuddddddddddddlluuuuuuuuuuuuuuddddddddddddddrruuuuuuuuuuuuudddddddddddddlluuuuuuuuuuuuuuudddddddddddddddrruuuuuuuuuuuuuuddddddddddddddlluuuuuuuuuuuuuuuruurrddldddddddddddddddrllluuuuuuuuuuuuuuurddddddddddddddrruuuuuuuuuuuuuulddd",
+        "won_level": false
+      },
+      {
+        "id": 121,
+        "iterations": 522,
+        "time": 2.131,
+        "solution": "luuurddluuruuluuurrdrdddlddldrlluurudrrlluuddrruuuulldddddldrluuruuluuurrdrddddrdrdrlulullluuluuurrdrddrddllluuluuurrdrddrrdddulllluuluuurrdrddrrrddldrlulllluuluuurrdrddrrrdrdldrllulllluuluuurrdrddrrrdrudddllulllluuluuurrdrrrrddddldrlulllluuluuurrdrddrrrdrdrdllullllluuluuurrdrddrrruurddddldrlullllluuluuurrdrddrrruururrddddddldddddlddrllulllu",
+        "won_level": true
+      },
+      {
+        "id": 122,
+        "iterations": 22,
+        "time": 0.012,
+        "solution": "dddldddlllluuuuuuurrddr",
+        "won_level": true
+      },
+      {
+        "id": 123,
+        "iterations": 8238,
+        "time": 10.001,
+        "solution": "drruululuurrdrdrdddddrruuddllluullluuuuurrdddrrdrddldrlluullluuuuurrdddrrdrdrdrdllllllrruullluuuuurrdddrrdrdddrruuddlllluullluuuuurrdddrruuurrdddddlddlluullluuuuurrdddrruuurrdddrddllddrudllluullluuuuurrdddrrdrrrdlddllluullluuuuurrdddrrdrdlddrruldludrrrudlllluullluuuuurrdddrrddlddrruldludrruullddrruuululldldrlluuuuurrdddrddllluuuuurrdddrrdrdrdruddlllludrruullddrruuululldldrlluuuuurrdddrddllluuuuurrdddrrdrrurddlddllludrruullddrrrruuudddlllluulluluuuurrdddrddddrruuuuuluurrdrddddlddrudllu",
+        "won_level": false
+      },
+      {
+        "id": 124,
+        "iterations": 33,
+        "time": 0.046,
+        "solution": "ddddddrruuuurrdldddr",
+        "won_level": true
+      },
+      {
+        "id": 125,
+        "iterations": 2354,
+        "time": 8.085,
+        "solution": "ddlllludrruuurrdddrrudlllllluuddrruuurrdddrruuddlllllluuudddrruuurrdddrruuruldddlllllluuuruuurrddrrdddldlllluuuruuurrdddrruuurddddldldrllllluuuruuurrddddrruuuurrdddddlldllllluuuruuurrddddrdrdldluudllluuuruuurrdddrdlddllluuurrdlddrruldluulurdrudddrruuuululldrddddrruuuuuldlddruuddddllluuuruuurrrdldddddllluuuruurrdddddrruuuuuuldddldrdruddllllluuuruuurrdddrrdruddldllllluuuruuurrddrruurrddldluddddllllluuuruuurrdrrrurdddd",
+        "won_level": true
+      },
+      {
+        "id": 126,
+        "iterations": 7580,
+        "time": 10.002,
+        "solution": "ddddldrlluuddrruulddrrlluuuuuurrdddddldrlluuuuuurrdddrdlddlluuuuuurrrrdullddddddrllluuuuuurrdddrrdlddrlllluuuuuurrddddrrdldllluuuuuurrdddrrrdldrlldllluuuuuurrdddrrrruullullddddddrruuurruuullluldddddlddlluuuruuurrrrdrrdddddllluldludlluuuruuurrddddldlulurrdruuddddllluuuruurrdddddrruuurruululdullddddddrruurulldddlllluuuruuurrdddddldlluuuruuurrr",
+        "won_level": false
+      },
+      {
+        "id": 127,
+        "iterations": 933,
+        "time": 10.001,
+        "solution": "ddduuurrdddldddrluuuluuurrddrddldludrrlluuddrruuulldddrruuuululldduurrdddddrrllluuuluurrrrddldddlluuuluurrrrrdrdddlddrluuuulldddlluuuluurrrrrrrddddldldrluuuulldddlluuuluurrrrrrdrdddrdlldluudrruullduruuluuldlddldlduruulldduuuuldrdluruuddddrdluuuurrddduurrdddddduuuulddddlddldlduuuullddlduuuudrrddddldlluuuruurrddrdddrdduluurrduuurddddldddlduuuulddddlddldlduuuullddldldrrrruurr",
+        "won_level": false
+      },
+      {
+        "id": 128,
+        "iterations": 6377,
+        "time": 10.001,
+        "solution": "rudlrudlurdrdlluldrulddddldddddldddlludludduldddlduddruudrulddurduludrdddluludruudlldduldrduruudl",
+        "won_level": false
+      },
+      {
+        "id": 129,
+        "iterations": 1649,
+        "time": 10.005,
+        "solution": "ddddddddudddddddrudludddddddddduuuldddddddddddlullllllllluuddllllddlllrdrduuududuuururddddddddddduruuuuuuuuuuurddddddddddddrdlddddddddddddddddddddddddddldddluddlludddddddudddddduuuldddddddddddddddlullllludddlllllluulllllruudullddlrdrlrdududduududuuurdddddddddddddudddddudddddudddddudddddudddddudddddudddulullldddulldddulldddulldddulldddulldddulldddullduuldddddddddddddddddddddddddddddddddddddddddddddddlullllllludddlllllllllllludddlllllllllllludddlluuddlllllllruudullddlllllllruudullddlllllllruudulrdrduududdududduududuududdududduududuududdududduudrddurddddddduddduddduddllddddddddddddddduuldddddddddddddddlullllllllllluddduullddlllllllruudurdduduududdududdurddudududurldududsruudduuduluuddrudduuddulduulrudldulruldurdudddddurdddddddddddddddddddlddddddddddddddddllddddddddddddddduuldddddddddddddddlulllllllllllluddlulllddlllllllruuurddduduududdurdddududududuudrurududdluulududduudddsduuulrdduduuduududuurddddlrrdudrdddddddddddddddddlldddddddddddddddldddldddddddddddddddulddddddddddddddduldddddddddddddluudddllllllllllluuruudullddllllllrrdrlduududuudududdrdurdudududuuddududrddddddddddddddddruudududududududululuudduldrudddlduulruldurdlulduldururudddlrurudddudududddrddddduddddduuuuuluulldruurrdlddddddddddddddddddddddddddddddddddddddddllddddddddddddddddddddddddddddddddddddddddddddddddddddddluldddddddddddddddddddddddddddddddddddddddddddddddddddddulddddddddddddddddddddddddddddddddddddddddddddddddddddddduudldlllllllllludddlllllllllllludddlllllllllllluuddddlluullrrdddudrduududududuudududuududududuudududuududududuudrulrudddudulluddlrrrudddudulluddlruduldudududududd",
+        "won_level": false
+      },
+      {
+        "id": 130,
+        "iterations": 4499,
+        "time": 10.003,
+        "solution": "ddddludrdululudduluduuuurrdddddddlrduluuuddddululuduuuurdddddluuduuurrdddrruuurrdddddldddurldulllldlrurruullllddduuuuurrddddrruuuurrdddddddldllurrrdurdlldurruudddlllllrrruulllldlrurruullllddduuuuurlddddrruuuurrdddruurudddlddddllllrrrudulllldlrurruullllddduuuuurrddddrruuuurrddddrruuuudlldldllulludururrdddlldduruurrrddrdrdrulddlddrlldurruulllllldrddluuldduuuuurlddddrruuuurrddddruuurudddldrdullllddrrrrldllurrrrrudldldllurrrdlllluuuldrdrdlulluuldduuuuurldddddduuullduruuludrrddruuuurddrduruuudrddlllldddlulluuldduuuuurldddddduuullduruuludrrdruuurdrduruurdddllllddddurlrrdrurrluduulllullluurrrrdrrrddlddrulldllldlrurruullllddluuudururrdddrruuurrldldddrruddrlluullllddrdddullduuldduuuuurrddddrruuuurrddddrudlllllddduuldluuduuurrdddddddulrddurrrdlllrrrulddllurrrdllllrrruulllldlrurruullllddduuuuurlddddrruuuurrddddrruuddddldlldllurrrdllllrrrudulllldlrurruullllddduuuuurrddddrruuuurrddruddddrlululllulludururrdddllddrdddullduuldduuuuurrddddrruuuurrddddlllldrddluuldduuuuurrdddrdrruuluurrddddllldddrrurdlllluluruululldrddrdlruululldrrruddrrrrdluuulllllluuudrruurrdurrudrdddddldlldllurrrdurululllldrlluuuurur",
+        "won_level": false
+      },
+      {
+        "id": 131,
+        "iterations": 304,
+        "time": 0.972,
+        "solution": "dlllluurddrruulldluuuuuurdddlddddrruuldluuuudrrurrdrruululldddllluuddrrurulddrruuuuurrdddd",
+        "won_level": true
+      },
+      {
+        "id": 132,
+        "iterations": 5390,
+        "time": 10.001,
+        "solution": "llddddrruurrlddlllluuuuuuurrdddrruuurrddddddlldlllluuuuuuurrdddrruuurrddddddrdlllllulluuuuuurrdddrruuurrdddddddlluldludrruullddrruuruldddllulluurdldrluuuuuurrdddrruuurrddddlldddlludrruuuulllldrdrddrruuruldddllulluurrdddrruuldluddrruurruldddlllulluurrdrudddrruurruldddllllulluuuuuurrdddrlddddrruurruldddlllulluuuuuurrdddrrllldddrdrruuruldddllulluuuuuurrddrruurrdddlddddlllulluuuuuurrddrrddddldrllulluuuuuurrdddrrddrdrdllulllluurddrdrlulluurrdddrrllulluuuuuurrddddrdddrrlllulluuuuuurrddddrdrrrdrdlllulllluuuuuurrddddrrddlldrrllulluuuuuurrddddrdrrdr",
+        "won_level": false
+      },
+      {
+        "id": 133,
+        "iterations": 4,
+        "time": 0.001,
+        "solution": "ddddl",
+        "won_level": true
+      },
+      {
+        "id": 134,
+        "iterations": 1057,
+        "time": 0.867,
+        "solution": "dlllluuuuddddrruuuuddddlluuuuudddddrruuuulddddrruuuuuldddddlluuuuddddrruuuuuuldddddldrluuuuruuuldddduuuurrddddddldludrrlluuddrruuuluuldduuuurrddddddrrdllluuuluuuurrdddrddddrruuuuuluurr",
+        "won_level": true
+      },
+      {
+        "id": 135,
+        "iterations": 62,
+        "time": 0.034,
+        "solution": "ddddddrruuuuddddllluuuuddddrruuuuululddddduuuuuurrdddddddrrr",
+        "won_level": true
+      },
+      {
+        "id": 136,
+        "iterations": 4003,
+        "time": 10.003,
+        "solution": "rudlrudlurdrdlluldrulddddldlludullluudulrddluudulrduluruldddduluudrddrdlrudllullurudldrddduldluuudrddluldlluldluuudurddduldudludrddluldudrddruudrddlllulludrddluuuddlrduuuudddlludulrdduluudulrddulurddlurldrrddlulduldudlrddruudrddllluludrdluruudrdddlulullldlruulldrdduuuddrduldulrdduuulddrduurudldddlulddudrddluldudrddruuduldddduldlulduuudurdddulduuudrluuddlludrddluldudlrurudlddduuruuldddlullrrudllddullrddruudldrruulldddduuudlddduuurrdrdddlllulluudurddluuudrrdddllulduuuddrdrrddllulllulduuuddrdrrddlllulluldulldlrduduuullddlduurldlurddrldulludurluddrdduldluuudrddrdllulduuuddrdrrddllullllulluudullrdrrdrdlllulduuuddrdrrddlllulluldulldrluuuddrdrrdlulluuuddlrdrrduluuuldddlrduuulluddlrdlludulrddrdulduuuldrdduurlddrdlulduldudrddrdlluludrdluruuddddululllduuruddrdrduuuulddddluuuudddrddululuruddlrdrrddluluuudddrrduuululdddrllduluuuddrduurudrddduuluudddluuruulddrrdrdddduldlllullullurrddlruuuldlddduuulddduurrdddrdullullullrudrrdrduuuuuldddddlluuuuddrrudrddulululuddlruuuudddrrduuluuldrruuddddrddllluldlulllulduruuudddlluurudddlrulruuruddrdudddlullulluruudddrruuuullddrrdrddddulduldullululldrruuudddrdllululdrddruudulddluuuudrdrdudululddrruuulldddllulrdlrruuldrdrdluluurrdrdrddllulduldluduldduurduuldddduuuddrdrduuuuldrdrrdrlluuurudddrrllluuldlddrruuurdddrddlululduuuruuddrdrddrrllulluuuuddrdrdrdluuuuuddldrdulldrddr",
+        "won_level": false
+      },
+      {
+        "id": 137,
+        "iterations": 33,
+        "time": 0.013,
+        "solution": "drruululluuurrdrdrdrdddrruuuuuuu",
+        "won_level": true
+      },
+      {
+        "id": 138,
+        "iterations": 6373,
+        "time": 10.001,
+        "solution": "llluuudddrruuudddlluuuuddddrruuuldddrruuuldddlluuudddrruuuuddddlluuuuddddrruuuuudddddlluuuuudddddrruuuuuuddddddlluuuuuuddddddrruuuuurrdddddrruuuuurldddddlllluuuuuuuddddddlluuuuuuddddrrduruuluuuldddddrrduuuurrddddrrlluuuurruldddddlllllluuuuuuddddrruuuuuldddddddluuuuuuruddddddrrduluuuuudddddlluuuuurrdddddrduuuuurrdddddrruuuuuulddddddllllluuuuurrddddrruuuuudddddllllluuuuuuddddrrduruuuuddrddruuuuruullllllurrrllldddddddlluuuuuurrdddddrdrruuluuurrddrdddlllluuuuuuuddddddllluuuuuuddddrrduruuluuudddrrddruuuurrulldddddllllluuuuuuddddrruuuuddrrdrrruuuuuludllddddduruuuuuullrddddddlllluuuuudddrruuurulddddddlluuuuurruldddddduuuuurruudddddllluuurrd",
+        "won_level": false
+      },
+      {
+        "id": 139,
+        "iterations": 6190,
+        "time": 10.001,
+        "solution": "dllluuuuurrddrrdrddrruuululddddllllluuuuurrddruddddllluuuuurrrdddddrruuuulddddlllluuuuurrrddddldlluuuuurrddrrdrddlllluluuuurrdddrddrruuuluudddddrruuuuuldddddlllluluuuurrruurdddddlddlluluuuurrdrruuurrdddddddlllulldrluluuuurrdddrdrdlulldrluluuuurrddrruuuurrddddddlldludrruullddrruuulullddlddrlurdrlluluuuurrdddrrdlldludrruullddrruuuluuruurrdddddddllulldrluludrdrrlluluuddrdrrrrlllluluuruuldduurrdddddrrrrllllluludrdrruulululduurrdddrruuuuurrdddr",
+        "won_level": false
+      },
+      {
+        "id": 140,
+        "iterations": 15,
+        "time": 0.005,
+        "solution": "llldddldlluuuuuu",
+        "won_level": true
+      },
+      {
+        "id": 141,
+        "iterations": 476,
+        "time": 0.904,
+        "solution": "ddldldldluuudddrrlluuuuddddrruuuuudddddlluuuurudddddrrluuuuuudddddllluluuuuddurrddrruuluulddddddlrduuuuuuudddddllluuuudduldrrrruruldddlllluuuuddurruuddrrurdrruuddllldlllluuuuddurrudrudddllluuuuddurrrrrdrruulddlldlllluuuuddurrudrruuddrlddlllluuulrurruddddllluuuuddurrrrrdrruullddldlllluuuuddurrudrrudrlddlllluuulrurrulddddddlrdluuuuurudddddlrduuuuuudddrdrdrlluuuruldddddlluuuurudddddrrluuuuurrdddddllllluluuuuddurrddrruuluuddrurdrruuluu",
+        "won_level": true
+      },
+      {
+        "id": 142,
+        "iterations": 3251,
+        "time": 10.004,
+        "solution": "uuuurrdddddduulluuuurrddrdrddrrddllllllrruuulluuuurrddrdrddrrdlldrruulullllluuuurrddruddddrddrruuudddlluldrruululllluuuurrddrrurulldddddddrruuuuuuurdddlddddlluululluuuurddddrdrddrrrudllluululluuuurrdddddrddrruuuluuurulldddddddrruruddllluululluuuurrrdddddddrruuuuuurddlddddlluululluuuurrrrdddddddrrudllluululluuuurrddrdr",
+        "won_level": false
+      },
+      {
+        "id": 143,
+        "iterations": 7845,
+        "time": 10.002,
+        "solution": "ruldruddlluulurdddrruuldluddrruurdduurulrddldurullddlluulurdddrruurdrdrullddlluuurdl",
+        "won_level": false
+      },
+      {
+        "id": 144,
+        "iterations": 293,
+        "time": 0.318,
+        "solution": "ddllludrudrudlluuddrruuddlluuudddrruulddrruuuldddlluuddrruuurrdddrrlllllluuudddrruuuldddrruuuruddddlllluuudddrruuurrdddrruuuululllludrudrrdddddrrudlllllluuurrdrruuuluurrddddldddrllllluuurrdrruuuluurrdrdldddldrldlllluuurrrruuluurrdrru",
+        "won_level": true
+      },
+      {
+        "id": 145,
+        "iterations": 3564,
+        "time": 10.004,
+        "solution": "luurrrdddrruruuullulllludrudrudrrudlluuddrrrudllluuudddrruruddllluuurrurdddddlulluuurrrdrdldllluuurrurrrdr",
+        "won_level": false
+      },
+      {
+        "id": 146,
+        "iterations": 4785,
+        "time": 10.001,
+        "solution": "ddddlldldluuddrrlluurudddrrluuddlluuruldddrrluuurdddlluuuuddddluduuudddddldlluluuuurdddddrruuuuddddlluluuuurrddddrruuuuddddldlluluuuurrrddddrruuddlldlluluuuurrdrruddddrruuudddllldlluluuuurrddrruurdddldldlluluuuurrdrruruddddldrlldlluluuuurrddrruururdddlddlldlluluuuurrdrrururrdlddlddrllldlluluuuurrddrruururrulddddlddruudrudldllldlluluuuurrddrruur",
+        "won_level": false
+      },
+      {
+        "id": 147,
+        "iterations": 3104,
+        "time": 10.005,
+        "solution": "ddldrluuuuudddddrrlluuuuurdddddrrdrudrruullddrruuululddddrruuuuulullddlddldrlluuuuurdddddrrllluuuuururddddlddrlluuuuururrddldddldrlluuuuururrdldddddrllluuuuururrddlddddlluuuuururrrdrdddddldrlullulluuuururrddddlddrlulluuuururrdddddldrlulluuuururrddddrdrdldrluulldrlulluuuururrddddrdrddlullulluuuururrddddrrdldludrruullddrruuululldldrrrddllulluuuururrddrrddlddruuddlllulluuuururrdddrrdddlllulluuuururrdrrurrdddlldludddllulluuuururrddrddddllulluuuururrrrdrdlldluddddrruuuuullddddllluuuurrrrrrurddddldldlllul",
+        "won_level": false
+      },
+      {
+        "id": 148,
+        "iterations": 199,
+        "time": 0.718,
+        "solution": "luduludrdluuddruldrdlulluluulruurddurdrddludrrluulddddddudddddrudddduudddddruddddurdddduddddurdddudluluuulul",
+        "won_level": true
+      },
+      {
+        "id": 149,
+        "iterations": 3530,
+        "time": 10.004,
+        "solution": "uuuuurrddddlldrluuuuurrddddrruuuuddddllldrlluuuuuuurrdddddddrllluuuuuuurrdddddrrdrruulululdddddllluuuuuuurrddddddldrlluuuuuuurrdddddrdrruuluurddddllldlluuuuuuurrdrrdddddlldlluuuuuuurrrddddddldrllluuuuuuurrdddddrrdrruululuurdddddlldllluuuuuuurrrrddddddrruuurulddddllldllluuuuuuurrddddrruuurddddldldllluuuuuuurrdddrruurrdddddllldllurdrudllluuuuuuurrdddddrddllluuuuuuurrdddrrdrdllldluddrruuululldrdrudddlluuuurrdruddddllluuuuuuurrddrdddddllluuuuuuurrrrdddldrdruddlldllluuuuuuurrdddrrrdrurullllldluddr",
+        "won_level": false
+      },
+      {
+        "id": 150,
+        "iterations": 2167,
+        "time": 10.008,
+        "solution": "dddddldlllluldluldluludrrdllulduuldrulddduuuuddddduduuuurddddduuuuuudddddlruuuuudddddluluudrruululdddduduuurudlrdddddudluuuururddddddldlluluudrruuludlurrrddrdddduruuddduruddlluuudrrruldddlluuuudrdddluuuuldldddlluuuudruldddddduduuuuuddddrduduuuulddddduuulrdrddduuuuudddrddddlddlluuuldddluuuuuudddlrdrdluulddrruuluurdrdrdddddlddlluuuldddlduuuldddldduuuuuddudrdrdddlluuulddduuluurudrdrdddddldlludrrduuuululddddrduluulddrdduruululudduruulddddrrddluulduuuldddrduuuuuddrrrddddduuuulddddlddlluuuldddlddluluduuuuddrrdduuuudlldddrdduulluuuddduruuuldddddduuuuurldddddldlulruluuudddrrddlulluuudrdduruuullddddrduluuuurudddddluuuuruddrdddlludrdluuuuudrdrddddlddluuulluurudddddluuuuruddddrdulluuurrdrdrddddduuuldddlddlluuuldddluuuldddduluuuuddrrdddduululuudddrruuluuurdrddddddlddlluuuldddlddluluudrruuludlurrrddrdddduruuuudrddddlluuuuldldddlluuuudruldddddduduuuuuddddrduduuuulddddduuulrdrddduuuuudddrddddlddlluuuldddluuuuuudddlrdrdluulddrruuluurdrdrdddddlddlluuuldddlduuuldddldduuuuuddudrdrdddlluuulddduuluurudrdrdddddldlludrrduuuululddddrduluulddrdduruululudduruulddddrrddluulduuuldddrduuuuuddrrruuludrrldddddduuuuldddduuulddddduuuuluuddrrddlddduuulddddduuuuudddrddrdduulduulduuulrdrdrrdddrddlluuulddduuuulddddddldduluuuuruddlddduruuuuddrrdddduuuuuuuddrdddduluuulddlddluuuruldldddrruuurddrddduruuuurddddlluuuluurrdrrddddduuuudldlddduuruullldlulururdrruruddrrdddldludrrluuululldrddldluuuruurdrrurudddddrddlluduuurrdddlluuullddlluuruldddrruuurrdddrrdlluuuluuddrrdrddduuuudddldduuulddduululddddlluuuldllurudldrrurrddlddluuullddlluurlddrruuulldddrluuurrdrddddduuldddluuululdrduuuddddulullurrdrdddduuuulldldddduuuuuddrdrrdddlldduduuuldddudluuuuddrruurrddddrulurudlldddduulddduuruuluddrrdrdddldluuuruludrud",
+        "won_level": false
+      },
+      {
+        "id": 151,
+        "iterations": 5,
+        "time": 0.001,
+        "solution": "dddddr",
+        "won_level": true
+      },
+      {
+        "id": 152,
+        "iterations": 11,
+        "time": 0.003,
+        "solution": "ddddrruuuur",
+        "won_level": true
+      },
+      {
+        "id": 153,
+        "iterations": 1650,
+        "time": 10.006,
+        "solution": "drrudllluuuurrddddlluuuurrddrdrruuldddlllluuuurrddddlluuur",
+        "won_level": false
+      },
+      {
+        "id": 154,
+        "iterations": 2436,
+        "time": 10.005,
+        "solution": "ddllllludrrudlluuddrruuddrrullllllludrudduulddduurlddrruudlllluuruuddddrruuuldddrruurrruldddlllllluurudddrruurrddrruuulldddllllluuruuddddrruurrddrruuulullluldddllluuuddlruduldrrdduurrddrluuruldddllllluurddlrurullddlruudlludrdrrudldrurduldddlllluudrrduulddllurrdrrluuruldrruuluddddlllllllrrurrdrruululllludludrrdddlllrurrdrruululdrrruuluullddddldllulddurudrdrudllluudlrulrrddluurrddllluudlrulrrdurulddruddlllluudlrulrrddluurrrrdrdrlluuudddlllluudlrulrrdurulddrruuulddddlllluudlrulrrruldduulddduuldrrururulddddllllluudlrulrrdurulddrruuuluulldluuurdrdudddddrruuuuuuuddrddddlduuuuuulldldluuurlddrdrddddllllluudlrudlrrdduurrddrruuuuuddddlluulddur",
+        "won_level": false
+      },
+      {
+        "id": 155,
+        "iterations": 6,
+        "time": 0.002,
+        "solution": "ddddduu",
+        "won_level": true
+      },
+      {
+        "id": 156,
+        "iterations": 24,
+        "time": 0.011,
+        "solution": "dllddldrluuuurrdrruurrdd",
+        "won_level": true
+      },
+      {
+        "id": 157,
+        "iterations": 102,
+        "time": 0.048,
+        "solution": "ddrruurrddrudllllluurrrrrddrruulldluuulu",
+        "won_level": true
+      },
+      {
+        "id": 158,
+        "iterations": 3874,
+        "time": 10.005,
+        "solution": "dddddddlludrudrruullddrruuulldddldddddlllluuddrruuuluddddlruuuddlluuruldrrdduuuuuldddddlruuudddrruuuullddddrruuuuuululdddddddluluduuurudlddddduuuurlddddduuuluruuldddduluuuuddrrddddlludrdulduuddlrdulluuudddduluuudddrdluulrruddrdrruuluululllddddduuururulddddddrruuuuruuurrdddddddldddlluulululrrrrruululllludddduuuurlddddrdddluruuuuurlddrdrurddddldddllluludrdludludrruullddduluudddurrdddlluuuuddddrduluuurrddrddrrlluuuluuuurldddlluudururrddddddduululdluurdldddulruulrdrddddlulduuruulddrddrrdluululuululdduulurrdddddddlluldlulrdulruuluuuluddrddldrdrruulululuurrdrdrdrdddlddllluluuluurddddddrruuuuuuudddddrruuuuuudddrldddllluluuuruuruddrrdrddddldlllllulurululddduuuruldduuludrdddddluururuuluudrddddddllulduuruulduulrdrddddrrdluluuuuuurrdddddddldddlluluuddlrdrrdluuluuluuulrdrdrddrurddddlddllluuruululdduurrddddlludrdrrddluululuuulurrdddrdrurddddldlllluuuldddulrdrruuluurrdrrldldllluuddrdlludduuuddrdrr",
+        "won_level": false
+      },
+      {
+        "id": 159,
+        "iterations": 5407,
+        "time": 10.002,
+        "solution": "dddddlluluuudddrdrudrddrruuulullddrddrruuuluullddddululduuudddrrdrdrruululuuuulddddldrdrdrruullddrruuurrudldddllluludrdrruulullddrdrruuluulullddldrrdrdrruululdldrdrudrruululdulldlluuurruurrddrdrdddlldrruulululluuurrdrdrdruddldddllludrruullddrruuululldldrlluuurrdrddldrdrudrruululdulldlluuurruurrddrdrruudddldddlllurdrudllululluuurrdrdrdrdruddlllululluuurrdrdrruuluurrdrdddldludddllululluuurrdrruuurrdddldluddddrruuuuulldddddrruuuuuululldddddllluuurrdrrdrdddlludrruulldludrdrruululldluulurddr",
+        "won_level": false
+      },
+      {
+        "id": 160,
+        "iterations": 12,
+        "time": 0.005,
+        "solution": "ddllllldldl",
+        "won_level": true
+      },
+      {
+        "id": 161,
+        "iterations": 4863,
+        "time": 10.001,
+        "solution": "dddrudlluuuurrddddlluuuurrddrddllluuuurrrddddllluuuurrdrrdddlllludrruuddlluuddrruuudddrruuuulldlldddrruuuuldlllurrddddrruuurulluldddduullurdrddrdrruuluululddurrdddlludrdrruulullllldduuurrdrdr",
+        "won_level": false
+      },
+      {
+        "id": 162,
+        "iterations": 5269,
+        "time": 10.001,
+        "solution": "dddrudlluuuurrddddlluuuurrddrddllluuuurrrddddllluuuurrdrrdddlllludrruuddlluuddrruuulllrruuldddduuurrddddlluuuurrddddrruuuullddddlluuuuurddddldrrllu",
+        "won_level": false
+      },
+      {
+        "id": 163,
+        "iterations": 76,
+        "time": 0.055,
+        "solution": "dldllddddllluluduuurldddduurrddddlluluduuurudlddddduuuurdddddrluuuuddddluuuuu",
+        "won_level": true
+      },
+      {
+        "id": 164,
+        "iterations": 3087,
+        "time": 10.001,
+        "solution": "dddddduuuuuurdddldddldllludrudrruullddrruuululldddludrrdrruululluldduurrddddrruuuuuuulddddddrdrruuluuuuurrddddrlddldllululuuuuurddddddrruuuuuurrdddddlldldllululuurrdrdrddllululuurrruurulddddddrdrruuluuuuurrddddrdldldllululuuuuurddddrdldlluluurrruurulddddddrruuuuuurrddddddldllululuuuuurdddddlddrulluluurrdrdlddrruldludrruullddrruuululldldrluurrddlluurrrdrdrruululuuldddddrrddludrruullddrruuululldldrrrrddllululuuuuurddddddrrudldllululuurrdrruuuulddddddrdrruuluuuuurrdddrdlddldllululuuuuurddddddrruuldddllululuurrdrddrruuuluuulddddddrdrruulurdruddldllululuuuuurddddddrruuudddldllululuurrruurulddddddrdrruuluuuuurrddldrdddldllululuuuuurddddddrruuuuuurrdddlddldldllululuurrdrruuuulddddddrdrruuluuuuurrddrdldddldllululuuuuurddddddrruuulddrruuululldduurulddddddrdrruuluddlluluuuuurddrddluuddddlluluuurrddddddrdrruuluuruldddddrruuuuuuldddddlluluuuuurddddldrdrdrruulldludrdrruulullddrdrruuluuuurulddddlluludrdrdrruululululuurddd",
+        "won_level": false
+      },
+      {
+        "id": 165,
+        "iterations": 122,
+        "time": 0.187,
+        "solution": "ddduuurrdddddlddrluuudddrudrlluuuuddddrruulddrrllluuddrruuululddduuuluuurdddduluuurrdddddddrruuuuuuulddddddrruuuuuurr",
+        "won_level": true
+      },
+      {
+        "id": 166,
+        "iterations": 2823,
+        "time": 7.396,
+        "solution": "ddddddddddddddddddddddddddddddddddddddddddddddddudlrddldldddddddddddddddddddddddddddddddddddddddddddddddddududrrrrrrr",
+        "won_level": true
+      },
+      {
+        "id": 167,
+        "iterations": 26,
+        "time": 0.022,
+        "solution": "ddddddrruuuuuurrdddddddrrr",
+        "won_level": true
+      },
+      {
+        "id": 168,
+        "iterations": 1153,
+        "time": 10.006,
+        "solution": "ddddddlddluddldudddulddludddduldduddddulddudddduldddddudluddddrddddddludddluddulddludulduddrdddddludludrddlulduldduduldduddulddduuduldddluuduudddurdddddldudlduddulddudduldddlulddudluudrddddlluddulddudldrdddludlduduldludrddlludulddudulddludludulduduldudduldduuduuduldddrddluudldluludluudrdddldudldudllulduldlulduudrdddddlluddulddludduldduddulduddududlduddrdddlluddldrddddludlduddulddludddrdddluddlduluddudluuddudllludluduldluulddulduudrdddduddludlduduudldddudluudldrddddlluddulddludulddulduldudurddddudduldudlduduldulduduluduudldrdddddllulduuddrdddddluudldduudlduldlududlduddurdddddudldludduldduddrdddludulduddluddudrddludulddulddludlulludrdddddlluddldudldludddrdludddrdludddrddddlluddulddludddrddddlluddldudludduldludluduuddludurdddddlludddulddluddulddduduuddduldudurddddlludduldddudduldddludddludduldudrddddduldduddludlulduduldludrddddudulddudrddudluudluuddrdddlludulddluduldduduudldddudlduldludduldudduldudrdddddudduuddldudrdddluddulluduudrdddddlludrddludlludldlulddrdddludldudduldduddulddudduldrdddludulludlulddrddddludluldudrdludldrdludldrdllludulddrdddlludldrddludulddluluduuldduuudluuuuuudddddrddddludduldlududrdddddudldudlulddudurdddlddudldudduld",
+        "won_level": false
+      },
+      {
+        "id": 169,
+        "iterations": 1601,
+        "time": 10.012,
+        "solution": "ddddddddddddddldllllllludrruululuuuuuuuuudddddddddddluuuuuuuuuurulddddddddddrrddluuuuuuudddddddrruuurrdddrruuuullddddllllluluuuuuuuuuuruuuuurrdddddddddldddddddrruuurrdddrruuuulullllldddddrruuurrdddrruuuulullluldldddddrruuurrdddrruuuululluulddlldddddrruuurrdddrruuuululuuululldddlddddddrruuurrdddrruuuulullllldddddrruuurrdddrruuuululllululldddddldrluuuuddddrrdrudrruullddrruuurulddddlllulluuuuudddddrrdrruullddrruuurulddddllulluuuuuuddddddrudrdrruulullddrdrruuuulddddrruuuuululldlluuudddrruuudddlluuuuddddrruuuuddddlluuuuudddddrruuuuudddddrdddddrruuuuuuluuuuullddddddrdddddrruuuuuuluuuuuuddddddddddddrruuuuuuuuuuuulddddddddddddllluluurruullluuuuuruddddddrrdddddrruuuuuululuuuuuuldddddddldrlluuuuuruudddddddrrdddddrruuuuuldddddrruuuuuulullddddddldrluluurrdrdrdllulluurruullluuuuuruuuddddddddrrdddddrruuuuuululuuuuuuuluuldddddddddlddrluuuuuruuuuuurrddddddddddddddddrruuuuuuuuuuuulddddddddddddrruuuuuuuuuuuuuldddddddddddddllulluurruulludrrdddddrruuuuuululllddrrdddddrruuuuuululululldddddrrdddddrruuuuuululululuuuuuuurrddddddddddddddldlluddrruuruullludrruululdduuuuruuuuuurrddddddddddddddldrllluuddrruuruullluuddrruuululddduuuuruuuuuurrdddddddddddddrddlllluuddrruuruullluuddrruuululddduuuuruuuuuurrdddddddddddddrrdrddrruuulululuuuuuuuulddddddddddddlllluuddrruuruullluuddrruuululddduuuuruuuuuurrddddddddddddddldlluuddrruuruullluuddrruuululddduuuuruuuuuurrddddddddddddrdrdddrruuuululuuuuuuuurulddddddddddddddrruuuuuuuuuuuuuuulldddddddddddddddrruuuuuuuuuuuuuuuullddddddddddddddddrruuuuuuuuuuuuuuuuurrddddddddddddddddldll",
+        "won_level": false
+      },
+      {
+        "id": 170,
+        "iterations": 12,
+        "time": 0.006,
+        "solution": "ddldlldldlldd",
+        "won_level": true
+      },
+      {
+        "id": 171,
+        "iterations": 4679,
+        "time": 10.001,
+        "solution": "dlddrruruuuluururrddddddullddlllluuruuuurrddrrudddlddlllluuruuuurrrurddddldddlllluuruuuurrrurrdddrddddlllllluuuuuurrddddddrrruullddllluuuuuurrdddddullddrrlluuuuuurrddddrruuuurrddddlddllluullddrluuuuuurrddddrrrddrudlllluullddrrlluuuuuurrddddrrrdruddlllluullddrrrllluuuuuurrddddrruuuurrddddlddruuudddlllluullddrrrrlllluuuuuurrddddrruuuurrddddlllddllluuuuuurrddr",
+        "won_level": false
+      },
+      {
+        "id": 172,
+        "iterations": 85,
+        "time": 0.091,
+        "solution": "ddldddllddddddddddddddddrlddddddddddddduuddllllddlllllllruuddudduddudududldulluu",
+        "won_level": true
+      },
+      {
+        "id": 173,
+        "iterations": 1242,
+        "time": 10.01,
+        "solution": "dudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddluddllluddddduddlludddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddddudddddudddddduuudddduddddddduddddduddddddduddddduddddddduddddduddddddduddddduddddddduddddduddddddduddddduddddddduddddd",
+        "won_level": false
+      },
+      {
+        "id": 174,
+        "iterations": 1677,
+        "time": 10.005,
+        "solution": "duldulldulddddddlddlllluddrdulduduldluddulduddrluddrddlulludulddluddrdddudddluuddrdudruuuddlludrddluuudldddlrdludrdddlulludulduludruddrddududlrdddudlludurlddduulduuldluuduudddrddudrdduuudduruuddddrdddlluddulludrdluduluudlruudddlrluuudddlulludurldrddrdlluduuuuuddddrdluudrldurddlulduduulrduluudduuudddurrddduduruudduuluduudddrrddudrldllludurdddlduuuuudddrdluudlddludrrddlluudrrddldurulullluuddllrudlrduluudlurdddduuudrrddduuuuddlldrulduuuduudduluurdddluuuuddurlddrrdduuuuddullllurudddduuudrluudddrdlluuuurlddddrrlduluuluuddrrldduuuuudddlrlrrdllduulurluuddduuurluddurrddddululuuddrrluduruuddrlddduuuudduuudurrdddddllluluuududduruuuddlllrduurulrdrdrddldlluluduuurduddrrdrdlluuuluruddllrrddrrldluuulurrdddlddluuuurudduddrrulldrdrdllulrudrruuulldlulrdrrrduuudduurlddddlludurdrddlddlulduuuuuddldruudlldrrdrurudllllllururdddduluurdrrrllluudrulddddluduuuuudrrulddddduduuuurlddddduuurrddddluurrdldrlluuulldururudddudrdrluuuurrdddllddluullluurdduuudduurrddddduuudduuudrrldllluuudddrdrdluuuuudddduruuuludddrrlldduuuurrdddrdllluudruudruudllullrdrlrrrruudddllllurrurudlluddddluluuuuddrlddduuuulrdldddruuuuludddduruuurldddddluuuuudddrdlduuuuuddururlddddduuuurrddrludurlddlduuuudurrldlldururrrdrdddllludurdldddullrdruuuuudrdrdddlluduuuuuddddlrduduuuuuddrdrlddluuulrrrdddrlldlluduuuuudddlrdulud",
+        "won_level": false
+      },
+      {
+        "id": 175,
+        "iterations": 663,
+        "time": 3.31,
+        "solution": "ddddddddddddddddddudddddddddddddddduuddddddddddddddddddddddddddddduruddddddddddddddludruudududududuluddddddddddddddddddruudududududududullududududuludddddddddddddddddddruudududududududullududududulrddddddddddddddddddlullllllllllllllulullllllllllludluluddddddddddddddddddddruudududududududullududududurrddldrlluuuuuuddddddrruuuuuuddddddlluuuuuuudddddddrruuuuuulddddddrrllluuuuuuddddddrruuuuuuudddddddlluuuuuuudddddddrruuuuuuuuddddddddlluuuuuuuuddddddddrruuuuuuuuudddddddddlluuuuuuuuudddddddddrruuuuuuuuuuddddddddddlluuuuuuuuuuddddddddddrruuuuuuuuuuudddddddddddlluuuuuuuuuuudddddddddddrruuuuuuuuuuuuddddddddddddlluuuuuuuuuuuuddddddddddddrruuuuuuuuuuuuul",
+        "won_level": true
+      },
+      {
+        "id": 176,
+        "iterations": 2329,
+        "time": 10.002,
+        "solution": "dddddlllludrrrruulluuruuudddddrddlllluuddrrrruulluuruurrdddrdrdddrulllllllluuudddrrrruulluuruurrdddrdrddrudlllllllluuuudddddrlluuddrruuudddlluuudddrruuurdlddlluuuuddddrruuurulddddlluuuuudddddrruuuulddddrrllluuuuddddrruuuuruldddddrudllluuuurudddddrruuddllluuuuruuddddddrruuudddllluuuuruuudddddddrruuuuddddllluuuuruuuuddddddddrruuuuudddddllluuuuruuuurddddddlddrlluuuuruuuurrdddddlddldrlluuuuruuuurrdddddldrlddlluuuuruuuurrddddrddllddlluuuuruuuurrddddrrddlllddlluuuuruuuurrddddrruuuuddddddlllddlluuuuruuuurrurddddddldlddlluuuuruuuurrdddrrdrddllllddlluuuuruuuurrdddddrdrruuluuuurddddddllllddlluuuuruuuurrurrdddddddlllddlluuurddldrluuuuruuuurrddddddldrllluuuruuuurrdddddrdrruuluuuuurdddddddllldrlllluuuruuuurrdddddrrdrrllldlllluuuruuuurrddddrruuuuurrdddddlddlldlllluuuruuuurrdddrruuuurrdddrdldlddlldlllluuuruuuurrdddrruuuurrddrddldlddlldlllluuuruuuurrdddrruuuurrrdddlddlddlldrllllluuuruuuurrdddddrruuuuuurrddddrldlddldllllluuuruuuurrdddrruuuurrddrrlddldlddldrlllllluuuruuuurrdddddrruuuuuurrddrrudlddldlddruuddldlllllluuuruuuurrdddddrruuuuuurrdddrdldddldlllllluuuruuuurrdddddrruuurdddlddruuruldddlllllluuuruuuurrdddrrdddrdllllldluudrruululddduuuru",
+        "won_level": false
+      },
+      {
+        "id": 177,
+        "iterations": 869,
+        "time": 7.618,
+        "solution": "ddddddddddddddddddddduulllllllllllllllllllllrdrddddddddddddddddddddddruududududududududududululuduluduudddddddddddlllluduuulrrdddddudrlddduduuduudrdrudduddurdldduduudlrdrddduruuddrudldudlrddddduuudurrrlrdddddddddddddddddddddddddddddddddllddddddddddddddddddddddlldddddddddddddddddddddllddddddddddddddddddddduldddddddddddddddddddddlldddddddddddddddddddddursuududuluuduuddddddddddddududuuuulrrdddddudrldddduuluuuudldddddddldddduduurrrlrdrudduddurdlddluudurrdddlurruuddrudldludlrrdddrulrruuudrdddddddddddddddddddddddddddddddddllddddddddddddddddddddddlldddddddddddddddddddddulududududududududududusrrdududududududududulrurrlrlrlrlrlrlrludurrrduuuuuuuuuuuuudududuuuuuluudddddddldddddduuulruudllu",
+        "won_level": true
+      },
+      {
+        "id": 178,
+        "iterations": 4,
+        "time": 0.002,
+        "solution": "ddddd",
+        "won_level": true
+      },
+      {
+        "id": 179,
+        "iterations": 20,
+        "time": 0.026,
+        "solution": "ddddddddddddddddddddd",
+        "won_level": true
+      },
+      {
+        "id": 180,
+        "iterations": 5,
+        "time": 0.003,
+        "solution": "rlr",
+        "won_level": true
+      },
+      {
+        "id": 181,
+        "iterations": 4,
+        "time": 0.005,
+        "solution": "ddddd",
+        "won_level": true
+      },
+      {
+        "id": 182,
+        "iterations": 4,
+        "time": 0.003,
+        "solution": "dddll",
+        "won_level": true
+      },
+      {
+        "id": 183,
+        "iterations": 3575,
+        "time": 10.001,
+        "solution": "ddlllrrdlldllrurldddddrruuuuurllls",
+        "won_level": false
+      },
+      {
+        "id": 184,
+        "iterations": 2235,
+        "time": 10.004,
+        "solution": "dddlldrrrrudlllluuurrdrruurrddllddlllluuurrrdlddrruldluuddlluuurrrrdruuuulurddddlddddlddllduddrludlddluddrldludluuddldludurdddludlddulddluddludurdllduddrudlddrluddrudllluuuddrdudrluudlduddrddludrrluddlrdludludrdrdlludlulddurdudlluudrddlulddludulddrdddrudlduddludrdluuddulddldrdlludlduddrullduudrdddludludrdldludlurduldduuludddlurldddlrluddrludlrddrludrlluuuddruudllurdddldluudrduuddllrrludduduldduldrduldulddurludluuddlrduuudrddlduurddldlluldlulduuurdddluddldludludrddlluddrluddlludulduudlrddluldrdddluudlduruuddllluldrddluudldurddldludludrddluddlludldudluuuddrddludluddurdddrdllludlludurddlludludlrdluddlrludulddudludrdldrlduduldudrddudrlurdldudrludlludulddurddluuuddruuudddludldrdludlrudddludulrdduldudrlulldrduluuddurdrdldddlluldullurddduldrddudulduudduldrddluduldrddldudurdudluuuddllluudrdldudlulrludrdduduluudlrdurddudluludulrddludlulrddludurdllrlludrldulddrdudluuduluddludrddudluldllurddludlulddrrddlduduudllurdddldudulddudrduduuddulludlurddluludlrdlurdluddudluuudddullrdlrurdldlludulddludurddludlduduldrduduldrduudllludulddrddudrddludlurddludulullrddduuuddduurdddlddludurdddludlulrdrrluudlddulurdduldudrdlduddudlllrdudduldlrddludulduddulrddudrldludludlulrdddldrludlruld",
+        "won_level": false
+      },
+      {
+        "id": 185,
+        "iterations": 37,
+        "time": 0.04,
+        "solution": "rrdduurdurdurdlllu",
+        "won_level": true
+      },
+      {
+        "id": 186,
+        "iterations": 1001,
+        "time": 10.011,
+        "solution": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddlddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddulddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddlldddddddddddddddddddddddddddddddddddddddddddddddddddddddddddrddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddluldddddddddddddddddddddddddddddddddddddddddddddddulllllllllldulllllllllludddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddrldddddddddddddddddddddddddddddddddddddddddddddddddddddddddulllllllllluldllllllllluldllllllllluldllllllllluldlllllllllullllllllllluuddlllllllluuddlllllllluuddlllllllluuddlllllllluudllllllllluulddllllllluulddllllllluulddllllllluulddllllllluuldllllllllurrdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddulldddddddddddddddddddddd",
+        "won_level": false
+      },
+      {
+        "id": 187,
+        "iterations": 2754,
+        "time": 10.005,
+        "solution": "rdldllluuurdlddrluuuruuddddldrluuuruuruldddddrrdlluluuruuurrddddlddrudlluluuruuurrrrrrdldlllddlddruuddlluluuruuurrrrrdldllddlddruuudddlluluuruuurrrrddllddddlluluuruurdddlddruuulurluurrrrrddlllldluddddrruuuurrrulullllddddldrdrulluuruuurrrrddllddldluddrruuuurruldlddddlluluurdddrruuuulddldrrdlluluururrruull",
+        "won_level": false
+      },
+      {
+        "id": 188,
+        "iterations": 960,
+        "time": 10.011,
+        "solution": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddlddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddllddddddddddddddddddddddddddddddddddddddddddddddddddddddddddduudddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddrlddddddddddddddddddddddddddddddddddddddddddddddddddddddddddduullllllllllllllllllllllllllllllllllllllllllllllllllllllllllluullllllllllllllllllllllllllllllllllllllllllllllllllllllllllluruuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuurdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddrddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddlldddddddddddddddddddddddddddddddddddddddddddddddddddddddddddlulddddddddddddddddddddddddddddddddddddddddddddddddddddddddddduullllllllllllllllllllllllllllllllllllllllllllllllllllllllllluulllllllllllllllllllllllllllllllllllllllllllllllllllllllllllrdrdddudududududududududududududududududududududududududududududrddddddddddddddddddddddddddddd",
+        "won_level": false
+      },
+      {
+        "id": 189,
+        "iterations": 969,
+        "time": 10.009,
+        "solution": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddlddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddllddddddddddddddddddddddddddddddddddddddddddddddddddddddddddduudddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddrlddddddddddddddddddddddddddddddddddddddddddddddddddddddddddduullllllllllllllllllllllllllllllllllllllllllllllllllllllllllluullllllllllllllllllllllllllllllllllllllllllllllllllllllllllluruuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuurdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddrddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddlldddddddddddddddddddddddddddddddddddddddddddddddddddddddddddlulddddddddddddddddddddddddddddddddddddddddddddddddddddddddddduullllllllllllllllllllllllllllllllllllllllllllllllllllllllllluulllllllllllllllllllllllllllllllllllllllllllllllllllllllllllrdrdddudududududududududududududududududududududududududududududrdddddddddddddddddddddddddddddddddddddd",
+        "won_level": false
+      },
+      {
+        "id": 190,
+        "iterations": 388,
+        "time": 0.688,
+        "solution": "ddddlruldrrluulddrrudlluuruldddrrurulddlluuurddldrluuururddurudddlullddrulurdruurulruullllll",
+        "won_level": true
+      },
+      {
+        "id": 191,
+        "iterations": 1546,
+        "time": 10.008,
+        "solution": "dllluudlrrudldrdllluudrduldrrdluudlrdudllrruudrdrluullddudrruudrulllllurdrdluudrduurruluddlllrrruulddlllldldldddddddddluldrrurrruullllldldlddddddddrruuddldlluuuuuuuuuuuuurrddrrurrdrruuuruuurrdddddddddddddlldldllluddllldlluuuuuuuuuuuuurrddrrurrdrruuuruuurrdddddddddddddlldllulldddllldlluuuuuuuuuuuuurrddrrurrdrruuuruuurrdddddddddddddlldlluullddddllldlluuuuuuurrddddddldrlluuuuuuuuuuuuurrddrrurrdrruuuruuurrdddddddddddddlldldllldlluluuuurdddldddlluuuuuuuuuuuuurrddrrurrdrruuuruuurrdddddddddddddlldldllldllldlluuuuuuuuuuuuurrddrrurrdrruuuruuurrdddddddddddddlldldllllldldlluuuuuuuuuuuuurrddrrurrdrruuuruuurrdddddddddddddlldldlllulddlldlluuuuuuuuuuuuurrddrrurrdrruuuruuurrdddddddddddddlldldlluulldddlldlluuuuuuuuuuuuurrddrrurrdrruuuruuurrdddddddddddddlldldlluuullddddlldlluuuuuuurrddddddldludrrlluuddrruuululddduuuuuuuuuuuurrddrrurrdrruuuruuurrddddddddd",
+        "won_level": false
+      },
+      {
+        "id": 192,
+        "iterations": 40,
+        "time": 0.025,
+        "solution": "lddudduldduldru",
+        "won_level": true
+      },
+      {
+        "id": 193,
+        "iterations": 171,
+        "time": 0.325,
+        "solution": "ddduuurdddddddddddddldddddddddddddddddddddluldddddddddddddddddddludddddddddddddddddddduudddddddddddddddddddduuldddddddddddddddddduu",
+        "won_level": true
+      },
+      {
+        "id": 194,
+        "iterations": 2021,
+        "time": 10.006,
+        "solution": "dlldddllluluduuddduuuuuuddddddrdrruuruldddrrlllluurruullluuurdddrrddddrruuuuuluddddddrrllllluurruullluuuruurrddddddddldrlluurruullluuuruurrdddludddrddddrllluurruullluuuruurddddldrlluuuruurrddddddddldrlluurruullluuuruurrdddrdrddddrdllluuuullluuuruurrdddrdrddddrrldllluuuullluuuruurrdddrdrddrruuullddddddlluuuullluuuruurrddrddddddldrluuuullluuuruurrdddrdrddddrdlluluuullluuuruurrdddrdrddrruuululddddddlluuullluuuruurrdrdddddddluuullluuuruurrdddrdrddrruuululudddddddlluuullluuuruurrrddddddddrruuuuuuurrrulddddrudlddllddllluuullluuuruurrdddrdrruuurrullddddddrruuuuuurdldddddllddllluuullluuuruurdddddrdddrruuuuluuurrddrruuulllddddddddlluuullluur",
+        "won_level": false
+      },
+      {
+        "id": 195,
+        "iterations": 3086,
+        "time": 10.002,
+        "solution": "dddluuuurrdddlldrluuuurrdddrdullluuurrdrdddrdrullullluuurrdruddddrudrudllullluuurrdrrdddlullluuurrdrrdrddllullluuurrdrrurddddllullluuurrdrrdrrddlllullluuurrdrruruullddddldlluuurrururrddddddlludrruullddrruuulullddlluurrururrddddddllulldluudrruululdduurrddrddrruuuuuurrddddlddlllulldluudrruululdurrdddrdrrrruuddllllullludrruululdduurrdddrdrruurrudddllllulldluudrruuuururrddddddrruuuuddddllllullluudddrrlluuuruurrddddrdllulluuruurrdddrddrruuuluuurrddddlddllllulldrluuruuurrdddddrrrrudlllllulldrrlluuuruurrddddrdrruuluuuurrddddlddllulldrllluuuruurrdddrdrdrruuddlllllulldrluuruuurrdddrdrruuluuu",
+        "won_level": false
+      },
+      {
+        "id": 196,
+        "iterations": 944,
+        "time": 10.02,
+        "solution": "lldddddrruuurrdddrruuddllllllluuuuuuurrddrruurrdddddlddllllluuuuuuurrddrruurrdddllddddlllluuuuuuurrdrrurrdddddrddlllllluluuuuuurrddrrdddddrrudllllluluuuuuurrddrrdddrrddllllluluuuuuurrddrrdlddddrruuuuuluurrdrddlddddllllluluurrdrruulullluurrrrdrrurrdddddldldlllllluuurrdrruulullluurrrrdrdrddddldllllluuurrdrruulullluurrrrdrdrddrddlldllllluuurrdrruulullluurrrrdrdrruurrdddddddlllllllulluurrrdrddrruuulululllluurrrrrdrdrdrdddldlllllulluurrrdrruululllluurrrrrdrdrddrrdrddlllllllullluurrruullluurrrrdrddddddrruuuuuuurrdddddddrruuddllllllllullluurrruullluurrrrdrddddrruuuuurrddddrrdddllllllllullluurrruullluurrrrdrddddrruuuuurrddrruurrddddddldlllllllllullluurrruullluurrrrdrddddrruuuuurrdddddrruuuuurrddddlddldllllllllullluurrruullluurrrrdrddddrruuuuurrddddrrdddllllllllullluurrruullluurrrrdrddddrruuuuurrddrruurrddddlldddllllllllullluurrruullluurrrrdrddddrruuuuurrdddrdddldllllllullluur",
+        "won_level": false
+      },
+      {
+        "id": 197,
+        "iterations": 792,
+        "time": 10.017,
+        "solution": "dlldddldrluuuuddddrrlluuuuudddddrrudlluuuuuuddddddrrurldlluuuuuururrdddrlllddddrrllluuuuuururrdddrrddddlllluluuuuururrdddrrddddlluuddlluluuuuururrddldrllddddrruulddrrudllluluuuuururrdddrllldddluuuuururrdddrrddddlllulluuuuururrdrrurrddddldddllllulluuuuururrdddrruuurrddrddddlldllllulluuuuururrdddrrdddldllulluuuuururrdddrrdlddldrllulluuuuururrdddrddrdrrudllldllulluuuuururrdddrdldddrrllluuruullluururrdrdrdddrdrruulddlldllluuruullluururrdrdrdrddlddllluuruullluururrdrdrdrrdddlldllluuruullluururrdrdrddrdrdrruuludddllldllluuruullluururrdrdrruurrdddddldlldllluuruullluururrdrdrdrruuurrddddrdddllllulllllurrdrruululllluururrdrrdrdrddddrudllullluuullluururrdrdrddrrdrddllullluuullluururrdrdrddrruuuurrddddddldllullluuulllu",
+        "won_level": false
+      }
+    ]
   }
 ]
