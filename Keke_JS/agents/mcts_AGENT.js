@@ -15,21 +15,23 @@
 var simjs = require('../js/simulation');					//access the game states and simulation
 let possActions = ["space", "right", "up", "left", "down"];
 
-let MCTS_ITERATIONS = 7000;
-let ROLLOUT_DEPTH = 200;
+let MCTS_ITERATIONS = 200;
+let ROLLOUT_DEPTH = 50;
 const DEFAULT_DISTANCE = 10;
-const HUGE_NEGATIVE = -10000000.0;
-const HUGE_POSITIVE = 10000000.0;
+const HUGE_NEGATIVE = -1000.0;
+const HUGE_POSITIVE = 1000.0;
 const EPISILON = 1e-6;
 const MAXIMUM = 1e9;
 const ALPHA = 0.05;
-const C = 5;
+const GAMMA = 0.95;
+const C = 2;
 
 let stateSet = [];
 let curIteration = 0;
 let totalIters = 0;
 let totalSteps = 0;
 let currentNode = null;
+let currentNodes = [];
 let rootMap = null;
 
 let solution = null;
@@ -67,6 +69,7 @@ function initAgent(init_state) {
     solution = null;
     curIteration = 0;
     currentNode = new SingleTreeNode(simjs.map2Str(init_state.orig_map), [], null, false, false);
+    stateSet = [];
     stateSet.push(currentNode.mapRep);
     rootMap = init_state['orig_map'];
 }
@@ -306,7 +309,7 @@ function rollOut(selected) {
     let rollerState = state;
     let died = false;
 
-    let actions = selected.actionHistory;
+    let actions = [].concat(selected.actionHistory);
     while (depth < ROLLOUT_DEPTH) {
         // random move
         let action = possActions[Math.floor(Math.random() * possActions.length)];
@@ -326,24 +329,24 @@ function rollOut(selected) {
         depth++;
     }
 
-    return value(rollerState, didwin, died);
+    return value(rollerState, didwin, died, depth);
 }
 
 
-function value(rollerState, didwin, died) {
+function value(rollerState, didwin, died, depth) {
     if (rollerState === null) {
         console.log('rollerState is null');
     }
     let delta = getHeuristicScore(rollerState);
     if (didwin) {
-        delta += HUGE_POSITIVE;
+        delta += HUGE_POSITIVE * Math.pow(GAMMA,depth);
     }
     if (died) {
-        delta += HUGE_NEGATIVE;
+        delta += HUGE_NEGATIVE* Math.pow(GAMMA,depth);
     }
     let map = simjs.doubleMap2Str(rollerState.obj_map, rollerState.back_map);
     if ( stateSet.indexOf(map) !== -1) {
-        delta += HUGE_NEGATIVE;
+        delta += HUGE_NEGATIVE* Math.pow(GAMMA,depth);
         // console.log("already visited this state");
     }
 
