@@ -20,12 +20,12 @@ This version uses the JS implementation originally found on the [Baba is Y'all](
 ### Usage
 #### Start the server: 
 1. Run the command `nodemon index-server.js`. 
-2. In a browser, go to the URL `localhost:8080` 
+2. In a browser, go to the URL [localhost:8080](http://localhost:8080)
     *Note*: this port number can be changed on _line 15_ in the [index-server.js](index-server.js) file. 
     There will be an error with NodeJS if the port is already in use.
 
 ### Quick Start
-1. To create a new agent, copy the `empty_AGENT.js` file and rename it with the following convention: 
+1. To create a new agent, copy the [empty_AGENT.js](./agents/empty_AGENT.js) file and rename it with the following convention: 
 `[NAME]_AGENT.py`. 
 2. Modify the `step()` and `init()` functions in the agent code.
 3. In the evaluator app on your browser, select your agent from the dropdown on the right
