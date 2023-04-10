@@ -15,11 +15,12 @@
 var simjs = require('../js/simulation');					//access the game states and simulation
 let possActions = ["space", "right", "up", "left", "down"];
 
-let MCTS_ITERATIONS = 200;
-let ROLLOUT_DEPTH = 50;
+let MCTS_ITERATIONS = 500;
+let ROLLOUT_DEPTH = 200;
 const DEFAULT_DISTANCE = 10;
 const HUGE_NEGATIVE = -1000.0;
 const HUGE_POSITIVE = 1000.0;
+const AGENT_LENGTH = 10;
 const EPISILON = 1e-6;
 const MAXIMUM = 1e9;
 const ALPHA = 0.05;
@@ -27,6 +28,7 @@ const GAMMA = 0.95;
 const C = 2;
 
 let stateSet = [];
+let stateSets = [];
 let curIteration = 0;
 let totalIters = 0;
 let totalSteps = 0;
@@ -68,9 +70,14 @@ function initAgent(init_state) {
 
     solution = null;
     curIteration = 0;
-    currentNode = new SingleTreeNode(simjs.map2Str(init_state.orig_map), [], null, false, false);
-    stateSet = [];
-    stateSet.push(currentNode.mapRep);
+    stateSets = [];
+    for (let i = 0; i < AGENT_LENGTH; i++) {
+        currentNode = new SingleTreeNode(simjs.map2Str(init_state.orig_map), [], null, false, false);
+        currentNodes.push(currentNode);
+        stateSets.push([currentNode.mapRep]);
+    }
+    // stateSet = [];
+    // stateSet.push(currentNode.mapRep);
     rootMap = init_state['orig_map'];
 }
 
@@ -85,7 +92,10 @@ function iterSolve(init_state) {
     // MCTS_ITERATIONS *= 1+ALPHA;
     // console.log("MCTS_ITERATIONS: " + MCTS_ITERATIONS);
     // console.log("ROLLOUT_DEPTH: " + ROLLOUT_DEPTH);
-    totalIters += mctsSearch(currentNode);
+    for (let i = 0; i < AGENT_LENGTH; i++) {
+        totalIters += mctsSearch(currentNodes[i]);
+    }
+    // totalIters += mctsSearch(currentNode);
     totalSteps++;
 
     if (solution != null) {
@@ -93,19 +103,35 @@ function iterSolve(init_state) {
     }
 
     // todo: compare two ways
+    for (let i = 0; i < AGENT_LENGTH; i++) {
+        currentNodes[i] = bestAction(currentNodes[i]);
+        currentNode = currentNodes[i];
+        stateSets[i].push(currentNode.mapRep);
+
+        if (currentNode.died) {
+            currentNodes[i] = new SingleTreeNode(simjs.map2Str(init_state.orig_map), [], null, false, false);
+            stateSets[i] = []
+            // initAgent(init_state);
+        } else if (currentNode.won) {
+            return currentNode.actionHistory;
+        }
+        else {
+            currentNodes[i] = new SingleTreeNode(currentNode.mapRep, currentNode.actionHistory, null, currentNode.won, currentNode.died);
+        }
+    }
     // Determine the best action to take and return it (in two ways).
-    currentNode = bestAction(currentNode);
-    stateSet.push(currentNode.mapRep);
+    // currentNode = bestAction(currentNode);
+    // stateSet.push(currentNode.mapRep);
     // console.log(currentNode.mapRep)
     //  currentNode = mostVisitedAction();
-    if (currentNode.died) {
-        // currentNode = new SingleTreeNode(simjs.map2Str(init_state.orig_map), [], null, false, false);
-        initAgent(init_state);
-    } else if (currentNode.won) {
-        return currentNode.actionHistory;
-    } else {
-        currentNode = new SingleTreeNode(currentNode.mapRep, currentNode.actionHistory, null, currentNode.won, currentNode.died);
-    }
+    // if (currentNode.died) {
+    //     // currentNode = new SingleTreeNode(simjs.map2Str(init_state.orig_map), [], null, false, false);
+    //     initAgent(init_state);
+    // } else if (currentNode.won) {
+    //     return currentNode.actionHistory;
+    // } else {
+    //     currentNode = new SingleTreeNode(currentNode.mapRep, currentNode.actionHistory, null, currentNode.won, currentNode.died);
+    // }
 
 
     // return currentNode.actionHistory;
@@ -439,7 +465,7 @@ module.exports = {
 
     //returns closest solution in case of timeout
     best_sol: function () {
-        return currentNode.actionHistory;
+        return currentNodes[0].actionHistory;
     }
 }
 
