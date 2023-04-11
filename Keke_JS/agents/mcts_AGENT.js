@@ -16,16 +16,17 @@ var simjs = require('../js/simulation');					//access the game states and simula
 let possActions = ["space", "right", "up", "left", "down"];
 
 let MCTS_ITERATIONS = 500;
-let ROLLOUT_DEPTH = 200;
+let ROLLOUT_DEPTH = 300;
 const DEFAULT_DISTANCE = 10;
 const HUGE_NEGATIVE = -1000.0;
 const HUGE_POSITIVE = 1000.0;
-const AGENT_LENGTH = 10;
+const AGENT_LENGTH = 20;
 const EPISILON = 1e-6;
 const MAXIMUM = 1e9;
 const ALPHA = 0.05;
 const GAMMA = 0.95;
 const C = 2;
+const TIME_OUT = 9.9;
 
 let stateSet = [];
 let stateSets = [];
@@ -37,6 +38,7 @@ let currentNodes = [];
 let rootMap = null;
 
 let solution = null;
+let startTime = null;
 
 function SingleTreeNode(m, a, p, w, d) {
     this.mapRep = m;
@@ -65,8 +67,9 @@ function newState(kekeState, map) {
 
 
 function initAgent(init_state) {
-    MCTS_ITERATIONS = 300;
-    ROLLOUT_DEPTH = 50;
+    // MCTS_ITERATIONS = 300;
+    // ROLLOUT_DEPTH = 50;
+    startTime = new Date().getTime();
 
     solution = null;
     curIteration = 0;
@@ -93,14 +96,20 @@ function iterSolve(init_state) {
     // console.log("MCTS_ITERATIONS: " + MCTS_ITERATIONS);
     // console.log("ROLLOUT_DEPTH: " + ROLLOUT_DEPTH);
     for (let i = 0; i < AGENT_LENGTH; i++) {
+        if ( (new Date().getTime() - startTime)/1000 > TIME_OUT){
+            return currentNodes[0].actionHistory;
+        }
         totalIters += mctsSearch(currentNodes[i]);
+        if (solution != null) {
+            return solution;
+        }
     }
     // totalIters += mctsSearch(currentNode);
     totalSteps++;
 
-    if (solution != null) {
-        return solution;
-    }
+    // if (solution != null) {
+    //     return solution;
+    // }
 
     // todo: compare two ways
     for (let i = 0; i < AGENT_LENGTH; i++) {
@@ -222,6 +231,9 @@ function dist(a, b) {
 function mctsSearch(root) {
     let numIters = 0;
     while (numIters < MCTS_ITERATIONS) {
+        if ( (new Date().getTime() - startTime)/1000 > TIME_OUT){
+            return currentNodes[0].actionHistory;
+        }
         let start = new Date().getTime();
 
         // selection & node expansion
