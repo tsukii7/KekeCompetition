@@ -15,21 +15,23 @@
 var simjs = require('../js/simulation');					//access the game states and simulation
 let possActions = ["space", "right", "up", "left", "down"];
 
-let MCTS_ITERATIONS = 500;
-let ROLLOUT_DEPTH = 300;
+const MCTS_ITERATIONS = 500;
+const ROLLOUT_DEPTH = 300;
+const AGENT_LENGTH = 10;
 const DEFAULT_DISTANCE = 10;
 const HUGE_NEGATIVE = -1000.0;
 const HUGE_POSITIVE = 1000.0;
-const AGENT_LENGTH = 20;
 const EPISILON = 1e-6;
 const MAXIMUM = 1e9;
-const ALPHA = 0.05;
+const ALPHA = 0.01;
 const GAMMA = 0.95;
 const C = 2;
-const TIME_OUT = 9.9;
+const TIME_OUT = 10;
+// const MAX_LENGTH = 80;
 
 let stateSet = [];
 let stateSets = [];
+let action2state = {};
 let curIteration = 0;
 let totalIters = 0;
 let totalSteps = 0;
@@ -65,12 +67,23 @@ function newState(kekeState, map) {
     simjs.interpretRules(kekeState);
 }
 
+function restartAgent() {
+    // MCTS_ITERATIONS *= 1 + ALPHA;
+    // ROLLOUT_DEPTH *= 1 + ALPHA;
+    console.log("MCTS_ITERATIONS:" + MCTS_ITERATIONS);
+    console.log("ROLLOUT_DEPTH:" + ROLLOUT_DEPTH);
+    stateSets = [];
+    for (let i = 0; i < AGENT_LENGTH; i++) {
+        currentNode = new SingleTreeNode(simjs.map2Str(init_state.orig_map), [], null, false, false);
+        currentNodes.push(currentNode);
+        stateSets.push([currentNode.mapRep]);
+    }
+}
 
 function initAgent(init_state) {
-    // MCTS_ITERATIONS = 300;
-    // ROLLOUT_DEPTH = 50;
     startTime = new Date().getTime();
-
+    // MCTS_ITERATIONS = 500;
+    // ROLLOUT_DEPTH = 300;
     solution = null;
     curIteration = 0;
     stateSets = [];
@@ -86,6 +99,7 @@ function initAgent(init_state) {
 
 // NEXT ITERATION STEP FOR SOLVING
 function iterSolve(init_state) {
+    // console.log("totalSteps" + totalSteps)
     // PERFORM ITERATIVE CALCULATIONS HERE
 
     // Do the search within the available time.
@@ -96,10 +110,10 @@ function iterSolve(init_state) {
     // console.log("MCTS_ITERATIONS: " + MCTS_ITERATIONS);
     // console.log("ROLLOUT_DEPTH: " + ROLLOUT_DEPTH);
     for (let i = 0; i < AGENT_LENGTH; i++) {
-        if ( (new Date().getTime() - startTime)/1000 > TIME_OUT){
+        if ((new Date().getTime() - startTime) / 1000 > TIME_OUT) {
             return currentNodes[0].actionHistory;
         }
-        totalIters += mctsSearch(currentNodes[i]);
+        totalIters += mctsSearch(currentNodes[i], i);
         if (solution != null) {
             return solution;
         }
@@ -117,14 +131,22 @@ function iterSolve(init_state) {
         currentNode = currentNodes[i];
         stateSets[i].push(currentNode.mapRep);
 
+
         if (currentNode.died) {
             currentNodes[i] = new SingleTreeNode(simjs.map2Str(init_state.orig_map), [], null, false, false);
             stateSets[i] = []
+            // MCTS_ITERATIONS *= 1 + ALPHA;
+            // ROLLOUT_DEPTH *= 1 + ALPHA;
+            // console.log("MCTS_ITERATIONS:" + MCTS_ITERATIONS);
+            // console.log("ROLLOUT_DEPTH:" + ROLLOUT_DEPTH);
             // initAgent(init_state);
+        // } else if (currentNode.actionHistory.length > MAX_LENGTH) {
+        //     currentNodes[i] = new SingleTreeNode(simjs.map2Str(init_state.orig_map), [], null, false, false);
+        //     stateSets[i] = []
+        //     console.log("reset agent")
         } else if (currentNode.won) {
             return currentNode.actionHistory;
-        }
-        else {
+        } else {
             currentNodes[i] = new SingleTreeNode(currentNode.mapRep, currentNode.actionHistory, null, currentNode.won, currentNode.died);
         }
     }
@@ -151,6 +173,11 @@ function iterSolve(init_state) {
 
 
 function applyActions(newActions) {
+    // if (newActions in action2state) {
+    //     console.log("already apply the actions")
+    //     return action2state[newActions];
+    // }
+
     //move the along the action space
     let state = {};
     newState(state, rootMap);
@@ -170,6 +197,9 @@ function applyActions(newActions) {
             return {state, didwin};
         }
     }
+    // action2state.push({
+    //     newActions: {state, didwin}
+    // })
     return {state, didwin};
 }
 
@@ -228,10 +258,10 @@ function dist(a, b) {
 
 
 // TODO: timer & avgTimeTaken
-function mctsSearch(root) {
+function mctsSearch(root, i) {
     let numIters = 0;
     while (numIters < MCTS_ITERATIONS) {
-        if ( (new Date().getTime() - startTime)/1000 > TIME_OUT){
+        if ((new Date().getTime() - startTime) / 1000 > TIME_OUT) {
             return currentNodes[0].actionHistory;
         }
         let start = new Date().getTime();
@@ -242,7 +272,7 @@ function mctsSearch(root) {
             return numIters;
         }
         // simulation
-        let delta = rollOut(selected);
+        let delta = rollOut(selected, i);
         if (delta === MAXIMUM) {
             return numIters;
         }
@@ -341,7 +371,7 @@ function eGreedy(node) {
 }
 
 
-function rollOut(selected) {
+function rollOut(selected, i) {
     let depth = selected.depth;
     let {state, didwin} = applyActions(selected.actionHistory);
     let rollerState = state;
@@ -366,27 +396,34 @@ function rollOut(selected) {
         }
         depth++;
     }
+    let v = value(rollerState, didwin, died, depth, i);
 
-    return value(rollerState, didwin, died, depth);
+    return value(rollerState, didwin, died, depth, i);
 }
 
 
-function value(rollerState, didwin, died, depth) {
+function value(rollerState, didwin, died, depth, i) {
     if (rollerState === null) {
         console.log('rollerState is null');
     }
     let delta = getHeuristicScore(rollerState);
     if (didwin) {
-        delta += HUGE_POSITIVE * Math.pow(GAMMA,depth);
+        delta += HUGE_POSITIVE * Math.pow(GAMMA, depth);
     }
     if (died) {
-        delta += HUGE_NEGATIVE* Math.pow(GAMMA,depth);
+        delta += HUGE_NEGATIVE * Math.pow(GAMMA, depth);
     }
-    let map = simjs.doubleMap2Str(rollerState.obj_map, rollerState.back_map);
-    if ( stateSet.indexOf(map) !== -1) {
-        delta += HUGE_NEGATIVE* Math.pow(GAMMA,depth);
-        // console.log("already visited this state");
-    }
+    // let map = simjs.doubleMap2Str(rollerState.obj_map, rollerState.back_map);
+    // // for (let i = 0; i < AGENT_LENGTH; i++) {
+    // if (stateSets[i].indexOf(map) !== -1) {
+    //     // delta += HUGE_NEGATIVE * Math.pow(GAMMA, depth);
+    //     console.log("already visited this state");
+    // }
+    // else {
+    //     stateSets[i].push(map);
+    // }
+    // }
+
 
     delta = delta > MAXIMUM ? MAXIMUM : delta;
     delta = delta < -MAXIMUM ? -MAXIMUM : delta;
