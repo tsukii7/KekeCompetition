@@ -1,6 +1,6 @@
 // BABA IS Y'ALL SOLVER - BLANK TEMPLATE
 // Version 1.0
-// Code by Milk 
+// Code by Milk
 
 
 //get imports (NODEJS)
@@ -16,7 +16,7 @@ var simjs = require('../js/simulation');					//access the game states and simula
 let possActions = ["space", "right", "up", "left", "down"];
 
 const MCTS_ITERATIONS = 500;
-const ROLLOUT_DEPTH = 300;
+const ROLLOUT_DEPTH = 2;
 const AGENT_LENGTH = 20;
 const DEFAULT_DISTANCE = 10;
 const HUGE_NEGATIVE = -1000000.0;
@@ -37,12 +37,16 @@ let totalIters = 0;
 let totalSteps = 0;
 let currentNode = null;
 let currentNodes = [];
+let rootNode = null;
+let salvagedTree = null;
 let rootMap = null;
+let gameState = null;
 
 let solution = null;
 let startTime = null;
 
-function SingleTreeNode(m, a, p, w, d) {
+
+function SingleTreeNode(m, a, p, w, d, tabooBias = 0) {
     this.mapRep = m;
     this.actionHistory = a;
     this.parent = p;
@@ -52,6 +56,20 @@ function SingleTreeNode(m, a, p, w, d) {
     this.toValue = 0;
     this.depth = 0;
     this.children = [null, null, null, null];
+
+    this.expectimax = 0;
+    this.nbGenerated = 0;
+    this.tabooBias = tabooBias;
+    this.nbExitsHere = 0;
+    this.totalValueOnExit = 0;
+    this.childrenMaxAdjEmax = 0;
+    this.adjEmax = 0;
+
+
+    this.nbGenerated = 0;
+    this.nbExitsHere = 0;
+    this.totalValueOnExit = 0.0;
+    this.childrenMaxAdjEmax = 0.0;
 
     if (this.parent != null)
         this.depth = this.parent.depth + 1;
@@ -67,109 +85,57 @@ function newState(kekeState, map) {
     simjs.interpretRules(kekeState);
 }
 
-function restartAgent() {
-    // MCTS_ITERATIONS *= 1 + ALPHA;
-    // ROLLOUT_DEPTH *= 1 + ALPHA;
-    console.log("MCTS_ITERATIONS:" + MCTS_ITERATIONS);
-    console.log("ROLLOUT_DEPTH:" + ROLLOUT_DEPTH);
-    stateSets = [];
-    for (let i = 0; i < AGENT_LENGTH; i++) {
-        currentNode = new SingleTreeNode(simjs.map2Str(init_state.orig_map), [], null, false, false);
-        currentNodes.push(currentNode);
-        stateSets.push([currentNode.mapRep]);
-    }
-}
-
 function initAgent(init_state) {
     startTime = new Date().getTime();
-    // MCTS_ITERATIONS = 500;
-    // ROLLOUT_DEPTH = 300;
     solution = null;
     curIteration = 0;
-    stateSets = [];
-    for (let i = 0; i < AGENT_LENGTH; i++) {
-        currentNode = new SingleTreeNode(simjs.map2Str(init_state.orig_map), [], null, false, false);
-        currentNodes.push(currentNode);
-        stateSets.push([currentNode.mapRep]);
-    }
-    // stateSet = [];
-    // stateSet.push(currentNode.mapRep);
+    rootNode = new SingleTreeNode(simjs.map2Str(init_state.orig_map), [], null, false, false);
+    salvagedTree = null;
     rootMap = init_state['orig_map'];
-    console.log(rootMap)
+    gameState = init_state;
 }
 
 // NEXT ITERATION STEP FOR SOLVING
 function iterSolve(init_state) {
-    // console.log("totalSteps" + totalSteps)
-    // PERFORM ITERATIVE CALCULATIONS HERE
-
-    // Do the search within the available time.
-    // todo: add time constraints to the search
-    // solution = null;
-    // ROLLOUT_DEPTH *= 1+ALPHA;
-    // MCTS_ITERATIONS *= 1+ALPHA;
-    // console.log("MCTS_ITERATIONS: " + MCTS_ITERATIONS);
-    // console.log("ROLLOUT_DEPTH: " + ROLLOUT_DEPTH);
-    for (let i = 0; i < AGENT_LENGTH; i++) {
-        if ((new Date().getTime() - startTime) / 1000 > TIME_OUT) {
-            return currentNodes[0].actionHistory;
-        }
-        totalIters += mctsSearch(currentNodes[i], i);
-        if (solution != null) {
-            return solution;
-        }
+    if (salvagedTree === null) {
+        rootNode = new SingleTreeNode(simjs.map2Str(init_state.orig_map), [], null, false, false);
+    } else {
+        rootNode = salvagedTree;
+        stateSet.push(gameState['orig_map']);
     }
-    // totalIters += mctsSearch(currentNode);
+
+    if ((new Date().getTime() - startTime) / 1000 > TIME_OUT) {
+        return rootNode.actionHistory;
+    }
+    // todo: add time constraints to the search
+
+    totalIters += mctsSearch(rootNode);
+    if (solution != null) {
+        return solution;
+    }
     totalSteps++;
 
-    // if (solution != null) {
-    //     return solution;
-    // }
 
     // todo: compare two ways
-    for (let i = 0; i < AGENT_LENGTH; i++) {
-        currentNodes[i] = bestAction(currentNodes[i]);
-        currentNode = currentNodes[i];
-        stateSets[i].push(currentNode.mapRep);
+    salvagedTree = bestAction(rootNode);
+    // currentNode = mostVisitedAction(currentNode);
+    salvagedTree.parent = null;
+    salvagedTree.depth = 0;
+    refreshTree(rootNode);
+    stateSet.push(salvagedTree.mapRep);
 
 
-        if (currentNode.died) {
-            currentNodes[i] = new SingleTreeNode(simjs.map2Str(init_state.orig_map), [], null, false, false);
-            stateSets[i] = []
-            // MCTS_ITERATIONS *= 1 + ALPHA;
-            // ROLLOUT_DEPTH *= 1 + ALPHA;
-            // console.log("MCTS_ITERATIONS:" + MCTS_ITERATIONS);
-            // console.log("ROLLOUT_DEPTH:" + ROLLOUT_DEPTH);
-            // initAgent(init_state);
-            // } else if (currentNode.actionHistory.length > MAX_LENGTH) {
-            //     currentNodes[i] = new SingleTreeNode(simjs.map2Str(init_state.orig_map), [], null, false, false);
-            //     stateSets[i] = []
-            //     console.log("reset agent")
-        } else if (currentNode.won) {
-            return currentNode.actionHistory;
-        } else {
-            currentNodes[i] = new SingleTreeNode(currentNode.mapRep, currentNode.actionHistory, null, currentNode.won, currentNode.died);
-        }
-    }
-    // Determine the best action to take and return it (in two ways).
-    // currentNode = bestAction(currentNode);
-    // stateSet.push(currentNode.mapRep);
-    // console.log(currentNode.mapRep)
-    //  currentNode = mostVisitedAction();
     // if (currentNode.died) {
-    //     // currentNode = new SingleTreeNode(simjs.map2Str(init_state.orig_map), [], null, false, false);
-    //     initAgent(init_state);
+    //     currentNodes[i] = new SingleTreeNode(simjs.map2Str(init_state.orig_map), [], null, false, false);
+    //     stateSets[i] = []
     // } else if (currentNode.won) {
     //     return currentNode.actionHistory;
     // } else {
-    //     currentNode = new SingleTreeNode(currentNode.mapRep, currentNode.actionHistory, null, currentNode.won, currentNode.died);
+    //     currentNodes[i] = new SingleTreeNode(currentNode.mapRep, currentNode.actionHistory, null, currentNode.won, currentNode.died);
     // }
 
-
-    // return currentNode.actionHistory;
-
     // //return a sequence of actions or empty list
-    return [];
+    return salvagedTree.actionHistory;
 }
 
 
@@ -259,16 +225,18 @@ function dist(a, b) {
 
 
 // TODO: timer & avgTimeTaken
-function mctsSearch(root, i) {
+function mctsSearch( i) {
     let numIters = 0;
+    let tempState = {};
     while (numIters < MCTS_ITERATIONS) {
-        if ((new Date().getTime() - startTime) / 1000 > TIME_OUT) {
-            return currentNodes[0].actionHistory;
-        }
         let start = new Date().getTime();
+        newState(tempState, gameState);
+        if ((new Date().getTime() - startTime) / 1000 > TIME_OUT) {
+            return salvagedTree.actionHistory;
+        }
 
         // selection & node expansion
-        let selected = treePolicy(root);
+        let selected = treePolicy(tempState);
         if (solution != null) {
             return numIters;
         }
@@ -286,24 +254,29 @@ function mctsSearch(root, i) {
     }
     return numIters;
 }
+function expand(fatherNode, currentState){
 
+}
 // todo: compare with deepCopy
-function treePolicy(node) {
-    let cur = node;
+function treePolicy(currState) {
+    let cur = rootNode;
+    let localDepth = 0;
+    let _tabooBias = 0;
+    let i = 0;
+    let stateFound = false;
+
     while (!cur.win && cur.depth < ROLLOUT_DEPTH) {
         // notFullyExpanded
-        let action = isFullyExpanded(cur)
-        if (action !== -1) {
+        if (notFullyExpanded(cur)) {
             // expand
-            // let n_kk_p = {};
-            // newState(n_kk_p, rootMap);
-            // let n_kk_p = deepCopyObject(rootstate);
+            return expand(cur, currState);
+        }else {
             cur.children[action] = getNextState(possActions[action], cur);
             if (solution != null) {
                 return cur;
             }
             return cur.children[action];
-        } else {
+        // } else {
             let next = uct(cur);
             // let next = egreedy(cur);
             cur = next;
@@ -313,16 +286,13 @@ function treePolicy(node) {
 }
 
 
-function isFullyExpanded(node) {
-    let action = -1;
+function notFullyExpanded(node) {
     for (let i = 0; i < possActions.length; i++) {
         if (node.children[i] == null) {
-            if (action === -1 || Math.random() > 0.5) {
-                action = i;
-            }
+           return true;
         }
     }
-    return action;
+    return false;
 }
 
 

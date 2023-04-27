@@ -176,6 +176,7 @@ function assignMapObjs(state){
 			}
 		}
 	}
+	return state;
 }
 
 function initEmptyMap(m){
@@ -380,6 +381,7 @@ function interpretRules(state){
 
 	//reset the objects
 	resetAll(state);
+	return state;
 }
 
 /// OBJECT RULE ASSINGMENT ///
@@ -413,6 +415,7 @@ function clearLevel(state){
 		else
 			state[props[a]] = {};
 	}
+	return state
 }
 
 //sets a state to the original ascii map passed
