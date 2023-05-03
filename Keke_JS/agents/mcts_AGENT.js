@@ -321,7 +321,8 @@ function isFullyExpanded(node) {
             candidates.push(i)
         }
     }
-    action = candidates[Math.floor(Math.random() * candidates.length)]
+    if(candidates.length !== 0)
+        action = candidates[Math.floor(Math.random() * candidates.length)]
     return action;
 }
 
