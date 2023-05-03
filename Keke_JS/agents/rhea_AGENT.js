@@ -13,7 +13,7 @@ const TIMER_LIMIT_MS = 500
 // ---------- parameters of GA ------------
 const POPULATION_SIZE = 20
 const SIMULATION_DEPTH = 10
-const CROSSOVER_TYPE = UNIFORM_CROSS
+const CROSSOVER_TYPE = POINT1_CROSS
 const MUTATION = 1
 const TOURNAMENT_SIZE = 2
 const ELITISM = 6
@@ -111,7 +111,7 @@ class Agent {
         this.remaining = 0
     }
 
-    act(current_node) {
+    act(current_node, init_state) {
         this.timer = new ElapsedCpuTimer()
         this.avg_time_taken = 0
         this.accum_time_taken = 0
@@ -122,13 +122,13 @@ class Agent {
         this.keep_iterating = true
         this.remaining = this.timer.remainingTimeMillis()
 
-        this.init_pop(current_node)
+        this.init_pop(current_node, init_state)
         if (has_found)
             return
 
         this.remaining = this.timer.remainingTimeMillis()
         while (this.remaining > this.avg_time_taken && this.remaining > BREAK_MS && this.keep_iterating) {
-            this.runIteration(current_node)
+            this.runIteration(current_node, init_state)
             if (has_found) return
             this.remaining = this.timer.remainingTimeMillis()
         }
@@ -137,44 +137,34 @@ class Agent {
     }
 
     /** 进行交叉变异，产生下一代，并将下一代放入 this.population 变量中 */
-    runIteration(current_node) {
+    runIteration(current_node, init_state) {
         const elapsed_timer_iteration = new ElapsedCpuTimer()
 
-        if (this.num_individuals > 1) {
-            // for (let i = ELITISM; i < this.num_individuals; i++) {
-            for (let i = 0; i < ELITISM; i++) {
-                // 此处修改：
-                // 原本：前 0 - ELITISM 个交叉产生新个体，剩余不变。但是前面的都是fitness很高的个体，不应改变
-                // 现在：前 0 - ELITISM 保持不变，后面个体改为交叉产生的新个体
 
-                if (this.remaining > 2 * this.ave_time_taken_eval && this.remaining > BREAK_MS) {
-                    let new_individual = this.crossover()
-                    new_individual = new_individual.mutate(MUTATION)
+        for (let i = ELITISM; i < this.num_individuals; i++) {
+            // for (let i = 0; i < ELITISM; i++) {
+            // 此处修改：
+            // 原本：前 0 - ELITISM 个交叉产生新个体，剩余不变。但是前面的都是fitness很高的个体，不应改变
+            // 现在：前 0 - ELITISM 保持不变，后面个体改为交叉产生的新个体
 
-                    this.evaluate(new_individual, current_node)
-                    if (has_found)
-                        return
+            if (this.remaining > 2 * this.ave_time_taken_eval && this.remaining > BREAK_MS) {
+                let new_individual = this.crossover()
+                new_individual = new_individual.mutate(MUTATION)
 
-                    this.next_pop[i] = new_individual.copy()
+                this.evaluate(new_individual, current_node, init_state)
+                if (has_found)
+                    return
 
-                    this.remaining = this.timer.remainingTimeMillis()
-                } else {
-                    this.keep_iterating = false
-                    break
-                }
-            }
+                this.next_pop[i] = new_individual.copy()
 
-            this.next_pop.sort((a, b) => b.fitness - a.fitness)
-        } else if (this.num_individuals === 1) {
-            let new_individual = new Individual(SIMULATION_DEPTH, N_ACTIONS)
-            this.evaluate(new_individual, current_node)
-            if (has_found)
-                return
-            if (new_individual.fitness > this.population[0].fitness) {
-                this.population[0] = new_individual
+                this.remaining = this.timer.remainingTimeMillis()
+            } else {
+                this.keep_iterating = false
+                break
             }
         }
 
+        this.next_pop.sort((a, b) => b.fitness - a.fitness)
         this.population = [...this.next_pop]
 
         this.num_iters++
@@ -206,7 +196,7 @@ class Agent {
         return new_individual
     }
 
-    init_pop(node) {
+    init_pop(node, init_state) {
         let remaining = this.timer.remainingTimeMillis()
 
         this.population = new Array(POPULATION_SIZE)
@@ -216,7 +206,7 @@ class Agent {
             if (i === 0 || remaining > this.ave_time_taken_eval && remaining > BREAK_MS) {
                 this.population[i] = new Individual(SIMULATION_DEPTH, N_ACTIONS)
 
-                this.evaluate(this.population[i], node)
+                this.evaluate(this.population[i], node, init_state)
                 if (has_found)
                     return
 
@@ -241,7 +231,7 @@ class Agent {
         return pop[0].actions[0]
     }
 
-    evaluate(individual, node) {
+    evaluate(individual, node, init_state) {
         const elapsed_timer_iteration_eval = new ElapsedCpuTimer()
         let accum = 0
         let avg = 0
@@ -251,7 +241,9 @@ class Agent {
         for (let i = 0; i < SIMULATION_DEPTH; i++) {
             if (!current_node.win) {
                 const elapsed_timer_iteration = new ElapsedCpuTimer()
-                const temp = getNextState(individual.actions[i], initial_state, current_node.actionSet)
+                let n_kk_p = {};
+                newstate(n_kk_p, init_state['orig_map'])
+                const temp = getNextState(individual.actions[i], n_kk_p, current_node.actionSet)
                 fitness = temp[0]
                 current_node = temp[1]
 
@@ -264,7 +256,8 @@ class Agent {
             } else {
                 last_solution = current_node.actionSet
                 has_found = true
-                break
+                console.log('evaluate: ' + current_node.actionSet)
+                return
             }
         }
 
@@ -388,33 +381,47 @@ function dist(a, b) {
     return (Math.abs(b.x - a.x) + Math.abs(b.y - a.y));
 }
 
-let current_state = null
-let current_node = null
-let initial_state = null
-let initial_node = null
+// let current_state = null
+// let current_node = null
+// let initial_state = null
+// let initial_node = null
 let solve_timer = null
 let remaining = 0
 let agent
 
 
 function iterSolve(init_state) {
-    current_state = initial_state
-    current_node = initial_node
+    let current_state = {}
+    newstate(current_state, init_state['orig_map'])
+    let current_node = new Node(simjs.map2Str(init_state['orig_map']), [], false, false)
 
     remaining = solve_timer.remainingTimeMillis()
     const result = []
 
     while (remaining > RHEA_BREAK) {
-        const new_action = agent.act(current_node)
-        if (has_found) return last_solution
+        // if (has_found) {
+        //     console.log('iterSolve: ' + last_solution)
+        // }
+
+        const new_action = agent.act(current_node, init_state)
+        if (has_found) {
+            console.log('\n')
+            return last_solution
+        }
         result.push(new_action)
 
-        const next = simjs.nextMove(new_action, current_state)
-        current_state = next['next_state']
+        const res = simjs.nextMove(new_action, current_state)
+        current_state = res['next_state']
+        let didwin = res['won'];
+        //everyone died
+        if (current_state['players'].length === 0) {
+            didwin = false;
+        }
+
         current_node = new Node(
             simjs.doubleMap2Str(current_state.obj_map, current_state.back_map),
             [...result],
-            next['won'],
+            didwin,
             current_state['players'].length === 0)
 
         if (current_node.died) {
@@ -436,15 +443,16 @@ module.exports = {
         return iterSolve(init_state)
     },
     init: function (init_state) {
-        initial_state = {}
-        newstate(initial_state, init_state['orig_map'])
-        initial_node = new Node(init_state['orig_map'], [], false, false)
+        // initial_state = {}
+        // newstate(initial_state.copy(), init_state['orig_map'])
+        // initial_node = new Node(simjs.map2Str(init_state['orig_map']), [], false, false)
         solve_timer = new ElapsedCpuTimer(SOLVE_LIMIT_MS)
         agent = new Agent()
         has_found = false
         last_solution = []
     },
     best_sol: function () {
+        console.log('best_sol: ' + last_solution + '\n')
         return last_solution
     }
 }
