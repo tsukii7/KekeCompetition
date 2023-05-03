@@ -17,7 +17,7 @@ let possActions = ["space", "right", "up", "left", "down"];
 
 const MCTS_ITERATIONS = 500;
 const ROLLOUT_DEPTH = 300;
-const AGENT_LENGTH = 20;
+const AGENT_LENGTH = 10;
 const DEFAULT_DISTANCE = 10;
 const HUGE_NEGATIVE = -1000000.0;
 const HUGE_POSITIVE = 1000000.0;
@@ -51,7 +51,7 @@ function SingleTreeNode(m, a, p, w, d) {
     this.nVisits = 0;
     this.toValue = 0;
     this.depth = 0;
-    this.children = [null, null, null, null];
+    this.children = [null, null, null, null, null];
 
     if (this.parent != null)
         this.depth = this.parent.depth + 1;
@@ -315,13 +315,13 @@ function treePolicy(node) {
 
 function isFullyExpanded(node) {
     let action = -1;
+    let candidates = []
     for (let i = 0; i < possActions.length; i++) {
         if (node.children[i] == null) {
-            if (action === -1 || Math.random() > 0.5) {
-                action = i;
-            }
+            candidates.push(i)
         }
     }
+    action = candidates[Math.floor(Math.random() * candidates.length)]
     return action;
 }
 

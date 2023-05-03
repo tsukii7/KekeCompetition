@@ -164,7 +164,7 @@ class Agent {
             }
         }
 
-        this.next_pop.sort((a, b) => b.fitness - a.fitness)
+        this.next_pop.sort((a, b) => a.fitness - b.fitness)
         this.population = [...this.next_pop]
 
         this.num_iters++
@@ -184,7 +184,7 @@ class Agent {
                 tournament.push(list[index])
                 list.splice(index, 1)
             }
-            tournament.sort((a, b) => b.fitness - a.fitness)
+            tournament.sort((a, b) => a.fitness - b.fitness)
 
             // get best two to be parents
             if (TOURNAMENT_SIZE >= 2) {
@@ -218,7 +218,7 @@ class Agent {
         }
 
         if (this.num_individuals > 1) {
-            this.population.sort((a, b) => b.fitness - a.fitness)
+            this.population.sort((a, b) => a.fitness - b.fitness)
         }
         for (let i = 0; i < this.num_individuals; i++) {
             if (this.population[i] !== undefined && this.population[i] !== null) {
