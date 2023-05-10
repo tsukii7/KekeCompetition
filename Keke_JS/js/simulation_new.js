@@ -20,7 +20,7 @@
 var map_key = {}
 map_key['_'] = "border";
 map_key[' '] = "empty";
-//map_key['.'] = "empty";
+map_key['.'] = "empty";
 map_key['b'] = "baba_obj";
 map_key['B'] = "baba_word";
 map_key['1'] = "is_word";
@@ -192,7 +192,10 @@ function splitMap(m) {
             var charac = m[r][c];
             var parts = map_key[charac].split("_");
 
-            if (parts.length == 1) {	//background
+            if (parts.length == 1) {
+                if (charac == '.')
+                    charac = ' '
+                //background
                 bm[r][c] = charac;
                 om[r][c] = ' ';
             } else {					//object
@@ -507,7 +510,7 @@ function resetAll(state) {
     setKills(state);
     setSinks(state);
 
-     setOverlaps(state);
+    setOverlaps(state);
     // res = [state['obj_map'][2][4]]
     // let res = [...state['back_map'][4]]
     setFeatures(state);
@@ -984,6 +987,29 @@ function inArr(arr, e) {
 
 ////////////////   KEYBOARD FUNCTIONS  //////////////////
 
+function stateNextMove(nextDir, current_state) {
+    let ascii_map = showState(current_state);
+    let map = ascii_map.split('\n');
+
+    let map_array = [];
+    for (let i = 0; i < map.length; i++) {
+        map_array.push(map[i].split(''));
+        // map_array.push([]);
+        // let array = map[i].split('');
+        // for (let j = 0; j < array.length; j++) {
+        //     if (array[j] === '.')
+        //         map_array[i].push('');
+        //     else
+        //         map_array[i].push(array[j]);
+        // }
+    }
+    // let res = splitMap(map_array);
+
+    let state = newState(map_array);
+    let res = nextMove(nextDir, state)
+    return res;
+
+}
 
 // GOTO THE NEXT DIRECTIONAL POINT IN THE SOLUTION STEP
 // THE PROBLEM IS HERE !!
@@ -1017,8 +1043,8 @@ function nextMove(nextDir, state) {
 
     //check if the game has been won
     wonGame = win(state['players'], state['winnables']);
-    return res;
-    // return {'next_state': state, 'won': wonGame};
+    // return state;
+    return {'next_state': state, 'won': wonGame};
 }
 
 
@@ -1202,7 +1228,7 @@ function movePlayers(dir, mo, state) {
     // res = [...res[4]]
     destroyObjs(badFeats(featured, sort_phys), state);
     // res = state['players'];
-    res = state
+    res = players;
     return res;
 }
 
