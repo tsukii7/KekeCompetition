@@ -17,7 +17,7 @@ let possActions = ["space", "right", "up", "left", "down"];
 
 const MCTS_ITERATIONS = 500;
 const ROLLOUT_DEPTH = 300;
-const AGENT_LENGTH = 10;
+const AGENT_LENGTH = 1;
 const DEFAULT_DISTANCE = 10;
 const HUGE_NEGATIVE = -1000000.0;
 const HUGE_POSITIVE = 1000000.0;

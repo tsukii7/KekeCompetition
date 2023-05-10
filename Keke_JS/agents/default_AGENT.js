@@ -179,7 +179,13 @@ function getNextState(dir, state, parent) {
     //console.log("after KEKE (" + newActions + "): \n" + simjs.doubleMap2Str(state.obj_map, state.back_map));
 
 
-    return [(win_d + word_d + push_d) / 3, new node(simjs.doubleMap2Str(state.obj_map, state.back_map), newActions, parent, didwin, (state['players'].length == 0))]
+    return [(win_d + word_d + push_d) / 3,
+        new node(simjs.doubleMap2Str(state.obj_map, state.back_map),
+            newActions,
+            parent,
+            didwin,
+            (state['players'].length == 0))
+    ]
 }
 
 

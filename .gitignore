@@ -1,3 +1,6 @@
 Keke_JS/node_modules/
 *.xml
 *.iml
+package-lock.json
+package.json
+Keke_JS/test.js

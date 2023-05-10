@@ -4,8 +4,8 @@
 
 
 //get imports (NODEJS)
-var simjs = require('../js/simulation')					//access the game states and simulation
-
+var simjs = require('../js/simulation')
+//access the game states and simulation
 let possActions = ["space", "right", "up", "left", "down"];
 
 
