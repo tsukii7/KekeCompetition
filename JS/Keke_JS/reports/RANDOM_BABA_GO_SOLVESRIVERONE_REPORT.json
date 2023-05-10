@@ -1,0 +1,3125 @@
+[
+  {
+    "levelSet": "new_full_biy_LEVELS",
+    "levels": [
+      {
+        "id": 1,
+        "iterations": 365,
+        "time": 0.918,
+        "solution": "urdrurddlurddulrudlulldlddlddudululudllulddulldluusdsudussudrsudllusrrdullsrrslrduuurdlsrurdurlurrl",
+        "won_level": true
+      },
+      {
+        "id": 4,
+        "iterations": 1,
+        "time": 0.006,
+        "solution": "urdlurddlurddulrldlulldlddlddudululudllulddulldluulrssruls",
+        "won_level": true
+      },
+      {
+        "id": 6,
+        "iterations": 895,
+        "time": 1.762,
+        "solution": "rlrururlrrrrulluldlllruruudlullrlurulluddllrrrrrrrsudursusddusudsulssdlsrdsddsullduuulddllsldsludul",
+        "won_level": true
+      },
+      {
+        "id": 8,
+        "iterations": 18,
+        "time": 0.035,
+        "solution": "rrrurrrdudrlrdluldllllruuddrlrlrrlrlllrdulrrrlrrlldlsrrlsrrsrruuduruulludlldururdlrsruulsurulrrldud",
+        "won_level": true
+      },
+      {
+        "id": 10,
+        "iterations": 0,
+        "time": 0.003,
+        "solution": "lrrurrrduddlrdluldllllruuddrlrlrrlrlllrdulrrrlrlllrlldsuullrrsuuruuuruuslsu",
+        "won_level": true
+      },
+      {
+        "id": 12,
+        "iterations": 5,
+        "time": 0.019,
+        "solution": "rllluudrduuuurrslsullrsdlur",
+        "won_level": true
+      },
+      {
+        "id": 15,
+        "iterations": 3436,
+        "time": 10.001,
+        "solution": "urdulrddlludduurrurudrlrlrurrurdudlluddllrulddulrlrllurdrlsdlrrsdssrulrrdsdlrldrssudlrlrlurlrlddddu",
+        "won_level": false
+      },
+      {
+        "id": 19,
+        "iterations": 2,
+        "time": 0.008,
+        "solution": "urdlllddlludduurrurudrlrrruuulrdudlludrlldrluuulrllsdudlsslddllulrrrlsulslulurususrslsrsudsusururrd",
+        "won_level": true
+      },
+      {
+        "id": 20,
+        "iterations": 1810,
+        "time": 3.271,
+        "solution": "rruluduudddduduuduudddduuuduuuudduuddrduududlduuuluulddsdddddursdssuulssdslssussrrsdurdssrdurdlsdll",
+        "won_level": true
+      },
+      {
+        "id": 21,
+        "iterations": 2697,
+        "time": 5.775,
+        "solution": "llulddrdullllluruddlrluludrlldurdrldldrrrdlrrudlddrsuusulsrldsrrruddlurrlldsssludruuuuruulddlulslsr",
+        "won_level": true
+      },
+      {
+        "id": 22,
+        "iterations": 1397,
+        "time": 4.632,
+        "solution": "ursrrrurrrrulludlrdrulrdurlrrrrdlullluudlrdlrudldrlurlldlsdslrssrrlsdsrlludlrusslllllsdssudslrlslrr",
+        "won_level": true
+      },
+      {
+        "id": 24,
+        "iterations": 947,
+        "time": 1.861,
+        "solution": "lluurrulrrudrduldrlludldruddrrludllrlddlrrrlluduldullususrduuddsdusuddluslrlssslssdurdudsruu",
+        "won_level": true
+      },
+      {
+        "id": 25,
+        "iterations": 466,
+        "time": 1.646,
+        "solution": "ullrlrdrrudurduldrdrduddddlurddrddlddludlruddllluudludsuludrdrurursldsdldddddlddsusddlluullslrsssrr",
+        "won_level": true
+      },
+      {
+        "id": 26,
+        "iterations": 0,
+        "time": 0.003,
+        "solution": "ullrlrdrrudurduldrdrduddddlurddrddrddludlruddllluuudrudlurdsluds",
+        "won_level": true
+      },
+      {
+        "id": 27,
+        "iterations": 693,
+        "time": 2.378,
+        "solution": "ruulddddduduluddrddldurdudrrrludrruddururdldulddllruddulllusrldlrsuuslrsurulssddsrlusrdsdulssdldllr",
+        "won_level": true
+      },
+      {
+        "id": 29,
+        "iterations": 0,
+        "time": 0.002,
+        "solution": "ruudddddduduluddrddldurdudrrrludrruddlrurdldulddlls",
+        "won_level": true
+      },
+      {
+        "id": 30,
+        "iterations": 105,
+        "time": 0.334,
+        "solution": "lrllllllllrudrrdudrdduluulrlddrrrdudluddrurllrururdsrsrdsllulldsdrruruldsrursllrlrrrulsrdrllulullsu",
+        "won_level": true
+      },
+      {
+        "id": 31,
+        "iterations": 239,
+        "time": 0.719,
+        "solution": "ddruduududrllulduurrdulrdruurdlrrudruuuudurrdlddrrdrlluldsrsdlusslrluds",
+        "won_level": true
+      },
+      {
+        "id": 32,
+        "iterations": 6,
+        "time": 0.018,
+        "solution": "uluuuurdlldllrddullddluuuldruudlrddludrluuuddurulddsddrssrddrdlrlsrdllslrulruurlruldsrulsulrrllsldd",
+        "won_level": true
+      },
+      {
+        "id": 33,
+        "iterations": 586,
+        "time": 2.389,
+        "solution": "udludrudrrdrrrurlldrlrddlluruddddllrdlullrdrdlrrrrlsullldlslsrlrlrrlrruduuudrldrrrssr",
+        "won_level": true
+      },
+      {
+        "id": 34,
+        "iterations": 2,
+        "time": 0.004,
+        "solution": "rruldlluuurlludluurrrurlrdlldrlduuudrdluruduululluurdlrllurdsrdudruudsruslrursudsusrsslssrudsslrluu",
+        "won_level": true
+      },
+      {
+        "id": 35,
+        "iterations": 4,
+        "time": 0.01,
+        "solution": "urrlddluuurlrudluurrrurlrdllrruluuddrdluruduululuudduuluddrrrdlslsrllrusrusuruddsurrrrdu",
+        "won_level": true
+      },
+      {
+        "id": 36,
+        "iterations": 187,
+        "time": 0.678,
+        "solution": "rululrllduldlurldululduuulruurudurlrdurudrrrdlurrlusuurrsrsudslluuldldrslrsdsrdsuslrdrlslurrussrlrs",
+        "won_level": true
+      },
+      {
+        "id": 37,
+        "iterations": 3107,
+        "time": 10.004,
+        "solution": "llrudddlldrulrdududrdrluluuuurddlrrldrrrurldllllurrsludludddsrldlrduuulusdlslusdudsuulrlrluursullus",
+        "won_level": false
+      },
+      {
+        "id": 38,
+        "iterations": 1,
+        "time": 0.007,
+        "solution": "llruddrllddulrdududrdrlululuurdddrrldrrrurlddlllurrdursurududrddrsdusllrsldllssuuursuldsdlurdsdudlu",
+        "won_level": true
+      },
+      {
+        "id": 39,
+        "iterations": 2649,
+        "time": 9.778,
+        "solution": "lllrdrrrlldrldrdrddddlurlddruudduruudrldruuudurduulurduulsuulrusulsddrurulddldusdlllsuddrrlrlrrlurl",
+        "won_level": true
+      },
+      {
+        "id": 40,
+        "iterations": 3356,
+        "time": 10.002,
+        "solution": "ruuluuurrldululrrllullldlldrurluduldulrrulllulrddlsrssrsdsdursdsdlrsdrdrlrsdrslrldrldlsrdsdlslurlrd",
+        "won_level": false
+      },
+      {
+        "id": 41,
+        "iterations": 1993,
+        "time": 10.003,
+        "solution": "lulluurrdlluruduulrurlrurlrrudrdrurrudluluruurulruussdsururdrudsdrslrulruuursrlsurdddrslrudsrruldld",
+        "won_level": false
+      },
+      {
+        "id": 42,
+        "iterations": 4716,
+        "time": 10.002,
+        "solution": "ddllllrdlrdluldullddlllrrllullllllllrrrlllrullddrlsudsrlslsdllrssdrsludrruddssuudrlrulrluuudlrdrddr",
+        "won_level": false
+      },
+      {
+        "id": 43,
+        "iterations": 96,
+        "time": 0.322,
+        "solution": "ddddlduddlrulruudrurluurdudlruldduldrldlruuudlllrrrrdrsudssuudlrsrdsllsurusrrslduuldddsslslusrdrl",
+        "won_level": true
+      },
+      {
+        "id": 44,
+        "iterations": 2,
+        "time": 0.024,
+        "solution": "uudlrruulluudlldrlrlrrdrrddlrlduldluurludrdlrululudrlsuud",
+        "won_level": true
+      },
+      {
+        "id": 45,
+        "iterations": 610,
+        "time": 3.129,
+        "solution": "lrddlulrrrlrlrlrdrlrrlurldrdululduuduuurrlduudurrusldrllrdluduruldrldsudrrddrssuursrlssurdudrlsludd",
+        "won_level": true
+      },
+      {
+        "id": 46,
+        "iterations": 0,
+        "time": 0.004,
+        "solution": "drdddudrrudrlrlrurlrrluuddrduludduuduuurrldurdurrusluuddssrsrdldurrlsrrsrlulsuudlrsdsulsddulsrsudus",
+        "won_level": true
+      },
+      {
+        "id": 47,
+        "iterations": 0,
+        "time": 0.002,
+        "solution": "drdddulrrudrlrlrurlrrluuddrduludduuduuurrldurdurrulss",
+        "won_level": true
+      },
+      {
+        "id": 48,
+        "iterations": 0,
+        "time": 0.001,
+        "solution": "usdsdlrudddlsuslrdulluurud",
+        "won_level": true
+      },
+      {
+        "id": 49,
+        "iterations": 1,
+        "time": 0.002,
+        "solution": "sllrdlrlurduusudsrslslrsdslusllulsurdldrdrursddrlsrlsssus",
+        "won_level": true
+      },
+      {
+        "id": 50,
+        "iterations": 112,
+        "time": 0.309,
+        "solution": "rdludududulrrlrdlldrllddluudlddddduruurluluruuuulusurssslddsdsslluuruussllrsllsdddrrdursudsrururlsd",
+        "won_level": true
+      },
+      {
+        "id": 51,
+        "iterations": 1111,
+        "time": 4.223,
+        "solution": "rduulululduldduddulrrdudlllllduuuldlddudrrruluuurudsssudursuruduuruusulrddrdrrlslrrdulsssudsssrrurs",
+        "won_level": true
+      },
+      {
+        "id": 52,
+        "iterations": 0,
+        "time": 0.005,
+        "solution": "rduulululduddduddulrrdudlllllduuuldlddudrrruluuurursurrulduruslsruddlsrssdusslll",
+        "won_level": true
+      },
+      {
+        "id": 53,
+        "iterations": 2869,
+        "time": 6.659,
+        "solution": "uullddlddddruuluurrllrrlrrrrdulrrddldullrluurllldldrddsruslldludrdrdrslrsrsldsldsddsrrsrldrlsdddrud",
+        "won_level": true
+      },
+      {
+        "id": 54,
+        "iterations": 6,
+        "time": 0.023,
+        "solution": "uullddldluuruuluurrllrurlrurluldrrlldullrluurllddrrdddlddssddlsddllrdurululusrsdrsdsudsursrrlllllrr",
+        "won_level": true
+      },
+      {
+        "id": 55,
+        "iterations": 9,
+        "time": 0.036,
+        "solution": "rullddldluuuuuluuuuldrurlllrluldlrudrlurrluuulrrdrdduuldsssrduuulrulsuurdssuruldrluusulllllrslduddd",
+        "won_level": true
+      },
+      {
+        "id": 56,
+        "iterations": 1,
+        "time": 0.002,
+        "solution": "sduluusduudsulrrrrusrsllrlssurrdlrssrrddrulrllsurlsrrssuu",
+        "won_level": true
+      },
+      {
+        "id": 57,
+        "iterations": 2799,
+        "time": 10.006,
+        "solution": "rldddllrdldrrruldddrllrurulruururuuuddlurruldlruururrslussurrrururusrllsrrdusrdrusudlurdsururuuuusl",
+        "won_level": false
+      },
+      {
+        "id": 58,
+        "iterations": 2,
+        "time": 0.006,
+        "solution": "rldddllrdldrrruldddullruuulruurrruuuddlurruldlrrurslulrdudurllrdsrdssdsruslrrruslrsussrlsusllrdlrdu",
+        "won_level": true
+      },
+      {
+        "id": 59,
+        "iterations": 3770,
+        "time": 10.002,
+        "solution": "ulrlllludruuurldrurulduluurlulrduudrldrdduuldludddssddslrududduslllususrdulsrusdussddulddlsdudrssdr",
+        "won_level": false
+      },
+      {
+        "id": 60,
+        "iterations": 5,
+        "time": 0.014,
+        "solution": "ldrlluluduuuuuluulrulduluuurudrdudduddudduudddddddslulrsddssulrldssdusssdlsdrulllrrludsrlsrulrudsll",
+        "won_level": true
+      },
+      {
+        "id": 61,
+        "iterations": 11,
+        "time": 0.028,
+        "solution": "ldrllururuuuruldluudlduluudrurldulduldudrrudddddddlllldsslslrrlsdssslrludrruluudrssddldrsrdrruuulld",
+        "won_level": true
+      },
+      {
+        "id": 62,
+        "iterations": 4,
+        "time": 0.016,
+        "solution": "ldrdlurursuurululuuddduludururrluldulduurrudlduddddudlullrrslrlruuudssudursdlldsudlsrdssrdlsududrlu",
+        "won_level": true
+      },
+      {
+        "id": 63,
+        "iterations": 486,
+        "time": 1.358,
+        "solution": "lulldddlldrlllrrdrurlrrrududlrlrrllludllrlurlllrulrldlsuurrululsudlurdrursdusssdssrulrssrlsdlssdlus",
+        "won_level": true
+      },
+      {
+        "id": 64,
+        "iterations": 325,
+        "time": 0.956,
+        "solution": "rllulrrlulrlulrrlrudllrllluulddduudllllrlllrllrllddulursrulsrddsuuulludulurulrldsdrssrssusluuurlsrl",
+        "won_level": true
+      },
+      {
+        "id": 65,
+        "iterations": 63,
+        "time": 0.203,
+        "solution": "llruudlruurrurululrlrullrruuluuuuurururrrrlullrlddrlsudldruusdlssrsdurlrludrdrrlududduuurullrluusuu",
+        "won_level": true
+      },
+      {
+        "id": 66,
+        "iterations": 2244,
+        "time": 10.002,
+        "solution": "uurllrrrrllllldllldlrrdlululrdrdlulrdrdrldllrlddrlsuudrddllludrlsdrldrldrruusulssuddllldrllsuslurll",
+        "won_level": false
+      },
+      {
+        "id": 67,
+        "iterations": 3603,
+        "time": 10.001,
+        "solution": "drlrlluldulluldrulllrlldrudullrllddrrruddlrdrurduudrsldsdlrldudlrrrsrrdussrslsdduuludssrdlurlsllusu",
+        "won_level": false
+      },
+      {
+        "id": 68,
+        "iterations": 3647,
+        "time": 10.001,
+        "solution": "ulrdrddllrldrurldddllrurldrrddulllrrlldddldrdlluddurruduurrrduusrusduudslusrsssllldssrulrlllsuudlul",
+        "won_level": false
+      },
+      {
+        "id": 69,
+        "iterations": 9,
+        "time": 0.028,
+        "solution": "udddrddulrldrrurdrrlruurrdrrddudllrdulrdrrurullddludrlldlldslssslrurlllssddusulsussdsu",
+        "won_level": true
+      },
+      {
+        "id": 70,
+        "iterations": 3307,
+        "time": 10.001,
+        "solution": "lrruluruluuuudduddddlurlduldldllrludrrldldldrdrrudrururlrrrrdsuururllsrluslulddudsdrrsrusurdudrllsl",
+        "won_level": false
+      },
+      {
+        "id": 71,
+        "iterations": 1301,
+        "time": 3.295,
+        "solution": "luulrluudddrdrludruuduuulrduddldruudlddldudduudrululudlsdususrdudruurdddsdsuudlddussddrdllddrllsuud",
+        "won_level": true
+      },
+      {
+        "id": 72,
+        "iterations": 219,
+        "time": 0.671,
+        "solution": "urduulurrlururdurulurululullurruullldludrlrrdldurlrsuudsdlrudslllursrsrlrdllrsdursluuusdusuduusdrll",
+        "won_level": true
+      },
+      {
+        "id": 73,
+        "iterations": 620,
+        "time": 1.925,
+        "solution": "durlurdlrrldrrlludrdddudrrrrrlurlllulddrduludlddllusurdslsrdrrslddurludsldulsudldusrululdsrsdlrrul",
+        "won_level": true
+      },
+      {
+        "id": 74,
+        "iterations": 22,
+        "time": 0.082,
+        "solution": "durdurudrllurrlrlddrduldurulrlrllludrurdllddrlldlrrddrursssdlslrslullluusrsduldduusdssdr",
+        "won_level": true
+      },
+      {
+        "id": 75,
+        "iterations": 2507,
+        "time": 8.074,
+        "solution": "lduddddullldluduudululudulrdruuurudlrlldrdlulluuldsusslsddrldlurrdslusuurlussrdsrdsrllrslrusldruurs",
+        "won_level": true
+      },
+      {
+        "id": 76,
+        "iterations": 140,
+        "time": 0.513,
+        "solution": "ududlrludrrurddlrrududldrrldudluudrruddrurlrlurlluudduruluuuulsurdudsdlrsuusrlrldrdrlllrslsussusssu",
+        "won_level": true
+      },
+      {
+        "id": 77,
+        "iterations": 3791,
+        "time": 10.002,
+        "solution": "rdlduulrddllrlllllllrrldlllrllrlrldlrlllllrrllldldssduldslsursulsrdrlrlduuldlldrdsusssdssuudusrsdss",
+        "won_level": false
+      },
+      {
+        "id": 78,
+        "iterations": 0,
+        "time": 0.002,
+        "solution": "rdlduulrddllrlllllllrrldlllrrlrlrldlllllllrrllldldslddrlul",
+        "won_level": true
+      },
+      {
+        "id": 79,
+        "iterations": 1231,
+        "time": 3.087,
+        "solution": "lrrrrrdrlldrldurrlllddllldlldddlddldddddlddrudrdluuuuuuudddudlldlrlsudussuusrlrsdlrlussuluullrlsrdd",
+        "won_level": true
+      },
+      {
+        "id": 80,
+        "iterations": 0,
+        "time": 0.002,
+        "solution": "lrrrrrdrlldrldurrlllddllldlllddlddldddddldduudrdlul",
+        "won_level": true
+      },
+      {
+        "id": 81,
+        "iterations": 3151,
+        "time": 10.001,
+        "solution": "luuddlrlurldurrdrurrlrrdlduullrldrdrlllrudlrlddullrdsldrusdsudsuddurdsldsrdddldssdssllsdsrdrrlddslu",
+        "won_level": false
+      },
+      {
+        "id": 82,
+        "iterations": 1451,
+        "time": 10.005,
+        "solution": "lldduluullllruduurddlldddllldluuruurrulrrdrdruurldldllsulrddluldulrluussslssdlssrsssddullsdududrlru",
+        "won_level": false
+      },
+      {
+        "id": 83,
+        "iterations": 2757,
+        "time": 10.003,
+        "solution": "dlrdddllrldlldlruldulrdduldluldllruurldrlldrlddrrdssdllrursdslrrddsddrdluurrdlulslulduussssulrddllr",
+        "won_level": false
+      },
+      {
+        "id": 84,
+        "iterations": 0,
+        "time": 0.004,
+        "solution": "dlrdddllrldlldlruldulrdduldluldllruurldrlldrlddrrdssllusrllsuudruddsssrsduussuuruudlrrudrrurrudrdsu",
+        "won_level": true
+      },
+      {
+        "id": 85,
+        "iterations": 2,
+        "time": 0.008,
+        "solution": "dlrdudllrlulldlruldulrdruldluldlrruurldrlldrlddrrdudududduusddlddlrdudddrrdluddrrulrud",
+        "won_level": true
+      },
+      {
+        "id": 86,
+        "iterations": 2408,
+        "time": 10.004,
+        "solution": "rururrldrrlddulullldlduluulullluulluuuudrlduuruulddlrdlrsusllldrrursrrrdsurudlrlslrlsusdlusrsssdusr",
+        "won_level": false
+      },
+      {
+        "id": 87,
+        "iterations": 1847,
+        "time": 10.001,
+        "solution": "rllrllruurrrdrulrdulrrlrrldudrulurruddruldurldrdddrusluduldruldrlsrslllrluusulrsslrsslrlrduuruurluu",
+        "won_level": false
+      },
+      {
+        "id": 88,
+        "iterations": 1698,
+        "time": 10.002,
+        "solution": "rdduldrduurdddrlllduddlluurrrrurrrruudurldluuudlldslrdrruddrsrrdsurlsuddlslslrdrrlslududrullrlslslr",
+        "won_level": false
+      },
+      {
+        "id": 89,
+        "iterations": 479,
+        "time": 1.172,
+        "solution": "uruudllluulrulrdruuuuduudluullludulrlduluuruuuuudussldsdslsrldsdsrsddsuudsrrddrdrruulruullruusrllrl",
+        "won_level": true
+      },
+      {
+        "id": 90,
+        "iterations": 2095,
+        "time": 10.003,
+        "solution": "uurddudrurrddlurluluurldlrurdullulrrdrdrlrdlruulurdsddulsdsrsrulsdsrlsuuslddrlsssuruslrslrrsururdud",
+        "won_level": false
+      },
+      {
+        "id": 91,
+        "iterations": 0,
+        "time": 0.002,
+        "solution": "durddddrurrddlurluduurldlrurdullulrrdrdrlrdlruulursdsulrlusssdrldluludluulssulsdrulrsrdsrdrurldllrr",
+        "won_level": true
+      },
+      {
+        "id": 92,
+        "iterations": 309,
+        "time": 0.908,
+        "solution": "lldlllrurlldddrdudrludddlulrrulrldlulldrllurlddlrrrsuuuulrrlrdsldrrsddldlsdusssudlurrurdudlurssruud",
+        "won_level": true
+      },
+      {
+        "id": 93,
+        "iterations": 23,
+        "time": 0.061,
+        "solution": "rldullrlrlddrurduddrrrdurulrrudrlddlrrrlllddlddrlldrsldrrldlllrululdluds",
+        "won_level": true
+      },
+      {
+        "id": 94,
+        "iterations": 43,
+        "time": 0.217,
+        "solution": "rludlrdrlurudrlddrrruldulldrdddlluududlldrlullluuluslsdssrdssdruurrdslrdrdsrduusldlddrussdlsssrsusr",
+        "won_level": true
+      },
+      {
+        "id": 95,
+        "iterations": 1258,
+        "time": 10.002,
+        "solution": "urrlldludruullruurdlruuldllurlullllduldrrlrldrldudrsdslsussdlursdlduluslllrrrrssusrlsulsuulruruddls",
+        "won_level": false
+      },
+      {
+        "id": 96,
+        "iterations": 4370,
+        "time": 10.001,
+        "solution": "uddddulrllldrduduuuurulluurulduuudluddddrlldrudrlulrldlsrusulssulduslrddlursrurdlrdrsusuusrsrdsudrs",
+        "won_level": false
+      },
+      {
+        "id": 97,
+        "iterations": 1423,
+        "time": 3.718,
+        "solution": "rudlluddrrddrdrldlllrruldurrddrlruddrruulldruuldrlullrlddlrdlrdrsrrlsdssusulslsluddusdrdrlsslsluruu",
+        "won_level": true
+      },
+      {
+        "id": 98,
+        "iterations": 5,
+        "time": 0.019,
+        "solution": "duduluddrrdrrlrddduduruldurrddrlruldrruurldlduldrlrrudluuudrulldrrrrdrulrrursuslsrsrrdslslddruulsus",
+        "won_level": true
+      },
+      {
+        "id": 99,
+        "iterations": 3,
+        "time": 0.006,
+        "solution": "lurddrrlrrrdudrudllrlludlrlurlruudrluulllududldrdrsssulld",
+        "won_level": true
+      },
+      {
+        "id": 100,
+        "iterations": 1293,
+        "time": 4.268,
+        "solution": "rdlddlrrrrlullruldldullldsrrrrrlulurdllulrurrrdlruruslslulrursllsusrldruuulldlursdlddlrusulrrduudud",
+        "won_level": true
+      },
+      {
+        "id": 101,
+        "iterations": 786,
+        "time": 1.724,
+        "solution": "ulldllddurllluuddrrlldrdldrrurllrllddllruuddrrllddrlrdusdruusuldurrrrsussllsrdludrdsdlrdrsurudursls",
+        "won_level": true
+      },
+      {
+        "id": 102,
+        "iterations": 4,
+        "time": 0.009,
+        "solution": "udlullllurlrludddrulrdudldrlurllrllddrluuuddrrulddurluddlsudrulllllrdddldlrddssruruursldrlulldrusdd",
+        "won_level": true
+      },
+      {
+        "id": 103,
+        "iterations": 625,
+        "time": 1.367,
+        "solution": "luldddlduluuduuulrlrlrruurrluuuuddurruruurrluddrdddddusrdlslrdlrddlldrsdddullusllsrrssllrsluurururd",
+        "won_level": true
+      },
+      {
+        "id": 104,
+        "iterations": 115,
+        "time": 0.278,
+        "solution": "lurdrrlllllrrurlllruuuuludrddlrurllddddrlduuudddlusdusurdddsdlssrsrrsrlrsdluulsuddlssrsrdssluulusru",
+        "won_level": true
+      },
+      {
+        "id": 105,
+        "iterations": 3275,
+        "time": 10.003,
+        "solution": "drdddruddulruuurlldluruurudulluddduurdludlsdrrrlrrrlsuussdlllrluudssurrrddudslullurdurlsdrudulrusud",
+        "won_level": false
+      },
+      {
+        "id": 106,
+        "iterations": 3503,
+        "time": 10.001,
+        "solution": "rluullururuudrdlrrlrdurlddrsdllrrrluuldrruudlurludulsdrrllsldludllsddruursulsusrslrsrdsldussssdlsdd",
+        "won_level": false
+      },
+      {
+        "id": 107,
+        "iterations": 4826,
+        "time": 10.001,
+        "solution": "udrdddduuullrlurldlulrdlrrdrldlrdlrlurrrludrdlurdrsrrsldlurdllsdsrsslrsssrurdusdsruururssdlldldddsu",
+        "won_level": false
+      },
+      {
+        "id": 108,
+        "iterations": 5171,
+        "time": 10.001,
+        "solution": "dlruduuuuuurrdruurduuuuddddudurddldrdrlduuddruldlrllssrslrrslusdlruusllddsrrdddssulddluusduslssluul",
+        "won_level": false
+      },
+      {
+        "id": 109,
+        "iterations": 0,
+        "time": 0.002,
+        "solution": "dlruduuuuuurrdruurduuuuddduudurddldrdrlduuddruldlrdrslrlrrluudlslddsudrusussudusslsudlurruddsdulrrl",
+        "won_level": true
+      },
+      {
+        "id": 110,
+        "iterations": 9,
+        "time": 0.022,
+        "solution": "dlldduuudurrrduuulduuuuddudldurduldrduluuuddrdlddrrurdldlursudldsdlllrrlulllsrrdsdrulsrrsuuuslllusu",
+        "won_level": true
+      },
+      {
+        "id": 111,
+        "iterations": 2,
+        "time": 0.005,
+        "solution": "dlldduuudurrrduuulluuulddrdldurduldrduduulddrdlddruudrurdurslusrrlssdlldrlrdsssuudurrsldlluuulrussu",
+        "won_level": true
+      },
+      {
+        "id": 112,
+        "iterations": 47,
+        "time": 0.121,
+        "solution": "rldlullrddruududlrurdrdddduddrudrduulluuddrlldrrrrrddusrdsrlsrrdslludrssdsrdluudldlslrsrldlsudrudur",
+        "won_level": true
+      },
+      {
+        "id": 113,
+        "iterations": 0,
+        "time": 0.004,
+        "solution": "rldlullrddruududlrurdrdddduddrudrduulluuddrlldrrrrssdlurrsdldrudurdsulsldrssrulrsld",
+        "won_level": true
+      },
+      {
+        "id": 114,
+        "iterations": 30,
+        "time": 0.064,
+        "solution": "urdrrllurulrldruulrurluurulrlduurdlrrlulrldudldrudrlsrdudldrrudldrddulrudddsuldssusulrudlsddlussdus",
+        "won_level": true
+      },
+      {
+        "id": 115,
+        "iterations": 0,
+        "time": 0.002,
+        "solution": "urdrrllurulrldruulrurluurllrldulrdlrrluldldudldruddsdslllud",
+        "won_level": true
+      },
+      {
+        "id": 116,
+        "iterations": 7,
+        "time": 0.014,
+        "solution": "uddduuurrurdluurrluurrrurudrrluuulrlruurdddurluuluuullddrdlluddudlrdlsslusssdddrlusrrludsurdrllusls",
+        "won_level": true
+      },
+      {
+        "id": 117,
+        "iterations": 4095,
+        "time": 10.002,
+        "solution": "ldlluduudrlldrdlrrururuldldudludrlluududuruudllurdulrrsrllsusuluuuldsssldrlslsllursullruduurslurusd",
+        "won_level": false
+      },
+      {
+        "id": 118,
+        "iterations": 80,
+        "time": 0.197,
+        "solution": "rruddlurluduuuruduuudruuddudurudluuulrudluuuuuuluruudrlsllrsudlurldssrlsll",
+        "won_level": true
+      },
+      {
+        "id": 119,
+        "iterations": 1669,
+        "time": 10.003,
+        "solution": "urrrdrrlludllulruudrudlurluddurdrlldrlududrllurlrlsdrduuddusdsssusudrlluusldssrldslusslruslduuudlrr",
+        "won_level": false
+      },
+      {
+        "id": 120,
+        "iterations": 1217,
+        "time": 10.003,
+        "solution": "uddulldluuldrlrddlurlddlddudldrdlrrluldlddurruldlulussrllrudrduurlsusdulllslusdlludsrrssrddsuusudus",
+        "won_level": false
+      },
+      {
+        "id": 121,
+        "iterations": 1663,
+        "time": 10.001,
+        "solution": "rlddrdrrrldrlulddlrulddullllllrrdldddulddrururdrulrllrlrddldusrsruuddulrrduuusrurullslulllrlssdrsud",
+        "won_level": false
+      },
+      {
+        "id": 122,
+        "iterations": 1,
+        "time": 0.004,
+        "solution": "rlddrdrruldrlulddlrulddullrlllrrdldddulddrururduuldrsuruududsdrsslrrsuuldlslusdurrdddsrrsduuldsdull",
+        "won_level": true
+      },
+      {
+        "id": 123,
+        "iterations": 5,
+        "time": 0.012,
+        "solution": "rudrruruuudrlulddlruldrullrllrrrdlruuuldddrruruuuludrrrrsldsursudldulsdllrdrddurduuurrddlurrlduslld",
+        "won_level": true
+      },
+      {
+        "id": 124,
+        "iterations": 1,
+        "time": 0.005,
+        "solution": "dudrruruuudrlulddlrulduullrllrrrdlruudrdddruuruuuurulrdslddsurulsrsudlrdldususddddrluulrulrlssrdrdl",
+        "won_level": true
+      },
+      {
+        "id": 125,
+        "iterations": 12,
+        "time": 0.04,
+        "solution": "durrrurududrrrdddluuuruuulrllruldrrurdrddduluruuududdsusrudddlrslsulrrllurulruurudsuusrssrrr",
+        "won_level": true
+      },
+      {
+        "id": 126,
+        "iterations": 3982,
+        "time": 10.002,
+        "solution": "lulrurdudurrdrluuludluuuudduurllluldduuludluluurddduddlurrldsusdsulsdrsllrsulrulluldsrusrdlurrursrl",
+        "won_level": false
+      },
+      {
+        "id": 127,
+        "iterations": 1552,
+        "time": 10.005,
+        "solution": "llrrduruuuududuudulrddddludduudrlrlulldddddddlrrlrdusllsuslrdrdrrrrurruulrldrdslslrrsuuuuulsldrldls",
+        "won_level": false
+      },
+      {
+        "id": 128,
+        "iterations": 576,
+        "time": 1.532,
+        "solution": "duldrrruulududlrrldurdulrrruduluudlurruruurrddullldlruurrdrdldudlldulsddusruddlduuudusludsluusldulu",
+        "won_level": true
+      },
+      {
+        "id": 129,
+        "iterations": 494,
+        "time": 1.49,
+        "solution": "dldruddllrrddlrururduddrruuludurlrudrududuluurrddrrrlddrdrllrurllrullrrrrlluldddldllluuu",
+        "won_level": true
+      },
+      {
+        "id": 130,
+        "iterations": 561,
+        "time": 1.295,
+        "solution": "dldddldlldudrudrddruldrrurrullldulrllrludddlrldddllsdrsrduulllluuuududuudrlluddur",
+        "won_level": true
+      },
+      {
+        "id": 131,
+        "iterations": 1642,
+        "time": 10.005,
+        "solution": "uldrrlddldllduddruullllrrrrllldurdrurdddulrrldrlrrursdduusulrursdsrurussdrurlrruusudurrussludsdllsl",
+        "won_level": false
+      },
+      {
+        "id": 132,
+        "iterations": 3,
+        "time": 0.008,
+        "solution": "slsrrllsluuluuldruuldllrrrrllldurdrurdduulrrddrlrrdulrlsrdslsusrlddrddsldlslulrslrsrlrurddudlsrudrs",
+        "won_level": true
+      },
+      {
+        "id": 133,
+        "iterations": 22,
+        "time": 0.047,
+        "solution": "rrurrlluluuldulddrrlulrdlrdldudludrrrudulrlrlurlrddlssrudrulllrllldddslursddrsrddlulslrdurudlulruus",
+        "won_level": true
+      },
+      {
+        "id": 134,
+        "iterations": 14,
+        "time": 0.033,
+        "solution": "rrudlllrruuldrlddrrludrruuululluulrduurrlrlrlrdlldrlusdrsdrlrsudussldsurrlldddlludddrrrulu",
+        "won_level": true
+      },
+      {
+        "id": 135,
+        "iterations": 2,
+        "time": 0.005,
+        "solution": "rudddudrdudddldrrrurdlulruuurldrdrurluldrruuldllrrlsddsrudsslluluuru",
+        "won_level": true
+      },
+      {
+        "id": 136,
+        "iterations": 3072,
+        "time": 10.001,
+        "solution": "rudrlrrdduddlddullullrdudlldddrudrurdulldlldllddlulssrdlsdulluusrdruulrsrlrulsdlrrrrusdlsslsrurslsd",
+        "won_level": false
+      },
+      {
+        "id": 137,
+        "iterations": 70,
+        "time": 0.155,
+        "solution": "rruullruldrdddrrurluudrrlduuruuuduuddurddlrdldrddlrludrssudusurlslrusdrusdlsludursruurruudlrsrussru",
+        "won_level": true
+      },
+      {
+        "id": 138,
+        "iterations": 98,
+        "time": 0.214,
+        "solution": "druldlrrdrudrdldrrrlrruurluudluurdulrrlllluldurludrssdddsrdurrsrlrsulduuldrrrllllllrdrdruusrudrsrlr",
+        "won_level": true
+      },
+      {
+        "id": 139,
+        "iterations": 5101,
+        "time": 10.002,
+        "solution": "luudrlulrluldlrllrlurrulrllrllrlrrdullllllrrlururldududsddldsusddsuurrddsurluurdduusrssdddlulsrulsu",
+        "won_level": false
+      },
+      {
+        "id": 140,
+        "iterations": 108,
+        "time": 0.26,
+        "solution": "rruruullrudrdrluddrurluruuddllllululrddrulldrlrrdludlsllrduussulrdrdslrrdrsldsuullslslluduruludsdll",
+        "won_level": true
+      },
+      {
+        "id": 141,
+        "iterations": 10,
+        "time": 0.027,
+        "solution": "uudruuldrrdrrrduddduruuruudrlldldlllrrulldlrllrddlrulsrluurdldssdurrudlrllsdrsdsulsrldllduldsdrsddu",
+        "won_level": true
+      },
+      {
+        "id": 142,
+        "iterations": 1602,
+        "time": 4.481,
+        "solution": "rrluuduulrruduurrldldulluurddullludldlluurrlrrdddddddulsurlrrddlrsdsddrduduuurlrrsrulsddsdsdurdsrls",
+        "won_level": true
+      },
+      {
+        "id": 143,
+        "iterations": 378,
+        "time": 0.675,
+        "solution": "rruuuddudduuuduudluuddruududduuuddduuuduuuuduuuudlldsudusdslurlluldulsrlrlrulddsulusssudsrrdsuluddd",
+        "won_level": true
+      },
+      {
+        "id": 144,
+        "iterations": 35,
+        "time": 0.088,
+        "solution": "udrddurudlruddludrrrdllrudddrdurdlddrddrdlduurdurldsuuuluusdudsrslrsruldsussrduursdrususssrsulrrsru",
+        "won_level": true
+      },
+      {
+        "id": 145,
+        "iterations": 2344,
+        "time": 10.001,
+        "solution": "ludrlulrlsllslulslulslslsldlslullrllrrlldldludlurrussllduludrddrlsurldlrddsrdrddududldlsssusslrldsl",
+        "won_level": false
+      },
+      {
+        "id": 146,
+        "iterations": 61,
+        "time": 0.162,
+        "solution": "uudlullrlullllrdudlrrdlrdddrrllddlrrdrurrrdlullrdurudud",
+        "won_level": true
+      },
+      {
+        "id": 147,
+        "iterations": 16,
+        "time": 0.041,
+        "solution": "rllrlurdlruududlludddururlduddrrrluluudullrlrddudrdudrrlsudlsduuldrsrrrrddduuudrdduudlssrdrsdrrusrd",
+        "won_level": true
+      },
+      {
+        "id": 148,
+        "iterations": 38,
+        "time": 0.197,
+        "solution": "rllddlduuruullduddududdlulduluuddluudldlururrruulusslluurlddrdrlurldluldrrurrduulrdrllllddsulrlrssr",
+        "won_level": true
+      },
+      {
+        "id": 149,
+        "iterations": 24,
+        "time": 0.055,
+        "solution": "rdlldruurruurrruldlddrlludluduudlldldllruuuudrrululusrdrssdsdrrlldsdrdsrldlddursdssrdrrduddduuludur",
+        "won_level": true
+      },
+      {
+        "id": 150,
+        "iterations": 19,
+        "time": 0.05,
+        "solution": "uuudsdrusslurddllrllsrslussdd",
+        "won_level": true
+      },
+      {
+        "id": 151,
+        "iterations": 10,
+        "time": 0.025,
+        "solution": "uuudrddldrlrrldldrdlruldudrlururuuuuddlluuuudllulurludrdsslldsddsrudd",
+        "won_level": true
+      },
+      {
+        "id": 152,
+        "iterations": 1,
+        "time": 0.002,
+        "solution": "urdusurlldssdsdllusdsrduusrrsuuslsurrssdsrdldslullrslduld",
+        "won_level": true
+      },
+      {
+        "id": 153,
+        "iterations": 1119,
+        "time": 10.002,
+        "solution": "duduuruudrlduurldllurlrurrlrdrrllllluuduudddldudrlludrslrrdldlusuruslsrluusrsrulrrrluluudsudsdsdlss",
+        "won_level": false
+      },
+      {
+        "id": 154,
+        "iterations": 3278,
+        "time": 10.005,
+        "solution": "rllrrlllllrrrllludrlulrdruddulrlllullrrdluurlluludulduudululrulrrrlurdsrrlrldusdlluslruludsruslulsd",
+        "won_level": false
+      },
+      {
+        "id": 155,
+        "iterations": 5,
+        "time": 0.013,
+        "solution": "rdddrrudlruuuuurudrdlrurrdduddllurululuuuudrddllurlssurrllullslldusrsdslrrlrdslulrllrdlssdlldurrdls",
+        "won_level": true
+      },
+      {
+        "id": 156,
+        "iterations": 34,
+        "time": 0.085,
+        "solution": "dururdlluuudrrrulrluruudulrrlllllddsrlruldlurldldlsdurduslrrldudruuluuuruusruruulrsulrusrrsrdlddrus",
+        "won_level": true
+      },
+      {
+        "id": 157,
+        "iterations": 117,
+        "time": 0.315,
+        "solution": "ldurrllllddruulrllduddrlldlrrdudrdrrdludllrlllrrursdurrdsuulldulddssluusuurrrusdlsrllsuududsllsddul",
+        "won_level": true
+      },
+      {
+        "id": 158,
+        "iterations": 57,
+        "time": 0.187,
+        "solution": "ddluulruludulldlddduurdldddrllldduurrrulrdudlduuuurursdusurrrursssrrddddrlrulslurldsdrrrurldllrsurd",
+        "won_level": true
+      },
+      {
+        "id": 159,
+        "iterations": 14,
+        "time": 0.046,
+        "solution": "uuluulddlddrlldldduludddulllulldlurrrlulurududuudrslusdrslllrrudrsrrruususrrssdldddslulurssudsrurrs",
+        "won_level": true
+      },
+      {
+        "id": 160,
+        "iterations": 165,
+        "time": 0.45,
+        "solution": "ldllrdlrldulldudlldlruuulduurduruulruududdrudrddllrsddsslrlrslssludsr",
+        "won_level": true
+      },
+      {
+        "id": 161,
+        "iterations": 3334,
+        "time": 10.002,
+        "solution": "ruduurlllrrudulurlrluuurrrruurdullurrldudrdrruluuulsrslssuuddrlsdsrsrsduurldlldrrussusduuulrdulrddu",
+        "won_level": false
+      },
+      {
+        "id": 162,
+        "iterations": 3292,
+        "time": 10.003,
+        "solution": "rluuruldddrrlulldruddrudrrudrrurdlrudlrldurdrullllusussrdulrusulrduddddldslsldrlurdudlusulsdrllrlur",
+        "won_level": false
+      },
+      {
+        "id": 163,
+        "iterations": 1,
+        "time": 0.005,
+        "solution": "rluuruldrdrrlullduudsrudrrudrrurllrudlrluulsrulldldrrddusdsurlrrrrudssdsrddssdsuludduudldrdsrdddrds",
+        "won_level": true
+      },
+      {
+        "id": 164,
+        "iterations": 3491,
+        "time": 10.004,
+        "solution": "lrdlrlrudlruruuduuurddudurluduuludududurrlrlldrddususlsuldlrsdssusrusrdldduddldrrsurrudrrlrruusrldd",
+        "won_level": false
+      },
+      {
+        "id": 165,
+        "iterations": 9,
+        "time": 0.026,
+        "solution": "rrdlrruuulruduuluuuudludurdrduududududldrlulldrdlusrdsdldrrrldsuduuuuluudsrsdsuurluldlrudrdrrdrrslu",
+        "won_level": true
+      },
+      {
+        "id": 166,
+        "iterations": 27,
+        "time": 0.092,
+        "solution": "urlulrrullrdddrdlllrrddduldrrrluuruludulrlrllduldrlddrurusrdulusdrsulrdusrslrdsrrldslsrrddsslrlurrs",
+        "won_level": true
+      },
+      {
+        "id": 167,
+        "iterations": 5,
+        "time": 0.013,
+        "solution": "ududlrrullrdddddldlrrdrduldurruuuruludulrlrllddldrulrsrlrdlsurllsddlsullssdddluusulsrsrdsrrdrdrdsru",
+        "won_level": true
+      },
+      {
+        "id": 168,
+        "iterations": 4287,
+        "time": 10.002,
+        "solution": "rlddrllrrlldlluuududrudddlddrlurldrddlddldrududullruldulsurulsrdddllrruslsrullrlrrrddslrdusrdslddrl",
+        "won_level": false
+      },
+      {
+        "id": 169,
+        "iterations": 61,
+        "time": 0.469,
+        "solution": "rudlurudrllrddrrlruruurddlrdurrrudurlruurllldruddlldlddudrddllrrsullul",
+        "won_level": true
+      },
+      {
+        "id": 170,
+        "iterations": 137,
+        "time": 0.405,
+        "solution": "rrdldlurrdrudlrrsrudrrrrllrullrrdldldrlruldlrrrrldlluduuslsrsuuludrlllslddddlrsdsrlsddruldsdrlldusu",
+        "won_level": true
+      },
+      {
+        "id": 171,
+        "iterations": 2070,
+        "time": 5.036,
+        "solution": "rduldrdrurrlulurrlrduuduruulrdrdududlrruudluruurlludusdrurrllurudldsdssrdulusdurulsrrursssrrrrlsluu",
+        "won_level": true
+      },
+      {
+        "id": 172,
+        "iterations": 17,
+        "time": 0.053,
+        "solution": "rdulludllurduluudruddullddddllsudrsrddddurdllludrdrursusdllduuuddrussrsdrussdrddsududslurdruludrrud",
+        "won_level": true
+      },
+      {
+        "id": 173,
+        "iterations": 2248,
+        "time": 10.004,
+        "solution": "ulrduluuluuruuuduuddurdudrdduuuullruurduuddudduuuuuldussdulsuusllsduluurdrruddsudrrlsddslrsrrrdursd",
+        "won_level": false
+      },
+      {
+        "id": 174,
+        "iterations": 5,
+        "time": 0.021,
+        "solution": "llddududrulrldldudrduudududduudldduluddrlrdudduuduurulsudsuduudrlduussrdlrrsrsruuursurluuludrusuldd",
+        "won_level": true
+      },
+      {
+        "id": 175,
+        "iterations": 73,
+        "time": 0.361,
+        "solution": "ruldrrruulllululuurludurrllddldrrlrrrlruurdudddllddlldllsdsssrrssslrsrssdssdullrlrrlsuurrsdsdudlls",
+        "won_level": true
+      },
+      {
+        "id": 176,
+        "iterations": 2688,
+        "time": 10.001,
+        "solution": "ddrrdllruurudruuddrdrdluuuurrrrlludululdrudllluudldudlsrdudrudlrrldruduursdurusrrlssdlrlulsdrrslsur",
+        "won_level": false
+      },
+      {
+        "id": 177,
+        "iterations": 2153,
+        "time": 10.006,
+        "solution": "rdrlldururlldruluurudlrllrluludldrrdrldlldddrlrddldudddslulusrrsdsluurlrsrdrslddudusdurdruuuuldsdsr",
+        "won_level": false
+      },
+      {
+        "id": 178,
+        "iterations": 3,
+        "time": 0.014,
+        "solution": "lurlruurlrludruluurullrllrlulurlrrrdrldllddlrrrdllslusruuudrrsddlssssdlurudlrssuulusrsudsudlrrrudu",
+        "won_level": true
+      },
+      {
+        "id": 179,
+        "iterations": 966,
+        "time": 5.969,
+        "solution": "rurrrrlurdrddddlrrdrdrddddrduuudduddddrddurddddddurssdsduuussurldurrrrdludssududrdddldsdrlddursrldl",
+        "won_level": true
+      },
+      {
+        "id": 180,
+        "iterations": 0,
+        "time": 0.004,
+        "solution": "rurrrrlurdrddddlrrdrdrddddrduuuddurdddrddudddlddduduldslddr",
+        "won_level": true
+      },
+      {
+        "id": 181,
+        "iterations": 45,
+        "time": 0.316,
+        "solution": "uuudrlluudrlulddrdrrruddrudrddlduurdlurdrldlrdulrllsdsrruddsldlulludsslsursdddudsrrusslllsrdrsdrrlu",
+        "won_level": true
+      },
+      {
+        "id": 182,
+        "iterations": 2,
+        "time": 0.006,
+        "solution": "ddudrdlsudrlulsudrssslssrruuuuduuldssrdsllursddusddrlldlu",
+        "won_level": true
+      },
+      {
+        "id": 183,
+        "iterations": 87,
+        "time": 0.559,
+        "solution": "lrlrdlldllddldddrlrldddlddldldlrllllrlrldldrdddururdudsulusdrsrssr",
+        "won_level": true
+      },
+      {
+        "id": 184,
+        "iterations": 3171,
+        "time": 10.001,
+        "solution": "rrdlrdlrrluudududuruuuuuuuulduuduluduluuulluluuddlusuudurddllssusdsrddrlursrrddudulslurllrudrddrdsu",
+        "won_level": false
+      },
+      {
+        "id": 185,
+        "iterations": 5,
+        "time": 0.023,
+        "solution": "rrdlrulrrluurrludrdluuuuuuulruuduluduruuulruuuuddrdssluluulsssrdlsrrsurrsddsdudsudrullusulldrlrlurl",
+        "won_level": true
+      },
+      {
+        "id": 186,
+        "iterations": 841,
+        "time": 10.006,
+        "solution": "rduddruduuururllldurulurlllldrdlrdlurdluuurrlrrrddursussldrslssdssdslduluudrslldudsusdluddrrludddru",
+        "won_level": false
+      },
+      {
+        "id": 187,
+        "iterations": 3436,
+        "time": 10.002,
+        "solution": "ssrluurlrdlduddrrrdlrlrrrdurdruuddrlldruulrdrlrrlusrrudddduluulsusrldsdulddsrrsdlldlrudullsldduldul",
+        "won_level": false
+      },
+      {
+        "id": 188,
+        "iterations": 851,
+        "time": 10.009,
+        "solution": "udldddrdlurrddududdrldrulrdrdduuduulurluuuuururldrlddlrrurlsdrlsdududusdlsuldrruruluuddslddusslrldu",
+        "won_level": false
+      },
+      {
+        "id": 189,
+        "iterations": 850,
+        "time": 10.002,
+        "solution": "rudldudldrudlllururrdldurrrrldrdrddrrldludduudrdlddduurlllsduudllruldurrudslurldrrslrrduuuuudsrrrrs",
+        "won_level": false
+      },
+      {
+        "id": 190,
+        "iterations": 3054,
+        "time": 10.001,
+        "solution": "dddlrlullurdurldulrluddldduuldrurdlrudlurldluddrddllsdsurdrdldddlrudsusuulrdursdurrudsrdurdrsdsslls",
+        "won_level": false
+      },
+      {
+        "id": 191,
+        "iterations": 1149,
+        "time": 10.009,
+        "solution": "luuldulrllrlulrrrrdrdlduldudddldlruldrrrrlrrulrludsrrrusruuldrullrruruslrsllruulssssrldusrdudlsduru",
+        "won_level": false
+      },
+      {
+        "id": 192,
+        "iterations": 0,
+        "time": 0.002,
+        "solution": "luuldulrllrlulrrrrdrdlduldudddldlrulurrrrlrruldludsl",
+        "won_level": true
+      },
+      {
+        "id": 193,
+        "iterations": 153,
+        "time": 1.014,
+        "solution": "uduuldulludrldlllldddddddudlrrlllduddddulddrdrllururlduuusuldlddruudlulsdddlddrlsdrdrlssurrdusdddds",
+        "won_level": true
+      },
+      {
+        "id": 194,
+        "iterations": 298,
+        "time": 1.168,
+        "solution": "lluulurrrlurlrrldllldruuululrlullrurdrlrduruudlrlldsrdrdrlsrrdrssldrslrllrusdluudssudddluusrruursrs",
+        "won_level": true
+      },
+      {
+        "id": 195,
+        "iterations": 760,
+        "time": 2.105,
+        "solution": "rdrrdludrulrdrrlududdlrduurrrllurrllruuddlrduddduuddllllrdrurddlrsrdssrlul",
+        "won_level": true
+      },
+      {
+        "id": 196,
+        "iterations": 1140,
+        "time": 10.005,
+        "solution": "lrrluldruulllrlrlluuuullrllrlluurlllrulrurlrddurululurldulrrsuduurduddrrdululsururldssldrrduddldusl",
+        "won_level": false
+      },
+      {
+        "id": 197,
+        "iterations": 1052,
+        "time": 10.001,
+        "solution": "dudrrdlrdrudurlllllludurldulsrdrrluudllrudrlulldrrdursusduslsdldlrusduuslussulsrurdusdlusrrlrslsrus",
+        "won_level": false
+      },
+      {
+        "id": 198,
+        "iterations": 1582,
+        "time": 9.058,
+        "solution": "rrurrdduulrudlrrurruuuullurrrrrrdrdddruddluurulddruululsrsulsrurudsrdrusuuslusssssruussrludddurllsl",
+        "won_level": true
+      },
+      {
+        "id": 199,
+        "iterations": 0,
+        "time": 0.004,
+        "solution": "rrulrdduulrudlrrurruuuullurrrrrrdrlddrurdluurdlddrdlsrrlssuuldrllsddddrsddsrldsddsdsul",
+        "won_level": true
+      },
+      {
+        "id": 200,
+        "iterations": 900,
+        "time": 10.004,
+        "solution": "rrurrlruuddrldddrudllrrrlrrddldlsludrllduuuuluurrrrllrrurlddsursudssldrlrrlsudsdsudurrludurrulldluu",
+        "won_level": false
+      },
+      {
+        "id": 201,
+        "iterations": 1153,
+        "time": 10.003,
+        "solution": "uurdrdrdlrurdldlldldurrruldruuurdllrulrudldrrurruussruuuruldudrlusdusdsrrsslrlslurddrssdussuldrlsll",
+        "won_level": false
+      },
+      {
+        "id": 202,
+        "iterations": 22,
+        "time": 0.36,
+        "solution": "uurlrdddlrrudllllddddrdduuddululullruldddldrdlrrllddslulurrlurlulsdduurusdsrlrssdlrldulrrdurlssdurr",
+        "won_level": true
+      },
+      {
+        "id": 203,
+        "iterations": 638,
+        "time": 10.003,
+        "solution": "rrlrdurulrrdrlrdurldurruudrurdruldrudrurdldlllrrllluuururssdslrsslldurrrslusdrudrlrllslusdlduldrusl",
+        "won_level": false
+      },
+      {
+        "id": 204,
+        "iterations": 419,
+        "time": 10.003,
+        "solution": "ulluulluddullrusdlllluudurrdullddluruldluldullurulrrlrsrlllslsddlruuludsrdussdrluludrdruudldlrslurs",
+        "won_level": false
+      },
+      {
+        "id": 205,
+        "iterations": 1082,
+        "time": 10.009,
+        "solution": "llddludluuulrdrulluddlrdrlruludrudluuuluuuuudldrudsrsruduudrslssssdrusldlsurldludrsrdldlddsdddsulld",
+        "won_level": false
+      },
+      {
+        "id": 206,
+        "iterations": 1502,
+        "time": 10.004,
+        "solution": "urdudluluuluulllrruruduuurdlrurlrdulurudddsrrruududuusrrludurrssrdlslddrslllusrudrrusuuluddrrusrduu",
+        "won_level": false
+      },
+      {
+        "id": 207,
+        "iterations": 1391,
+        "time": 4.905,
+        "solution": "rdurldlduuurldldudlddulrdddullrddudurrddlurdduddulurrusrdrurusdrdlurrslrurlsruuluusssudsuusususslss",
+        "won_level": true
+      },
+      {
+        "id": 208,
+        "iterations": 4,
+        "time": 0.012,
+        "solution": "dduruldlururldluudlddulldddlllrdduuurrluuurdduddulllddrrdlrluruurrlrsssdsusrrrrdrrrldssurldsusdllls",
+        "won_level": true
+      },
+      {
+        "id": 209,
+        "iterations": 48,
+        "time": 0.055,
+        "solution": "lldldlrrdrdulrrddrdlrdudrdllrlrlulluudlruuldlrdlurrdrursuuduldsrsrludssur",
+        "won_level": true
+      },
+      {
+        "id": 210,
+        "iterations": 1553,
+        "time": 10.002,
+        "solution": "rlluurrddddrlduuldllrrurldddudrdrrrdldllrrrlurlrdlsuuudrssurudrsdldrdlsduuudsusldlusluuurrussslrssl",
+        "won_level": false
+      },
+      {
+        "id": 211,
+        "iterations": 6,
+        "time": 0.163,
+        "solution": "rddulruddddrddlrdrrdrrurldddldrdrrudldllrrrlurlrdllldduluddssrsdsslslslssudurdsussursrsrlduuusrrdrr",
+        "won_level": true
+      },
+      {
+        "id": 212,
+        "iterations": 3860,
+        "time": 10.002,
+        "solution": "llrdudrurlddrudddlrurlddlldluuldduludrruddlurluldusldddsldsdrrduuldsrlluddldsuudllulsssdulssdsrrlll",
+        "won_level": false
+      },
+      {
+        "id": 213,
+        "iterations": 1294,
+        "time": 10.003,
+        "solution": "ddurrrullrldldudrrlulldlddurldrlddrllrrrdluurrudulrrsdluudlusslrduusuruusrrdlrrrrusdlsldsrdsluusdsr",
+        "won_level": false
+      },
+      {
+        "id": 214,
+        "iterations": 3,
+        "time": 0.008,
+        "solution": "rdururulurldldulrrlulldldllrlurlldlllrlrdldurruduldsdsdrdudsusdusdduuuddrusulrrllulsussrurddulsdlsr",
+        "won_level": true
+      },
+      {
+        "id": 215,
+        "iterations": 3526,
+        "time": 10.001,
+        "solution": "lruuuldurldduuuuduuduuullududdluuuddluuulullduludlllusulllsrddrssuuurrsdslslsusurduurrrluduudulslls",
+        "won_level": false
+      },
+      {
+        "id": 216,
+        "iterations": 3004,
+        "time": 10.001,
+        "solution": "lrrlrduruudluuulrddludlrdlrdludururrrrlududurduulrudulllrsdrluuudllduulddrlruuullrdurdlrusluruluusr",
+        "won_level": false
+      },
+      {
+        "id": 217,
+        "iterations": 3601,
+        "time": 10.002,
+        "solution": "rrrlllslllllullusrlrrrlrrluurlurlulrrlllrluursrrddurulrsruuurldurdlluurrudsddlrrrsrlrulsrdddllddrll",
+        "won_level": false
+      },
+      {
+        "id": 218,
+        "iterations": 204,
+        "time": 0.533,
+        "solution": "lrrludrddrldudldlldrrddlrddrrduudruuuruurududrluruurrulsrlssuudlddlrluudslsdusrlrdlusddlddrrrrsrluu",
+        "won_level": true
+      },
+      {
+        "id": 219,
+        "iterations": 1682,
+        "time": 5.992,
+        "solution": "drllrdrrrrddruurlruuudddlldluuuuluuluurlludlurduuludurrdsssrsssrdruuusrddurrddddsussuussdudususdsrr",
+        "won_level": true
+      },
+      {
+        "id": 220,
+        "iterations": 806,
+        "time": 2.875,
+        "solution": "ddrrlddlrruruuruuululrrudlrrurudlrrdddrddlrdrrrlrddrdruddrrusluuuslruruulrudulsusslrsusss",
+        "won_level": true
+      },
+      {
+        "id": 221,
+        "iterations": 72,
+        "time": 0.192,
+        "solution": "urullllrdrdrrrlrllrlduduldurdlrlrrurrldrurdluuduuuldlssrsdsldurrrsudlsdudsulrruldurrrllrudsdsduudrr",
+        "won_level": true
+      },
+      {
+        "id": 222,
+        "iterations": 5,
+        "time": 0.015,
+        "solution": "udullulrdrdrrrldllrlduduldurdlrlrrurruururdrruduuusddlsrrdllsdrdlsuuuuddsussdrullsrdsrssrdsdlrrldss",
+        "won_level": true
+      },
+      {
+        "id": 223,
+        "iterations": 1511,
+        "time": 5.426,
+        "solution": "lulduddrldurrlldrlrurllludrrlddldururddrdruduudrlurrlsdddlusrsrusrsruuurulrudduursrrlludulululuusrs",
+        "won_level": true
+      },
+      {
+        "id": 224,
+        "iterations": 2712,
+        "time": 10.003,
+        "solution": "lrrdurludurdrrdlllldduurrduudluuulrrddlrdudludddulssrudsdddddruurrllslsrsrsuurrrudlslddrrudusllsrdu",
+        "won_level": false
+      },
+      {
+        "id": 225,
+        "iterations": 630,
+        "time": 2.575,
+        "solution": "lururrurrrdrdudlulrrudluullurddrddulrlrdurrururrddrdlrslsurururlssdddlsrlusuludrdrsrlsuuuulrrdrdlsr",
+        "won_level": true
+      },
+      {
+        "id": 226,
+        "iterations": 165,
+        "time": 0.319,
+        "solution": "rlrulrulrlruuuurlruudrurduldrdlldrurruuuludrlldruduuslllsslsluusuullslrurddurrrldlsrurrsdrrdusudurr",
+        "won_level": true
+      },
+      {
+        "id": 227,
+        "iterations": 1,
+        "time": 0.004,
+        "solution": "rlrulrulrlruuuurlruudrurduldddrldrurruuuludrlldrudurddddrrurulldsurssdrlsuuldudlrlsrlrdrsrulrdrlrrr",
+        "won_level": true
+      },
+      {
+        "id": 228,
+        "iterations": 215,
+        "time": 0.636,
+        "solution": "rrrrurluulddrddlurrdrurulddluududruuldduullduludlddsldududdlurrlldruuslulsdulrsllssrsudududlulrudsu",
+        "won_level": true
+      },
+      {
+        "id": 229,
+        "iterations": 222,
+        "time": 0.495,
+        "solution": "rldrdrddldldrrrdrrdrrdrlulrdulduuuuuurrulrdullulrlsldrdrdurulrddrrdlldldrllrluruslrludusddsuududsdu",
+        "won_level": true
+      },
+      {
+        "id": 230,
+        "iterations": 182,
+        "time": 0.537,
+        "solution": "rrrruurllrulldlllrdrlrluurlrurdudulldrluddrlrulldlsdruusslulududsddsdldusulddsusudrdulslrlluddlrsdl",
+        "won_level": true
+      },
+      {
+        "id": 231,
+        "iterations": 4501,
+        "time": 10.002,
+        "solution": "rldurdlruldduduldldlllldldlurrrdddlrrururddduduulusuddlrudruulrrulrrrsusrrddsruslurdssldsrddsdusudu",
+        "won_level": false
+      },
+      {
+        "id": 232,
+        "iterations": 1062,
+        "time": 10.007,
+        "solution": "uldduulurululluludulsddsdldlslrrdsuudsdurulruururrululrddrdrrlulrssusrllrrddrlussdsrsduuudddrudruss",
+        "won_level": false
+      },
+      {
+        "id": 233,
+        "iterations": 0,
+        "time": 0.002,
+        "solution": "urdduulurululluluduurddldldlrlrrduuudldurulluururrd",
+        "won_level": true
+      },
+      {
+        "id": 234,
+        "iterations": 3432,
+        "time": 10.001,
+        "solution": "ldrllrurrllrlllrldlduldrrluuddrlrrlldudluldlududrddsulludulddllllddlrddllllusulddrrdrulddsuudrlurus",
+        "won_level": false
+      },
+      {
+        "id": 235,
+        "iterations": 4,
+        "time": 0.012,
+        "solution": "udrrlrurrrurlrlrldlduldrrlludddlrrdldudluudlududrrdldursddrdls",
+        "won_level": true
+      },
+      {
+        "id": 236,
+        "iterations": 2374,
+        "time": 4.58,
+        "solution": "ldddrrddrurrdullddududdrdulrddldrlrrudldduldudldudsrsruudrldlrlrsuuslrrsuuduurrlrrrudluurdrssullrsu",
+        "won_level": true
+      },
+      {
+        "id": 237,
+        "iterations": 3271,
+        "time": 6.517,
+        "solution": "rrrllullddddddrrrldllurluullrrdrrrdullddldrllullrdddrdurdruldrrlluudulluudlusulrurudrduursrsdrsusus",
+        "won_level": true
+      },
+      {
+        "id": 238,
+        "iterations": 4716,
+        "time": 10.002,
+        "solution": "dlldlrlrrrrlrrurrllrrududdrlulrrdddrrludldulurrdrdrudrdlrddsrdldlssdudldldslllrrddddsursrlusdldlldu",
+        "won_level": false
+      },
+      {
+        "id": 239,
+        "iterations": 4696,
+        "time": 10.001,
+        "solution": "dudluuddllldrrudluuurdduududuuudddllddddrdduuuddldlusrulrududsldddurddrsususurdudssruslurlsllrdlddd",
+        "won_level": false
+      },
+      {
+        "id": 240,
+        "iterations": 0,
+        "time": 0.002,
+        "solution": "dudluuddllldrrudluuurdduududluudddllddldrdduuuddldududldudr",
+        "won_level": true
+      },
+      {
+        "id": 241,
+        "iterations": 1743,
+        "time": 10.003,
+        "solution": "ulrluurrdrlrlrrddludrulurdllrlurlruudrurdrldrudlldrlllrdldsllrdlulldulrlsdslluldllsrdluddsdsssruuur",
+        "won_level": false
+      },
+      {
+        "id": 242,
+        "iterations": 101,
+        "time": 0.208,
+        "solution": "rlulddrluddldlllddururlllrrdrddruudrdddldddrlddrldsudduuslurslrrssrlulsudrdlddrrldslrlsdldrudurlsls",
+        "won_level": true
+      },
+      {
+        "id": 243,
+        "iterations": 0,
+        "time": 0.001,
+        "solution": "rlulddrluddldlllddururldlrrlrddruudrdddldddrlddrlddluurrsdrduuldsdddddsdsusrrsrslsslsslsuururdrldrr",
+        "won_level": true
+      },
+      {
+        "id": 244,
+        "iterations": 2940,
+        "time": 10.001,
+        "solution": "drldudlrlldlduuldldduuulldrdllulrluldlrdulldlrduldddussdruuduldluulurllldlrrdudsddsdulrlrslsrldrlsd",
+        "won_level": false
+      },
+      {
+        "id": 245,
+        "iterations": 1236,
+        "time": 2.998,
+        "solution": "udlludduuuuudullurruluudullululrlrlrlrllullldddddddddrurduuudllsuurdrddlsrrrrdurdlruurdsrllsludslsr",
+        "won_level": true
+      },
+      {
+        "id": 246,
+        "iterations": 3407,
+        "time": 10.002,
+        "solution": "rdrdduddurlrudddrrlddddruulldrrluululrruldrdddruurllulrlrllssldusrdrulllldusrddsuurrudlrdlluuuduusu",
+        "won_level": false
+      },
+      {
+        "id": 247,
+        "iterations": 3962,
+        "time": 10.001,
+        "solution": "rlddrluddurldddlldrdddrldrddurrrrddrduddrdrruddurrudsslrsrusddllldsuurrusssruduldllrldlrruusrurssdu",
+        "won_level": false
+      },
+      {
+        "id": 248,
+        "iterations": 20,
+        "time": 0.046,
+        "solution": "llrlulldddrdrddululrduruurdrrrrrudllrdldrrlddududlsrdulrdurd",
+        "won_level": true
+      },
+      {
+        "id": 249,
+        "iterations": 1598,
+        "time": 3.427,
+        "solution": "rrluuurudldrddurlrldudlrrdululrllrldrrdrlrddrudrududrrrdrurusllrdssrudulsdurdslrursllullsuludrld",
+        "won_level": true
+      },
+      {
+        "id": 250,
+        "iterations": 0,
+        "time": 0.001,
+        "solution": "srdsuruudsulslrrlu",
+        "won_level": true
+      },
+      {
+        "id": 251,
+        "iterations": 3592,
+        "time": 10.001,
+        "solution": "rurrluluduuuluulrdududluuurrrlrrlldrlulrrlulurluuddddrlrrsllsrdrudddudrluluduudullrdrllsulurdsudlur",
+        "won_level": false
+      },
+      {
+        "id": 252,
+        "iterations": 1548,
+        "time": 10.002,
+        "solution": "uldrddrulrrurudruullldrullllrurllrrllldrrlllllulrrdduudddlruddddrsusdssurdurldudusldudssrrdsrdsddlu",
+        "won_level": false
+      },
+      {
+        "id": 253,
+        "iterations": 195,
+        "time": 0.692,
+        "solution": "luuulururddurrrulurdlrlddlrulddddllddllrrrldrdrulludurdusuurursrrsdddssrlldrlrdddluduuulsllrdssduls",
+        "won_level": true
+      },
+      {
+        "id": 254,
+        "iterations": 4237,
+        "time": 10.002,
+        "solution": "ddrruruuluddddlldllurulllruuurddldludluuddrruuulldrsddlsdrurldddlrrsulslurrlsrrsudrrluddrrrlsduudsl",
+        "won_level": false
+      },
+      {
+        "id": 255,
+        "iterations": 1102,
+        "time": 10.004,
+        "solution": "llldrdlsudrdllulurluruuulluuludluldrududrdlldurrrdrdrursdsuslrldruslsldduldrsssrurdulrrsuslrslrrrur",
+        "won_level": false
+      },
+      {
+        "id": 256,
+        "iterations": 4284,
+        "time": 10.002,
+        "solution": "luuluddlurllrrrrrudurudlluudlrullullluudlrlldllrudusuluruldlrsluuudsuudslllslrslrdluddssudrrdldslul",
+        "won_level": false
+      },
+      {
+        "id": 257,
+        "iterations": 0,
+        "time": 0.003,
+        "solution": "luuluddlurdlrrrrrudurudllludlrullullluudlrlldllrrdsus",
+        "won_level": true
+      },
+      {
+        "id": 258,
+        "iterations": 7,
+        "time": 0.081,
+        "solution": "dlldrurrldruulllrlllrrrldrdruludlddlludrlulrlrullulsdlssllrudrulssdrddldrrsrudsdrdllssuurldrsdlusds",
+        "won_level": true
+      },
+      {
+        "id": 259,
+        "iterations": 0,
+        "time": 0.002,
+        "solution": "dlldrurrldruuldlrlllrrrldrdruludlddlludrlulrlrurlulssuldsrullldrrulslsddldsrd",
+        "won_level": true
+      }
+    ]
+  },
+  {
+    "levelSet": "full_biy_LEVELS",
+    "levels": [
+      {
+        "id": 1,
+        "iterations": 73,
+        "time": 0.199,
+        "solution": "dlulddldrruulrddldrdulldrdrdrululdudlluudldldlrdlludrlurrsuddsrlrsulrluurlslruluuusdrdudrulrdlurdru",
+        "won_level": true
+      },
+      {
+        "id": 4,
+        "iterations": 0,
+        "time": 0.005,
+        "solution": "dlulddldrruulrddldrdulldrdrdrululdudlluudldldlrdrlsrsusrdlusrdu",
+        "won_level": true
+      },
+      {
+        "id": 6,
+        "iterations": 1025,
+        "time": 1.834,
+        "solution": "ullllullldlrluurlrlruldurrrdulduudrlruurdrrrdddrlusuldrurudlsuuslddssrsurdrlrldlsrsdrlsurrrrurssdrl",
+        "won_level": true
+      },
+      {
+        "id": 8,
+        "iterations": 2,
+        "time": 0.006,
+        "solution": "dlddllrdrdldddddluuulurlduuudlrddrrlururludrduldldrluruurdsruuluulrdrsslsrrudlsurddururusuurdddrluu",
+        "won_level": true
+      },
+      {
+        "id": 10,
+        "iterations": 0,
+        "time": 0.004,
+        "solution": "dlddllrdrdldddddluuulurluuuudlrddrrlururrudrduldldlrsdusdrrludlsuuddllsuuddrdrdussussrslr",
+        "won_level": true
+      },
+      {
+        "id": 12,
+        "iterations": 0,
+        "time": 0.001,
+        "solution": "surrslddrruldsldrd",
+        "won_level": true
+      },
+      {
+        "id": 15,
+        "iterations": 3639,
+        "time": 10.002,
+        "solution": "dduuudlurddudurrulurrluruudlrudddlurlurrduurldrlddsllslulululudldrdlurullrsurdlrrurldrldlsdussddull",
+        "won_level": false
+      },
+      {
+        "id": 19,
+        "iterations": 23,
+        "time": 0.077,
+        "solution": "dldddldulddlruuludrulurrllulrulrrrurlurrlduulrulrudrrudlludllllrdldldlrdudulrsuldrrururdddrdslrrlld",
+        "won_level": true
+      },
+      {
+        "id": 20,
+        "iterations": 120,
+        "time": 0.211,
+        "solution": "rruuududdudduululududuluuddluudluududldddddddlduddlrdrsdusludsluldullurllusuusluururrssuuusldudrdrd",
+        "won_level": true
+      },
+      {
+        "id": 21,
+        "iterations": 2566,
+        "time": 5.22,
+        "solution": "rldrdurlrddurrldudlldduudddrlrrrluulrdluurdduudulrsrrdrrsrdsrsusrlsrsrdudrldssusudldsdulldlslludssu",
+        "won_level": true
+      },
+      {
+        "id": 22,
+        "iterations": 697,
+        "time": 2.232,
+        "solution": "luduudrldurrulrlulrrllrlrllllrrdurrrrrrludlurdrruddsruuduuuudddlssrusrdllrsduuluuddlllulrsdldlluslu",
+        "won_level": true
+      },
+      {
+        "id": 24,
+        "iterations": 3830,
+        "time": 7.288,
+        "solution": "dlddldduduldulldrulrrullurludrlrrrlrrruullllrluuurrsllsrslsrddllsllsrsduddrrrdrlsdsdssdrldrdluuurru",
+        "won_level": true
+      },
+      {
+        "id": 25,
+        "iterations": 712,
+        "time": 2.488,
+        "solution": "llrrrdrrdrldurrdrdlrdullrurdudlurrlrdlddldlddruddulususludsrsdsslldlullusslrsludrsdldulrrudlulludlu",
+        "won_level": true
+      },
+      {
+        "id": 26,
+        "iterations": 0,
+        "time": 0.002,
+        "solution": "llrrdrrrdrldurrdrdlrdullrurdudlurrlrdlddldlddrudduddruls",
+        "won_level": true
+      },
+      {
+        "id": 27,
+        "iterations": 1234,
+        "time": 4.187,
+        "solution": "drlluulluurlrlrlllrddrrdlddrluddduudrururdddduullrrdrduslsdssslluluslurdluuddldsdurlrurdlsruusdurdl",
+        "won_level": true
+      },
+      {
+        "id": 29,
+        "iterations": 0,
+        "time": 0.002,
+        "solution": "drlluulluurlrlrlllrddrrdlddrluddduudrururdddduullrd",
+        "won_level": true
+      },
+      {
+        "id": 30,
+        "iterations": 3,
+        "time": 0.008,
+        "solution": "rllrlllrurulrllurluurdrlluullldddrdudrdrdrdrurdrruulduldulldrdsdlssudlurrluldlssldsdsrlsludsduddlrr",
+        "won_level": true
+      },
+      {
+        "id": 31,
+        "iterations": 296,
+        "time": 0.91,
+        "solution": "ddulududududuudduurrduduldududddddrudrdulddruuuudlruludrrdsrlllssruudur",
+        "won_level": true
+      },
+      {
+        "id": 32,
+        "iterations": 3,
+        "time": 0.008,
+        "solution": "rdrldlrlduldddrdllludllrlldlrlrurdldulduddrrurudlllssurlludldldrllursdlululrdurusuudssrluludrrddlsl",
+        "won_level": true
+      },
+      {
+        "id": 33,
+        "iterations": 29,
+        "time": 0.14,
+        "solution": "rurdrrdlddldrdrlrdlrrdlrdrrlrrulddlruldrdlulrudllddllrlssullduruldldsuludsrulduluurlrurdlrdurssdlls",
+        "won_level": true
+      },
+      {
+        "id": 34,
+        "iterations": 5,
+        "time": 0.01,
+        "solution": "llurddrddrluudurdllldudrlulrduudlrrrrrurlurrldudllsldrslldlruusslllruussslllslrdururslrslullddlldul",
+        "won_level": true
+      },
+      {
+        "id": 35,
+        "iterations": 5,
+        "time": 0.012,
+        "solution": "lrurldrrdrduuduruldududdlulrluddlrrrrrrrlurrldullldrrudrrrldrduslrrrurlssududllsrsldrsuuuruululrlsl",
+        "won_level": true
+      },
+      {
+        "id": 36,
+        "iterations": 27,
+        "time": 0.102,
+        "solution": "ururlurrrrululruulldlrdlllululldulduuldlldddddudulludurrsrsrdldrdrlr",
+        "won_level": true
+      },
+      {
+        "id": 37,
+        "iterations": 3012,
+        "time": 10.003,
+        "solution": "rdudduuuuudullurudluuullldrdlldlrrlluuudruuuulllrulrdsrsduluulluurlssslrslrrlsslrrudlsdsuslsulrlllu",
+        "won_level": false
+      },
+      {
+        "id": 38,
+        "iterations": 0,
+        "time": 0.003,
+        "solution": "rdudduuuuudullurudluuullldrdlldlrrlluuudruuuulllrussddusuddd",
+        "won_level": true
+      },
+      {
+        "id": 39,
+        "iterations": 1265,
+        "time": 4.57,
+        "solution": "rddddlulrrdrldldludrldddldlluruddrlrurrdlrdrudlurddsddsssuslrsrusrudssuluuuluuurlrussuddrrdlruuuddu",
+        "won_level": true
+      },
+      {
+        "id": 40,
+        "iterations": 3502,
+        "time": 10.001,
+        "solution": "rrlldlrldrdrrrdlldrlduddlllrudluluurlrlrlulldrdllrddsusllusrsrdlsuulsssrrrrsdrrdsdslusduusslrdrlsud",
+        "won_level": false
+      },
+      {
+        "id": 41,
+        "iterations": 2102,
+        "time": 10.001,
+        "solution": "duuluuudluulllulrllurdurdrldurduurdldruuudddllrudusuuudluuuldsurruudussrrldlllsuudlrllulurlrussrdss",
+        "won_level": false
+      },
+      {
+        "id": 42,
+        "iterations": 4869,
+        "time": 10.002,
+        "solution": "dudrdrlldullrldrrdlrrrdldudurldrdrdlluurudllrddrlduluurdrurdllssdddrlsrlrrrsrusssrrslslruursrrsdldr",
+        "won_level": false
+      },
+      {
+        "id": 43,
+        "iterations": 805,
+        "time": 2.521,
+        "solution": "lduulldullurrdddddudruulluddurdlurrlululldlrrrrdrruulssdulddldlrdslllrrurlulrdluslsuuuurdrruussdddd",
+        "won_level": true
+      },
+      {
+        "id": 44,
+        "iterations": 0,
+        "time": 0.006,
+        "solution": "lduulldullurrdddududruulluddurdlrrrlululldlrrrrdrrrdduurursru",
+        "won_level": true
+      },
+      {
+        "id": 45,
+        "iterations": 1619,
+        "time": 8.268,
+        "solution": "luuuddduuldluuduludlllulrlrrddlldlddrurruldluulduursrrususdrrsuuddlsrusrldrsudrrsslrrrrrrduudslrrsr",
+        "won_level": true
+      },
+      {
+        "id": 46,
+        "iterations": 4,
+        "time": 0.02,
+        "solution": "duurddduudduuudddddddrddrlrududdlddduuuuudduuudduussusssrudlllrrssrussld",
+        "won_level": true
+      },
+      {
+        "id": 47,
+        "iterations": 19,
+        "time": 0.041,
+        "solution": "duurdrdruldllddllrlrlrlluduurllrlduuldruurrulrlrdrsluruldruuddsrl",
+        "won_level": true
+      },
+      {
+        "id": 48,
+        "iterations": 1,
+        "time": 0.002,
+        "solution": "slusulrsursdddrduldduuudsrssssldrsdurrddrddudsrlrdulrldsr",
+        "won_level": true
+      },
+      {
+        "id": 49,
+        "iterations": 1,
+        "time": 0.006,
+        "solution": "ddlrdrlldlllluurusrs",
+        "won_level": true
+      },
+      {
+        "id": 50,
+        "iterations": 48,
+        "time": 0.13,
+        "solution": "drrullluduulduudddrduurulurrdllludlrlrddruulldrrduluuddldlurllulurururlsslulrusurrldsdlssuludrssrdd",
+        "won_level": true
+      },
+      {
+        "id": 51,
+        "iterations": 1917,
+        "time": 7.244,
+        "solution": "rlrudlurldruusdrudrruruududdusllrudlllsrurusrdduruursllrususrdrlddlllsursruududsrssusdrlrddrluldlrd",
+        "won_level": true
+      },
+      {
+        "id": 52,
+        "iterations": 19,
+        "time": 0.081,
+        "solution": "rluudlduuuururddududuruurudrudllrrdlullldllldldrllulluslusldldssdlddrlurlrldlrsslldrsrldlruldrddrsu",
+        "won_level": true
+      },
+      {
+        "id": 53,
+        "iterations": 2220,
+        "time": 4.987,
+        "solution": "uuuurddruluuddurrlrlrrurlluuudduluulluluddlurldlrrldrrrllsuuluurdrldsssrsdlrdddsdrslssddruldulurdru",
+        "won_level": true
+      },
+      {
+        "id": 54,
+        "iterations": 114,
+        "time": 0.332,
+        "solution": "dulrdrrurdululdllllrlrdluurrrlrlulrddrllldduuddlllllldruudlrlrulusduuurudsuuusudlrululuuurrllruudsl",
+        "won_level": true
+      },
+      {
+        "id": 55,
+        "iterations": 30,
+        "time": 0.096,
+        "solution": "durrdurrrdrlurllrurdluddulrrrlrdurldldullrddddluulrslsuuldrrsrsdssurrllssusrrssurrlrslddsulurrrrdru",
+        "won_level": true
+      },
+      {
+        "id": 56,
+        "iterations": 5,
+        "time": 0.012,
+        "solution": "durudurrrrruurllrurdldldurrrrlrdullrldullrdrddluurssrrrrursddrsdursdsdsusdddrusulrsruuurrlsllrslddd",
+        "won_level": true
+      },
+      {
+        "id": 57,
+        "iterations": 2861,
+        "time": 10.001,
+        "solution": "dlrlrludrldlruludurrrlrlddlldlullurrrdurrluuudurlllduullrsudrlssuurusrsddrdrllrulluuruurlsudlllluld",
+        "won_level": false
+      },
+      {
+        "id": 58,
+        "iterations": 3,
+        "time": 0.008,
+        "solution": "dlrlrlrdrldlruludurrrldlddlrdlullurdrdulrruuururllrdddddrulusussrrruruddurudrsdulrrsudlurslsuddrrul",
+        "won_level": true
+      },
+      {
+        "id": 59,
+        "iterations": 3842,
+        "time": 10.001,
+        "solution": "lddrludldrrlulrdddddlullldlrdldllrruruddrddduruulddsusussrsdudsrsrduluuurssluruddsssdulrdldudullrus",
+        "won_level": false
+      },
+      {
+        "id": 60,
+        "iterations": 50,
+        "time": 0.149,
+        "solution": "luuuluudulllldduuduudduddddlddudldulddlddddrdruuursrusduddrusddlruruuurdlrlddudsuuuudrrlsldlduldddd",
+        "won_level": true
+      },
+      {
+        "id": 61,
+        "iterations": 8,
+        "time": 0.021,
+        "solution": "lulrlulduudrldduurudddudrddlddudlduuldluddlrdrurudsrdrusludsdrudsrrdsldlsussddrddsrsurldrsluldssllr",
+        "won_level": true
+      },
+      {
+        "id": 62,
+        "iterations": 5,
+        "time": 0.022,
+        "solution": "lullruldrudrldduuuudldldrddruduuuduuldllddlrlruruurdrrlsrdsudddrlrrdslrullrurdd",
+        "won_level": true
+      },
+      {
+        "id": 63,
+        "iterations": 1090,
+        "time": 2.975,
+        "solution": "rulllrruudllrlrdrrdrlllslllrsrlrdrrrurulrllrlrrlllddsdlrdrsdruruusludsdursusrdrsluulrrrlsruusuuludd",
+        "won_level": true
+      },
+      {
+        "id": 64,
+        "iterations": 278,
+        "time": 0.788,
+        "solution": "lrrurrlllrrllduuulrlruulluddddllllrlldlllllllluuuruuurulurdlssdsluruuudssldsrlurldrluuulullduudrusl",
+        "won_level": true
+      },
+      {
+        "id": 65,
+        "iterations": 21,
+        "time": 0.068,
+        "solution": "lrdrrdurlllrlddldluldurrludddrlllrluddlddlrurudllrruurdurrlrluuuldrddsrrrududdsslslsrslususdulldusr",
+        "won_level": true
+      },
+      {
+        "id": 66,
+        "iterations": 2274,
+        "time": 10.001,
+        "solution": "uldulurdudllrdlurlurlrrlrrlldddrdrlrdrdulrddduddudsudursdddssdurdrlurudlsddsudulrudsssdlsrusduduurl",
+        "won_level": false
+      },
+      {
+        "id": 67,
+        "iterations": 2628,
+        "time": 7.037,
+        "solution": "rdudrrlrldudrddrddrdlllrlllldluulrldullluddllddrruudrsrlrdsuuururlulsluldlsrdlluslldrdullsrdldlurll",
+        "won_level": true
+      },
+      {
+        "id": 68,
+        "iterations": 2037,
+        "time": 5.594,
+        "solution": "rddrulrddrlllrlrlllulddrrudulddudlrrlrldlluludrdursrusdldsdrurllrdrrrllrruruuuuduuulsllldddlsurudls",
+        "won_level": true
+      },
+      {
+        "id": 69,
+        "iterations": 207,
+        "time": 0.512,
+        "solution": "rdulduuluddlllrluuululuurrluddddddrdldudulrlduurdduusllruldrrrdlsrlrddllurddrsrslsrdldrrdrurulldlrl",
+        "won_level": true
+      },
+      {
+        "id": 70,
+        "iterations": 3529,
+        "time": 10.003,
+        "solution": "rdullullulduduurdruuudldlurlduuudullduulrduudrululsrlursllududrluluuslsuluurlsurlrdrsrsuddurrrssuul",
+        "won_level": false
+      },
+      {
+        "id": 71,
+        "iterations": 122,
+        "time": 0.317,
+        "solution": "uruduuldlulurdlddludrdddldduurldrulrlddlrlduuduulrlluulllrlrrdduurudluddlllluulrrdsddsldrllsddldrsd",
+        "won_level": true
+      },
+      {
+        "id": 72,
+        "iterations": 474,
+        "time": 1.425,
+        "solution": "lrldllluddrlrulduddldrlululddrdudrulrdddrduruullururdruslr",
+        "won_level": true
+      },
+      {
+        "id": 73,
+        "iterations": 747,
+        "time": 2.246,
+        "solution": "uddrdruudrlrrrrudddurrlldulurluddurrruurrdulrdrrdluudrrsddlrruldrlllulrruurudrrddusdsddsludrlrurlud",
+        "won_level": true
+      },
+      {
+        "id": 74,
+        "iterations": 0,
+        "time": 0.004,
+        "solution": "uddrdruddrlrrrrudddurrlldulurluddurrruurrlulrdrrdluuddsuldldrdrudrrllrdrsrldssllsulsssr",
+        "won_level": true
+      },
+      {
+        "id": 75,
+        "iterations": 1388,
+        "time": 4.353,
+        "solution": "rrlldrdulrurrdrdllldrddulllddluurururdrlldrulddrlulllruluuluudsrsuudssrslusrsslusrdrrrrlurusrudlsur",
+        "won_level": true
+      },
+      {
+        "id": 76,
+        "iterations": 599,
+        "time": 2.02,
+        "solution": "ruuddludduludlllududlrlrrdllururdddlduuuuudddurlluuuruuurrsusldsususlllddrdlsruldsdrrrdsdsrlssdddsl",
+        "won_level": true
+      },
+      {
+        "id": 77,
+        "iterations": 219,
+        "time": 0.545,
+        "solution": "rrlrlrulldulrulldlullrdllrlllrdldldrllrdrlllrrlldllululrlssuullrddrdusurddururrlsrusulsdsrurlrlrrlr",
+        "won_level": true
+      },
+      {
+        "id": 78,
+        "iterations": 0,
+        "time": 0.002,
+        "solution": "rrlrlrulldulrulldlullrdllrlllrdldldrllrdrlllrrlldldlldduslluduuu",
+        "won_level": true
+      },
+      {
+        "id": 79,
+        "iterations": 4242,
+        "time": 10.001,
+        "solution": "lldrllrldldrlrdlllddddrldddddlrldlldldrdldruddddudrduslsuddlulldslrllrulrudrdsudssruusdlslsldddssru",
+        "won_level": false
+      },
+      {
+        "id": 80,
+        "iterations": 0,
+        "time": 0.002,
+        "solution": "lldrllrldldrlrdlllddddrldudddlrldlldldrdldruddddudr",
+        "won_level": true
+      },
+      {
+        "id": 81,
+        "iterations": 3264,
+        "time": 10.001,
+        "solution": "rlldrddllddrddrlrurrdlrldrrludrlluluuduulludlrlddllsrdlddusuulllrudlsrsussdrsrurrurusllduusrdddldrd",
+        "won_level": false
+      },
+      {
+        "id": 82,
+        "iterations": 1536,
+        "time": 10.004,
+        "solution": "urudulurudrullddrldduddurdurlurllrddrdddlurddluluduudldrlrddsssddusurlddudsrsudldurssuduurrrddrludd",
+        "won_level": false
+      },
+      {
+        "id": 83,
+        "iterations": 2864,
+        "time": 10.004,
+        "solution": "duldudlrddluddudurduulrllddulrululldlulrlrdulrlurlsrrsdsrddssurlsssrsluldrrsldslsrldslrdlsdddruurul",
+        "won_level": false
+      },
+      {
+        "id": 84,
+        "iterations": 6,
+        "time": 0.035,
+        "solution": "ddlddulrddruddddurdruddllldudrudullululrlrdulrluursuursdslslddsdusslslldl",
+        "won_level": true
+      },
+      {
+        "id": 85,
+        "iterations": 1,
+        "time": 0.001,
+        "solution": "ddsrsusluslrllsudslrsluslddrrsrsullsrlrdulrrsusulrdrsdrsr",
+        "won_level": true
+      },
+      {
+        "id": 86,
+        "iterations": 391,
+        "time": 1.603,
+        "solution": "ldudludrrldrdldrdddlrruruddrudrlludlluduuruulrrlulrullrdlludsrudrsurdlrdrllrsudurdldldssrsdrslrurdu",
+        "won_level": true
+      },
+      {
+        "id": 87,
+        "iterations": 1829,
+        "time": 10.001,
+        "solution": "lurudrduddlullurulddrrurlrlduldulrldldluulurlrrrurlruusssdrsulsrlrssldrusdlrudrllslurslsssudursrrul",
+        "won_level": false
+      },
+      {
+        "id": 88,
+        "iterations": 1764,
+        "time": 10.001,
+        "solution": "rdduuuruldluudruudurddluuruluulurddldluudddrlurudurusdusduldrduuudlddrlrsdlsurlddlldlusdsrrlluulrsl",
+        "won_level": false
+      },
+      {
+        "id": 89,
+        "iterations": 585,
+        "time": 1.365,
+        "solution": "rrlduduulllddruuulluulrrlruuududldddludlduddulddlddusrllddrlrrdrudduuuulrsrusrllusrsurrdurrssudslus",
+        "won_level": true
+      },
+      {
+        "id": 90,
+        "iterations": 2191,
+        "time": 10.004,
+        "solution": "rrdululdlrrurdurldururrulrrrurdllrldrulullrudrrudduullllllusssuurssldrusluruuusdsrrssrldsuslldrrdud",
+        "won_level": false
+      },
+      {
+        "id": 91,
+        "iterations": 355,
+        "time": 0.834,
+        "solution": "rdrrllddrurldduddrlrrullrddrlulrurddlurddurdlrrluuursduslsrlrrlludsudusdlsusssusssluluslssusldldsrs",
+        "won_level": true
+      },
+      {
+        "id": 92,
+        "iterations": 373,
+        "time": 1.039,
+        "solution": "dldullllulrrlduddrdluulldlddrulllluurdrlulldudrurduldsrdddsdluursususullrddrdruruudsslsudddldlrulls",
+        "won_level": true
+      },
+      {
+        "id": 93,
+        "iterations": 20,
+        "time": 0.068,
+        "solution": "dudllrrddrrduuuldldlurlrllddrdldllruluuruurdldrdrrrlddluurssrd",
+        "won_level": true
+      },
+      {
+        "id": 94,
+        "iterations": 583,
+        "time": 2.821,
+        "solution": "lrddldruudrdddrlrdrdduuudududurddududrlrdldudlrlrrldusslrlsrurddslsldludsr",
+        "won_level": true
+      },
+      {
+        "id": 95,
+        "iterations": 1302,
+        "time": 10.006,
+        "solution": "llrrrulrulllruuuudduduuuuuuduurdulullurldlllrrlddulruldsduulsuldlslrlrsdudrusudddululdsslllrdldlrld",
+        "won_level": false
+      },
+      {
+        "id": 96,
+        "iterations": 4564,
+        "time": 10.001,
+        "solution": "ldudlllrrdluurldrddlulddulrdlrlddllulrdrdururuldrlddrlsssullsulldllslrudsrduuulrrsrduurrsudrrdddllr",
+        "won_level": false
+      },
+      {
+        "id": 97,
+        "iterations": 4196,
+        "time": 10.002,
+        "solution": "dddddllrluuurrudlullrlllrdlldullurldrulurrdlrulruudlrduursrlulrsssdrrruddlslssldlsruldurldlsusldrds",
+        "won_level": false
+      },
+      {
+        "id": 98,
+        "iterations": 44,
+        "time": 0.148,
+        "solution": "uurddruurudddrudllruluulruuuulrrudulruuuruurrudrrrrrrdssrdsrrdllddddslllsduldludsurrulrrdlldudurldr",
+        "won_level": true
+      },
+      {
+        "id": 99,
+        "iterations": 0,
+        "time": 0.002,
+        "solution": "uurddruurudddrudllrdluulruuuulrrudulruuuruurrudrrrusldld",
+        "won_level": true
+      },
+      {
+        "id": 100,
+        "iterations": 3154,
+        "time": 10.003,
+        "solution": "rlulululldrruluuddllddllllddlurldurdlduuldrdrludururuddldsuldulrllrsrrsdlldsrllsuullldrrslldsdrudss",
+        "won_level": false
+      },
+      {
+        "id": 101,
+        "iterations": 736,
+        "time": 1.558,
+        "solution": "dddluluuudldrdllllduulduullrdlldurduldrrrduddrludrdudrddudrsrdruulusdssssrrlsusldrslddsdrsddsdsuudl",
+        "won_level": true
+      },
+      {
+        "id": 102,
+        "iterations": 3,
+        "time": 0.008,
+        "solution": "ludlruruurrrddrruruulldrlluuddrullrullulurruddludusrrdsulurddrduduusrluldlrulssrsssdddrldrlurdslduu",
+        "won_level": true
+      },
+      {
+        "id": 103,
+        "iterations": 745,
+        "time": 1.549,
+        "solution": "uudrdudllludluuuulrdudlddrururulululldulddrruudrrurrddsddusduruurudusdddlsdrsrrdrrdrrdddslsudsdrsuu",
+        "won_level": true
+      },
+      {
+        "id": 104,
+        "iterations": 11,
+        "time": 0.028,
+        "solution": "ludrdddlllldlludurluudlldrurddddulllrdulddlrludrllsldurdldldrdlldususur",
+        "won_level": true
+      },
+      {
+        "id": 105,
+        "iterations": 3482,
+        "time": 10.003,
+        "solution": "dlrldrlrdddrldudduluuuuuuddrddduldruddrlrruludsdrulrldsrulsrluususrssdudludllllrlsruuuudrrdslsluuru",
+        "won_level": false
+      },
+      {
+        "id": 106,
+        "iterations": 3689,
+        "time": 10.001,
+        "solution": "rurrrddldduudrulrlrlddullrurrrrrlulduruurrrlluududrsrdsrdldrsrdrrurrdlslrllludrrurluurururrslsrssrr",
+        "won_level": false
+      },
+      {
+        "id": 107,
+        "iterations": 5126,
+        "time": 10.001,
+        "solution": "lrddrudlulurrdlrudrdldlddlduddduruddrduddddllurlrrrurslusdudusldlsluduldulrsdulrddlddlruuldlddllrrr",
+        "won_level": false
+      },
+      {
+        "id": 108,
+        "iterations": 5426,
+        "time": 10.001,
+        "solution": "rurrudluuldlurlullrlddudduullulullulldulrulrlruuurrdluuslsrrdrrrsddsuuursusuuuurdurusdrslduddlurdls",
+        "won_level": false
+      },
+      {
+        "id": 109,
+        "iterations": 2,
+        "time": 0.005,
+        "solution": "rurrudluuldlurdullrldduddlulluludlulldulrulurruuurldsssrduddlddsrrllrlddruusslrdurlllrsslsulssrllrl",
+        "won_level": true
+      },
+      {
+        "id": 110,
+        "iterations": 1,
+        "time": 0.004,
+        "solution": "rurrudlulldluldullrldduddlulluludlulldulrulurruuursddsrdsduulsdrluusursrudsddudurlssdsuuddlsulslduu",
+        "won_level": true
+      },
+      {
+        "id": 111,
+        "iterations": 29,
+        "time": 0.057,
+        "solution": "rdlllrullduldrdddurudlrdlrdllluurdrdudrludduurddrdrrdsrddurrlsrddssduuuddussdlurrsudrdsds",
+        "won_level": true
+      },
+      {
+        "id": 112,
+        "iterations": 148,
+        "time": 0.362,
+        "solution": "lruudluudrdlrrrlllludurldudduudrddudldururdrrduuudddudslsrlsdldurursddddusrurldsrrrdlddludrlullldru",
+        "won_level": true
+      },
+      {
+        "id": 113,
+        "iterations": 25,
+        "time": 0.059,
+        "solution": "lruuullduddlrludllruldrlururdurudlldlddlurrlduuurdrrsdrsdludsdlrudddrsrusulludrsuldurululdruddlusus",
+        "won_level": true
+      },
+      {
+        "id": 114,
+        "iterations": 22,
+        "time": 0.047,
+        "solution": "ululldldldllrrlrrlrullldurrrrulruulrldrlurrdudurrduldsrrusddslulldrdruurlrldussrsrsurdrddlrrdrdssuu",
+        "won_level": true
+      },
+      {
+        "id": 115,
+        "iterations": 0,
+        "time": 0.004,
+        "solution": "ululldrdldllrrlrrlrullldurrdrulruulrldrlurrdudurrduldurlslddsdusdlrudllduurrrrdrsdusrrsd",
+        "won_level": true
+      },
+      {
+        "id": 116,
+        "iterations": 5,
+        "time": 0.009,
+        "solution": "uldrllrllrludldruddrurlruuuruulrudrludldurllurlllrdrrslurddsrrldudlsludllrsdldlddddlrslrslullulsssl",
+        "won_level": true
+      },
+      {
+        "id": 117,
+        "iterations": 4363,
+        "time": 10.001,
+        "solution": "rrlddldrldudrrdddrlddrllddrluruurrduddldululduuurusuurdususursdlssusrrsrduduslsulduusddusddrdrrsddr",
+        "won_level": false
+      },
+      {
+        "id": 118,
+        "iterations": 97,
+        "time": 0.22,
+        "solution": "udlrrdurlrddlrlddudruludruuulrdldlluduudddlldduludllusrrrudrllrrursulsrssusrdrdrlurlludrulussdrrrdu",
+        "won_level": true
+      },
+      {
+        "id": 119,
+        "iterations": 1763,
+        "time": 10.003,
+        "solution": "dduruuddlrrurrdrlurdrrrrdddlururuldludlurluddllurrddlsrllsluuulrrlsrslluldlduslrrsddlsrsuluudrusslr",
+        "won_level": false
+      },
+      {
+        "id": 120,
+        "iterations": 1263,
+        "time": 10.005,
+        "solution": "dlrululuddllurruurlluldlduuuddrdurdldduududrlrullullluudurldduurrlrduusdsrrdlsuuldusssllsssurulddld",
+        "won_level": false
+      },
+      {
+        "id": 121,
+        "iterations": 1738,
+        "time": 10.003,
+        "solution": "drruruldrduurlldlrlludlddrrlldludluudrllddrdudrulusrlsdrdldddrdudddslsruslruulluurrlsuuuuusdlrsllrd",
+        "won_level": false
+      },
+      {
+        "id": 122,
+        "iterations": 0,
+        "time": 0.003,
+        "solution": "drruruldrduurlddlrlludlrdrrlldludluudrllddrdudruldrusldlrlsurrsdrulusddus",
+        "won_level": true
+      },
+      {
+        "id": 123,
+        "iterations": 17,
+        "time": 0.036,
+        "solution": "dluurlrldllrluluuluuuulldluullrrrlrrrdrurddudrdddrddrlsduuuuslrduslsrssludrddrdsluusuludulr",
+        "won_level": true
+      },
+      {
+        "id": 124,
+        "iterations": 2,
+        "time": 0.004,
+        "solution": "rrdldulrlurrrdrulurrldrdlludrurddruurruldluulllrulururdrlddudlrddsdurudsrddursssuudssudsrrduldusldd",
+        "won_level": true
+      },
+      {
+        "id": 125,
+        "iterations": 2504,
+        "time": 6.607,
+        "solution": "rulllldrlrllrlrldudluldrddrlrrruurdllduuludddlurluulurrsrrsdrusudrrrddssusrsulddlldllrsurddrlulsdus",
+        "won_level": true
+      },
+      {
+        "id": 126,
+        "iterations": 4127,
+        "time": 10.003,
+        "solution": "udlrrlrlddruldludldrddlududrlurruullruuuulluruuruurrusrudrsuuurllrrsdlddlssruuururldllllrrduudruudd",
+        "won_level": false
+      },
+      {
+        "id": 127,
+        "iterations": 1632,
+        "time": 10.004,
+        "solution": "rdddrulrruulruduuldrlrdluuddruddduuuuduuddlddululddllsldssllrsdulrsddrusdsrddlusddururrsdusrdrdluul",
+        "won_level": false
+      },
+      {
+        "id": 128,
+        "iterations": 39,
+        "time": 0.121,
+        "solution": "rluuruldruudddludlrrldurdldrurullurluurudlrrrrllddsrrlluldluldlrdsrrlrldulursuluddruurlrllluulrudur",
+        "won_level": true
+      },
+      {
+        "id": 129,
+        "iterations": 3465,
+        "time": 10.002,
+        "solution": "drlrrudrurlruuluuldrdrruddllllllrrldlduuusulrludrrdusudluuldsrlllssllldrsrluurrdlulllrurssdsdudrdrd",
+        "won_level": false
+      },
+      {
+        "id": 130,
+        "iterations": 4582,
+        "time": 10.002,
+        "solution": "ludrllluuldudrrlluurlrddurlldlrduurddulrdduullruldrdrllrllrdsdsdrllrluldldlsduulududrrsullsssrlusld",
+        "won_level": false
+      },
+      {
+        "id": 131,
+        "iterations": 1771,
+        "time": 10.001,
+        "solution": "udrlddududdurdrudlllldrullrrlldrdrdullrdlulrlddlullrsursuuursrsdsrsrrrdrsdrrdsrduududulruuuddusddsl",
+        "won_level": false
+      },
+      {
+        "id": 132,
+        "iterations": 21,
+        "time": 0.045,
+        "solution": "lldlrulrdruulrdudlrrldrulllllldrlrdulludruuruddluduudursuudrsslrssudrsssdsuurrsuruddsddsdrdsrurrusd",
+        "won_level": true
+      },
+      {
+        "id": 133,
+        "iterations": 5,
+        "time": 0.014,
+        "solution": "lrdlrulrdruulrdudrrrldrulllllrddlrdullddruuuuudldrddusrddudddlrrudrsdluslllsrurrlrldusddrl",
+        "won_level": true
+      },
+      {
+        "id": 134,
+        "iterations": 271,
+        "time": 0.547,
+        "solution": "llllluudrrrdlrdrdllddllldrrullrlrrlddrdruurdurdulluuluruursurlurdrdsssusudrlurusldulddudddssduurrll",
+        "won_level": true
+      },
+      {
+        "id": 135,
+        "iterations": 0,
+        "time": 0.002,
+        "solution": "lllllruddrrdlrdrdllddllldrrullrlrrlddrdruurdurdullrdslurrusddlrsudlullrdrdrrllusdslllsslusddluudddl",
+        "won_level": true
+      },
+      {
+        "id": 136,
+        "iterations": 3347,
+        "time": 10.002,
+        "solution": "luluuudrududldrdurdrrrlluldruludurdrrddudldduruuludduuususlldssrdsddulssurdurdusulruusuddudlrsllsrl",
+        "won_level": false
+      },
+      {
+        "id": 137,
+        "iterations": 42,
+        "time": 0.111,
+        "solution": "ldrluudduddruulrurrrduuuuduuudlulrrldlrrludulrurlusdusrldduulssdrrsurusrsdslduudrdldrsluuuurrsssdul",
+        "won_level": true
+      },
+      {
+        "id": 138,
+        "iterations": 2,
+        "time": 0.008,
+        "solution": "ldrluudduddruudrurrrduuulduludlulrrldlrlluruldurlusudllrlluulrlrlrsduusulssddldlsurllslsdsslud",
+        "won_level": true
+      },
+      {
+        "id": 139,
+        "iterations": 5310,
+        "time": 10.001,
+        "solution": "rudurdluludrrdudlrldrrlldlulrulllrllrrrulldurdlldusuuslsrdrrdrdlrlsrlsrsssluslurudssdlurruursuulsul",
+        "won_level": false
+      },
+      {
+        "id": 140,
+        "iterations": 12,
+        "time": 0.03,
+        "solution": "ruddrdlllldrullrlrlulrdlulurrdluulurruduuldurduddusurlldsuuurssrlsdrlsdrldrrudluullrrlsrlulldlrlddd",
+        "won_level": true
+      },
+      {
+        "id": 141,
+        "iterations": 0,
+        "time": 0.005,
+        "solution": "ruddrdlllldrullrlrlulrdlulurrdlullurruduuudurduddusldurluuurduuddlrrudurlullussruuuullusdldddurr",
+        "won_level": true
+      },
+      {
+        "id": 142,
+        "iterations": 79,
+        "time": 0.21,
+        "solution": "urrlurdludrlurlluuuudruluuldulldrdllddsuulurdlludrsllsrssrdurdrrldululdlsurudssrurddllsdlrddddllrll",
+        "won_level": true
+      },
+      {
+        "id": 143,
+        "iterations": 571,
+        "time": 0.965,
+        "solution": "ruluudurduddrduuudurdduudlluuuuudruduudududuuudduuldssdslussrldssllrslsusllr",
+        "won_level": true
+      },
+      {
+        "id": 144,
+        "iterations": 34,
+        "time": 0.08,
+        "solution": "rdudrduddulurlrdulrulrrddrulddududurdllrdduluuruuudssuddsurduudlldlssusdllrdlurduusdssuuudrdlsrusl",
+        "won_level": true
+      },
+      {
+        "id": 145,
+        "iterations": 2430,
+        "time": 10.002,
+        "solution": "lrludrlulrlrlllrlrllllslsldlslslsllrdullulllldldrlsdrslsrlssslslluusluuluusrlrrlurudulssrurursulurr",
+        "won_level": false
+      },
+      {
+        "id": 146,
+        "iterations": 2,
+        "time": 0.007,
+        "solution": "lruudrlulrlrlllrlrllllrllllllldlrdlddullllrludldrlussusuld",
+        "won_level": true
+      },
+      {
+        "id": 147,
+        "iterations": 66,
+        "time": 0.165,
+        "solution": "dudrluddlddullrluuruldurrduddrdllurdrduuddruddrrudsuluudusrulrrdlsddurduusrldsrddlldrllrurdsudrrsd",
+        "won_level": true
+      },
+      {
+        "id": 148,
+        "iterations": 0,
+        "time": 0.001,
+        "solution": "rlsdulusurruurdurruuruullrlul",
+        "won_level": true
+      },
+      {
+        "id": 149,
+        "iterations": 880,
+        "time": 1.946,
+        "solution": "drrurdurlrrlrludlrlrlluuulrrurldulldulurdrldrrllrrddrruuddddsrlusuddllsrrdrddsudlsdrlurrlrurllsddus",
+        "won_level": true
+      },
+      {
+        "id": 150,
+        "iterations": 2,
+        "time": 0.008,
+        "solution": "druurdurlrrlrludrrdrllulurruurldulldulurdrldurlldrsldlddudrdrlsdlssllrsu",
+        "won_level": true
+      },
+      {
+        "id": 151,
+        "iterations": 2,
+        "time": 0.006,
+        "solution": "rdlldluruuudlddrrlrudrdrluuuduruulrlurrdlrdlddurulrusrdlruduuudludrsudrss",
+        "won_level": true
+      },
+      {
+        "id": 152,
+        "iterations": 2,
+        "time": 0.005,
+        "solution": "ulrdulldlruuuruudrlddddrduduuruurrudrdduuldulrlludrldlsrldudsulslruursusldlsrdusld",
+        "won_level": true
+      },
+      {
+        "id": 153,
+        "iterations": 1180,
+        "time": 10.002,
+        "solution": "rdrlrrudlllludrrlurrrdrludlluuuulddruddruuluulururudurrulrdluurlrrslssrsududdldudssusruudssrddddssl",
+        "won_level": false
+      },
+      {
+        "id": 154,
+        "iterations": 3484,
+        "time": 10.003,
+        "solution": "dudluludlrdllluurlldlurdrlldulrrlrulrlrdrullluddrdddllrslsrlrrdrlldlrrsrdldddsrruudlrdrlrduduudlrul",
+        "won_level": false
+      },
+      {
+        "id": 155,
+        "iterations": 0,
+        "time": 0.004,
+        "solution": "duddududdrdldduurlldlurdrlldulrrlrulrlrdrullluddrdruslsudslsdddsrslsll",
+        "won_level": true
+      },
+      {
+        "id": 156,
+        "iterations": 8,
+        "time": 0.019,
+        "solution": "uurruuldrrdlrllllurllududlldlrdlrudlrdrrllrdllldllrldlrdluldu",
+        "won_level": true
+      },
+      {
+        "id": 157,
+        "iterations": 7,
+        "time": 0.018,
+        "solution": "lddlrdludrrllllrrldulddrrrulllduldlulrdrldlllldllrldusssrdrrduusddsrursuuuulrrrrlllsludlsudrsuslrld",
+        "won_level": true
+      },
+      {
+        "id": 158,
+        "iterations": 30,
+        "time": 0.093,
+        "solution": "duulrululdluuddllruurdlrdlullddudrrrlrulllddulrdurruruuudlusrdsdldrruudlluusursusslsruuuurrurulrlsu",
+        "won_level": true
+      },
+      {
+        "id": 159,
+        "iterations": 1,
+        "time": 0.006,
+        "solution": "luulrrluldluuddllruurdlrdlullddudrrrlrulllddulrdurssdrsrudurssuurdsldrduurdlddrussddldlllduurrsrruu",
+        "won_level": true
+      },
+      {
+        "id": 160,
+        "iterations": 192,
+        "time": 0.484,
+        "solution": "ludulrlrddlrlrdududuuddrllullllduuududududddsudldldsslrldrrrrdrrslsludllrddllusrsllrlssldrurdlusslu",
+        "won_level": true
+      },
+      {
+        "id": 161,
+        "iterations": 3500,
+        "time": 10.002,
+        "solution": "rrddlurlldddluururllulddrdldudrlurrdrdlrrurulrdrddsldsldlusdrrdllulrlslsrulddrssllrrdsurssuulussrsl",
+        "won_level": false
+      },
+      {
+        "id": 162,
+        "iterations": 3399,
+        "time": 10.001,
+        "solution": "uduludurdrlduddrrrrdrdddururlllruudlruddulrrdludrldululsrlrlsdrdlrsulrrslldrurusudrsusludrdrsuslrsr",
+        "won_level": false
+      },
+      {
+        "id": 163,
+        "iterations": 49,
+        "time": 0.136,
+        "solution": "rlrlulllrdulrluullllrulllrrrusllulrruuullulullludlslududdsuusuusrlrduslddlrsdlsrdllllssussusrdlulrr",
+        "won_level": true
+      },
+      {
+        "id": 164,
+        "iterations": 3611,
+        "time": 10.003,
+        "solution": "ddlddlulddlddrdlrrulrrudddrrddldrudrddlrduullrllurdruudddlddudsudrdrrruusususldlruludlssududrldrlll",
+        "won_level": false
+      },
+      {
+        "id": 165,
+        "iterations": 14,
+        "time": 0.043,
+        "solution": "ddlddludrdlddddrrrullrdlddluudlrrdrrrdlrdurddrllursrldurururuusurlllssdrslrursrsldsssuruduldruldrlr",
+        "won_level": true
+      },
+      {
+        "id": 166,
+        "iterations": 124,
+        "time": 0.406,
+        "solution": "dldudllruuuduuuddrldudlulrddrlldddlrdrrduurllududldururddrrrdrrldddlldldlslrldurrududdusssdruuuudrl",
+        "won_level": true
+      },
+      {
+        "id": 167,
+        "iterations": 3,
+        "time": 0.008,
+        "solution": "dlduddlruuuduuuddrlduduulrdlrllddddrdrrduurllududldssdrdsusrluruusddrdrldssulrdsrsllsursrlrrddrsdls",
+        "won_level": true
+      },
+      {
+        "id": 168,
+        "iterations": 4363,
+        "time": 10.001,
+        "solution": "luduulduuudlullulrlruluurlruurulldrllurruddudddlludldrddrssurdrludllusdrdurlsusuurrurruuuudlldrsdss",
+        "won_level": false
+      },
+      {
+        "id": 169,
+        "iterations": 77,
+        "time": 0.583,
+        "solution": "rduuldlrruduullduludrudldudrdudddurlrdrdrurdurdlrlululdrlrsrsdlduludurlrurdrurssldd",
+        "won_level": true
+      },
+      {
+        "id": 170,
+        "iterations": 151,
+        "time": 0.453,
+        "solution": "lllruudurudldrulrlrlrldrrurrdrulruurdluuddrdullddrldurlsllslusrldlslsrdrludddsurursludrddulluulludd",
+        "won_level": true
+      },
+      {
+        "id": 171,
+        "iterations": 154,
+        "time": 0.365,
+        "solution": "rrurududrrdullruldruldrudrdldsulrurulrudursududuuruuurlsrdsuldslruslsruuurruurddsrduduulsslrlurlddd",
+        "won_level": true
+      },
+      {
+        "id": 172,
+        "iterations": 399,
+        "time": 1.122,
+        "solution": "rrllrllulllulusudrdrddllrddrrdrduuddrddrllrdurlulurrrrdslssudrllrulrulrlsuurlsdsusdddsllrrlursdsddd",
+        "won_level": true
+      },
+      {
+        "id": 173,
+        "iterations": 2261,
+        "time": 10.002,
+        "solution": "durlrudrurruuulrllrsudduuudluruddurddudrrruuudlurdsrlrusrrldulruludrssrsdlrlsurldullluldddldslddldl",
+        "won_level": false
+      },
+      {
+        "id": 174,
+        "iterations": 79,
+        "time": 0.292,
+        "solution": "ullddldrdddrrllurdlrrldlrrlurllrrrldudlullrdrulluldldllslurruldlsulruduussluuuslssldusluursllssdrur",
+        "won_level": true
+      },
+      {
+        "id": 175,
+        "iterations": 227,
+        "time": 1.083,
+        "solution": "llluuduuuuddrllurulrrdlddlruurlullrulrdlrrlrlllrrrdrsruulluususursrdluusdulrssluldluslduruuluudlrds",
+        "won_level": true
+      },
+      {
+        "id": 176,
+        "iterations": 2756,
+        "time": 10.004,
+        "solution": "drlrduuuudluluulluruuudruldrrdrrdurudlrrlrurlrldlrssddsdsrdrruusdslsrsulllssurdlrsrusudsrdudrdusuld",
+        "won_level": false
+      },
+      {
+        "id": 177,
+        "iterations": 2196,
+        "time": 10.004,
+        "solution": "dduuuludldlddlduduldluuddlldruuullddluurllllrruddllrldrldsddsusdsssrrrrrlrususulluurlusrurddrdrsdsr",
+        "won_level": false
+      },
+      {
+        "id": 178,
+        "iterations": 5,
+        "time": 0.016,
+        "solution": "dduuulurldlddldudrldluuddludruuullddlulrludlrruddlrdlddlsdlsrssulruurdudlsrsrslslduusrrusdursddurdd",
+        "won_level": true
+      },
+      {
+        "id": 179,
+        "iterations": 249,
+        "time": 1.534,
+        "solution": "lrddururudddrrddrrrdddrudddudddurdsdddrrrdddrddurdlldllrdurrdlrddssrlrsdrddrrdslsluuuldduuludddurll",
+        "won_level": true
+      },
+      {
+        "id": 180,
+        "iterations": 0,
+        "time": 0.003,
+        "solution": "lrddurulududrrddrrrdddrudddudddurdrdddrrrdddrddurdulddsrllrudrd",
+        "won_level": true
+      },
+      {
+        "id": 181,
+        "iterations": 49,
+        "time": 0.344,
+        "solution": "rrdrrddlllrduuurrrdurlldurdurrrldrlldrrlddllrlrdrruulrudusdllllrlsurruduululdurrsdldldssulrsd",
+        "won_level": true
+      },
+      {
+        "id": 182,
+        "iterations": 16,
+        "time": 0.042,
+        "solution": "ldrddrrrdrrrurrrrullrrdldrrdudludulddrlurrldlurudusrlruulusllldddssurusududusu",
+        "won_level": true
+      },
+      {
+        "id": 183,
+        "iterations": 450,
+        "time": 2.74,
+        "solution": "dlrllldldrlddrdrllldrdlrurlrruddrludllllslllrlddldlsdluslrslssrrsurrussuslllurlsdsrrrrrludsllrsrlrd",
+        "won_level": true
+      },
+      {
+        "id": 184,
+        "iterations": 3203,
+        "time": 10.003,
+        "solution": "llrudllrruludruludurululuududdllluruududduuulrdludsuldlulslddsuluuslruslrlludrrdsuslrrdsrrlullsudsl",
+        "won_level": false
+      },
+      {
+        "id": 185,
+        "iterations": 23,
+        "time": 0.106,
+        "solution": "rllrllduruldddrddrulududdurddddrrdududrdrrurlrdurddrlsuulsulddlddrsrsdusrussllussdslrllluludddsrdlu",
+        "won_level": true
+      },
+      {
+        "id": 186,
+        "iterations": 730,
+        "time": 8.881,
+        "solution": "urrddruruudluurlddrrrdduullddrulldlrdrrrrludrddlrrrsduulddusrslduuusdddsldlsulldsrluurdlsrudrddsdrr",
+        "won_level": true
+      },
+      {
+        "id": 187,
+        "iterations": 3472,
+        "time": 10.002,
+        "solution": "rruudllurrlulrudlllurrdlrdrrlrlrluldlluddlurrrullrdrlsrlsllrsurrusrulsslrrsduursrludsdusdululsrrssu",
+        "won_level": false
+      },
+      {
+        "id": 188,
+        "iterations": 496,
+        "time": 5.803,
+        "solution": "lururrddudrudulurlrurldddrulddurluddlrlurudrduulrddrsuldlsldrdssuuusldrurrllsdlsldrldllrdrrdsslddls",
+        "won_level": true
+      },
+      {
+        "id": 189,
+        "iterations": 855,
+        "time": 10.006,
+        "solution": "ldulllruduuuurruuuuldrrludulddrruuuuuddurdrrlddludsrsdrssuulslsrdduurrllslrldusurdllssdrsddlrdssrsl",
+        "won_level": false
+      },
+      {
+        "id": 190,
+        "iterations": 3192,
+        "time": 10.003,
+        "solution": "lurudrrldldulururdrrllllrlddurudlrullurrlrllrdurddrrusddsluslusdursrdrslddsludlrlddusdusslurllrdrdu",
+        "won_level": false
+      },
+      {
+        "id": 191,
+        "iterations": 1146,
+        "time": 10.005,
+        "solution": "udrulurluulllrlulrrrrllluuuurrdurruldddrluuludluuduurlrdlsdrssrluudsrsudssururdsdrudrsuludldurrdsru",
+        "won_level": false
+      },
+      {
+        "id": 192,
+        "iterations": 0,
+        "time": 0.003,
+        "solution": "udrulurluulllllurrrrdllluuuurrdurruldddrluuuudluudrrlsllls",
+        "won_level": true
+      },
+      {
+        "id": 193,
+        "iterations": 287,
+        "time": 1.939,
+        "solution": "dudluulldldrurlluduldrldullrdudulrrdudduddulddduulddullrrludsulddlssluuuusudrsduddusrdudllulrluuldu",
+        "won_level": true
+      },
+      {
+        "id": 194,
+        "iterations": 58,
+        "time": 0.247,
+        "solution": "duduururuuuurrlurllllrlrulllududuuulrldrluddurruullrslurudsdlssrsuurrrrsdduussuddrdrrsldulldlrulsrd",
+        "won_level": true
+      },
+      {
+        "id": 195,
+        "iterations": 2902,
+        "time": 7.743,
+        "solution": "rdruddddduurulddrldldllllurrlddllululudrrlrrrrdldrusrsrdruuldusdrrllrldusulsssrrusrrsllrdlddrsldllr",
+        "won_level": true
+      },
+      {
+        "id": 196,
+        "iterations": 1150,
+        "time": 10.003,
+        "solution": "urrlludrrlrllrllurllrldlllluuurlurlrrllurulruuudlusrulusurssddrudddsdullrluuddllddlllrsrrudsurdrldr",
+        "won_level": false
+      },
+      {
+        "id": 197,
+        "iterations": 1082,
+        "time": 10.008,
+        "solution": "uldrruurddurllrldurdrudluulrldurrlrlldurllrllrlrdruduldsudslrsdrrdrdslldrsddrudsludlslssdurdludurru",
+        "won_level": false
+      }
+    ]
+  },
+  {
+    "levelSet": "demo_LEVELS",
+    "levels": [
+      {
+        "id": 1,
+        "iterations": 0,
+        "time": 0.003,
+        "solution": "udrdsdudrrrrrsdluulsrulurddrl",
+        "won_level": true
+      },
+      {
+        "id": 2,
+        "iterations": 193,
+        "time": 0.424,
+        "solution": "uruulrludrrddrduruuuuddurudddlrllrruddddurdldlrduuuurlddrsrurrduruurrdlrrsrudrr",
+        "won_level": true
+      },
+      {
+        "id": 3,
+        "iterations": 3636,
+        "time": 6.622,
+        "solution": "ullrldddllrdddlluuldrurlllrdrudlldldlrddruullduudrulsdllulllursrslsslusrsduludddrulruruudlusulrdudl",
+        "won_level": true
+      },
+      {
+        "id": 4,
+        "iterations": 0,
+        "time": 0.003,
+        "solution": "ullrldddllruddlluuldrurlllrlrudlldldlrddruullduudrsrlsllrdlsduldud",
+        "won_level": true
+      },
+      {
+        "id": 5,
+        "iterations": 833,
+        "time": 1.73,
+        "solution": "dllrddrdudluudluuuldlrdrrdllldddllduururrrddllllrrsrrdsduslddduddssdrlrlsdrurursddlrluursuluruursll",
+        "won_level": true
+      },
+      {
+        "id": 6,
+        "iterations": 4,
+        "time": 0.015,
+        "solution": "rllrddrdudluudluullddddrrdldldldlldrrlurrrddllllrudrrddlusrduursrurlussrulruurluduruulllllslrudrrld",
+        "won_level": true
+      },
+      {
+        "id": 7,
+        "iterations": 1,
+        "time": 0.008,
+        "solution": "rllrddrdudluudluulrddddrudldldldllrurlurrrldulllrurlrrddrsdurssuudrlrrudrurlslldsslussssludrruduuud",
+        "won_level": true
+      },
+      {
+        "id": 8,
+        "iterations": 1,
+        "time": 0.008,
+        "solution": "lssludluudlurdruulrddddrudldldldllrurlurrrldudllrurlduulldlrsdrruuuurddslruudsrllruldlusddulludrudr",
+        "won_level": true
+      },
+      {
+        "id": 9,
+        "iterations": 19,
+        "time": 0.055,
+        "solution": "dlruudlluldurdruullduddrdlrdlrddlddllllrurdruudlrlrrrlsduulslurddusdrulususldsullurulrdlsrrrudsrsdl",
+        "won_level": true
+      },
+      {
+        "id": 10,
+        "iterations": 0,
+        "time": 0.004,
+        "solution": "dlruudlluldurdruullduddrdrldlrddlddllllrurdruudurlslulsllrldussdulllldrduuldldlrdlsdudrsuursudlrlrr",
+        "won_level": true
+      },
+      {
+        "id": 11,
+        "iterations": 800,
+        "time": 2.342,
+        "solution": "ddduuududdddrrrdudrdudduuuduududuuuuuuuuuduuduuullsulrdssudrrsdlsdlrrsslrduusdldlddlsdldrdsrrddulrl",
+        "won_level": true
+      },
+      {
+        "id": 12,
+        "iterations": 3198,
+        "time": 10.001,
+        "solution": "uuuuudddddlddududuluuuudduddddlrlddddldduddddududdruslrdddddsssddlrulrssdrrldudursdssululddldsrddus",
+        "won_level": false
+      },
+      {
+        "id": 13,
+        "iterations": 19,
+        "time": 0.064,
+        "solution": "lulllrduddududludluulllrrlduldllldddrudruuurdrrluulrldudsrsrssussslsrrddrlsullurusulduldduudsudurrr",
+        "won_level": true
+      },
+      {
+        "id": 14,
+        "iterations": 81,
+        "time": 0.198,
+        "solution": "urlrudrrlllduurdrlrllldlllulldrrrruurrrrlldlllllulddrlsdruusulrdrusrulurlllrrslrssllsrdrlsrllrrdsru",
+        "won_level": true
+      }
+    ]
+  }
+]
