@@ -37,7 +37,7 @@ level15 = [
 class KeKeEnv(Env):
     def __init__(self, root_map=None):
 
-        with open(r"C:\Users\Ksco\ProgramProjects\GithubRepos\KekeCompetition\Keke_JS\js\simulation_new.js",
+        with open("../../JS/Keke_JS/js/simulation_new.js",
                   "r") as simjs_file:
             simjs = simjs_file.read()
         self.simjs = execjs.compile(simjs)
