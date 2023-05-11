@@ -49,7 +49,6 @@ class KeKeEnv(Env):
         self.init_state = self.getInitialState()
         self.current_state = self.init_state
 
-
     def step(self, action):
         # new_state = deepcopy(self.current_state)
         state = self.current_state
@@ -62,7 +61,7 @@ class KeKeEnv(Env):
         killers = state['killers']
         sinkers = state['sinkers']
         featured = state['featured']
-        baba = self.simjs.call('movePlayers', action, [],self.current_state)[0]
+        baba = self.simjs.call('movePlayers', action, [], self.current_state)[0]
         print('baba: (%d, %d)' % (baba['x'], baba['y']))
         # print('player (' + str(baba['x']+', '+baba['y'])+')')
         # res = self.simjs.call('nextMove', action, self.current_state)
@@ -84,6 +83,83 @@ class KeKeEnv(Env):
         # if self.render:
         #     self.render()
         return self.current_state, reward, done, info
+
+    def getMyHeuristicScore(self, pre_state, next_state):
+        def get_exp_score(arr1, arr2, initial_weight, decrease_speed):
+            dists = []
+            for i in arr1:
+                for j in arr2:
+                    dists.append(self.dist(i, j))
+            dists.sort()
+            res = 0
+            weight = initial_weight
+            for dist in dists:
+                res += dist * weight
+                weight *= decrease_speed
+            return res
+
+        def get_rule_score(pre_rules, next_rules, weight_add, weight_minus):
+            only_pre = list(set(pre_rules)).difference(set(next_rules))
+            only_next = list(set(next_rules).difference(set(pre_rules)))
+            return weight_add * only_next - weight_minus * only_pre
+
+        pre_players = pre_state['players']
+        pre_pushables = pre_state['pushables']
+        pre_killers = pre_state['killers']
+        pre_sinkers = pre_state['sinkers']
+        pre_rules = pre_state['rules']
+        pre_winnables = pre_state['winnables']
+        pre_words = pre_state['words']
+
+        next_players = next_state['players']
+        next_pushables = next_state['pushables']
+        next_killers = next_state['killers']
+        next_sinkers = next_state['sinkers']
+        next_rules = next_state['rules']
+        next_winnables = next_state['winnables']
+        next_words = next_state['words']
+
+        weight_players = 5
+        score_players = (len(next_players) - len(pre_players)) * weight_players
+
+        weight_pushables = 5
+        score_pushables = (len(next_pushables) - len(pre_pushables)) * weight_pushables
+
+        weight_killers = 5
+        decrease_killers = 0.8
+        score_killers_players = get_exp_score(next_players, next_killers, weight_killers, decrease_killers) - \
+                                get_exp_score(pre_players, pre_killers, weight_killers, decrease_killers)
+
+        weight_sinkers_players = 1
+        decrease_sinkers_players = 0.9
+        score_sinkers_players = get_exp_score(next_players, next_sinkers, weight_sinkers_players,
+                                              decrease_sinkers_players) - \
+                                get_exp_score(pre_players, pre_sinkers, weight_sinkers_players,
+                                              decrease_sinkers_players)
+        weight_sinkers_pushables = -3
+        decrease_sinkers_pushables = 0.9
+        score_sinkers_pushables = get_exp_score(next_pushables, next_sinkers, weight_sinkers_pushables,
+                                                decrease_sinkers_pushables) - \
+                                  get_exp_score(pre_pushables, pre_sinkers, weight_sinkers_pushables,
+                                                decrease_sinkers_pushables)
+        score_sinkers = score_sinkers_players + score_sinkers_pushables
+
+        weight_add = 3
+        weight_minus = 3
+        score_rules = get_rule_score(pre_rules, next_rules, weight_add, weight_minus)
+
+        weight_winnables = -5
+        decrease_winnables = 0.9
+        score_winnables = get_exp_score(next_players, next_winnables, weight_winnables, decrease_winnables) - \
+                          get_exp_score(pre_players, pre_winnables, weight_winnables, decrease_winnables)
+
+        weight_words = -5
+        decrease_words = 0.9
+        score_words = get_exp_score(next_players, next_words, weight_words, decrease_words) - \
+                      get_exp_score(pre_players, pre_words, weight_words, decrease_words)
+
+        ans = score_players + score_pushables + score_killers_players + score_sinkers + score_rules + score_winnables + score_words
+        return ans
 
     def render(self):
         res = self.simjs.call('showState', self.current_state)
