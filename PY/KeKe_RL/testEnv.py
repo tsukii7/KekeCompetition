@@ -24,29 +24,17 @@ level15 = [
     ["_", "2", " ", " ", " ", " ", "g", " ", "f", "_"],
     ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_"]
 ]
-#
-# level15 = [
-#     ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-#     ["_", "F", "1", "3", "1", " ", " ", " ", "G", "_"],
-#     ["_", " ", " ", "R", "b", "5", "a", " ", "1", "_"],
-#     ["_", " ", " ", " ", " ", " ", " ", " ", "0", "_"],
-#     ["_", "a", " ", "A", " ", " ", " ", "a", " ", "_"],
-#     ["_", " ", " ", " ", " ", "a", " ", " ", " ", "_"],
-#     ["_", "B", " ", " ", " ", " ", "g", "g", "g", "_"],
-#     ["_", "1", " ", "a", " ", "a", "g", " ", "a", "_"],
-#     ["_", "2", " ", " ", " ", " ", "g", " ", "f", "_"],
-#     ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_"]
-# ]
 
-env = KeKeEnv(level15)
+env = KeKeEnv(level1)
 init_state = env.reset()
 
-action = ['left', 'up', 'up','right','right', 'down']
-# action = ['right','right', 'down']
+# action = ['up','right','right','up','up','left','left','left','down','down','up','up','right','down','down']
+# action = ['down', 'down', 'right', 'right', 'right', 'up', 'left', 'up']
+action = ['down', 'space']
 for a in action:
     state, reward, done, info = env.step(a)
     env.render()
 
     # print(state)
     print("reward: %.3f \t done: " % reward, end="")
-    print(str(done)+"\n")
+    print(str(done) + "\n")
