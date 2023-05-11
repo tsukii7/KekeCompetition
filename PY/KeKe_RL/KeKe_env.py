@@ -77,7 +77,7 @@ class KeKeEnv(Env):
         done = res['won']
 
         self.current_state = new_state
-        reward = self.getHeuristicScore(self.current_state)
+        reward = self.getMyHeuristicScore(state, new_state)
 
         info = {}
         # if self.render:
