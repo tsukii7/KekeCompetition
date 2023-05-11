@@ -4,3 +4,4 @@ Keke_JS/node_modules/
 package-lock.json
 package.json
 Keke_JS/test.js
+*.pyc

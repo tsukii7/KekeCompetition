@@ -54,6 +54,42 @@ map_key['0'] = "sink_word";
 map_key['v'] = "love_obj";
 map_key['V'] = "love_word";
 
+var map_word = {}
+map_word["border"] = '_';
+map_word["empty"] = ' ';
+map_word["baba_obj"] = 'b';
+map_word["baba_word"] = 'B';
+map_word["is_word"] = '1';
+map_word["you_word"] = '2';
+map_word["win_word"] = '3';
+map_word["skull_obj"] = 's';
+map_word["skull_word"] = 'S';
+map_word["flag_obj"] = 'f';
+map_word["flag_word"] = 'F';
+map_word["floor_obj"] = 'o';
+map_word["floor_word"] = 'O';
+map_word["grass_obj"] = 'a';
+map_word["grass_word"] = 'A';
+map_word["kill_word"] = '4';
+map_word["lava_obj"] = 'l';
+map_word["lava_word"] = 'L';
+map_word["push_word"] = '5';
+map_word["rock_obj"] = 'r';
+map_word["rock_word"] = 'R';
+map_word["stop_word"] = '6';
+map_word["wall_obj"] = 'w';
+map_word["wall_word"] = 'W';
+map_word["move_word"] = '7';
+map_word["hot_word"] = '8';
+map_word["melt_word"] = '9';
+map_word["keke_obj"] = 'k';
+map_word["keke_word"] = 'K';
+map_word["goop_obj"] = 'g';
+map_word["goop_word"] = 'G';
+map_word["sink_word"] = '0';
+map_word["love_obj"] = 'v';
+map_word["love_word"] = 'V';
+
 var features = ["hot", "melt", "open", "shut", "move"];
 var featPairs = [["hot", "melt"], ["open", "shut"]];
 
@@ -124,49 +160,56 @@ function assignMapObjs(state) {
         console.log("ERROR: Map not initialized yet");
         return false;
     }
+    for (let i = 0; i < 2; i++) {
 
-    for (var r = 0; r < m.length; r++) {
-        for (var c = 0; c < m[0].length; c++) {
-            var charac = m[r][c];
+        for (var r = 0; r < m.length; r++) {
+            for (var c = 0; c < m[0].length; c++) {
+                var charac = m[r][c];
 
-            var base_obj = map_key[charac].split("_")[0];
-
-            //word-based object
-            if (map_key[charac].includes("word")) {
-                var w = new word_obj(base_obj, undefined, c, r);
-
-                //add the base object to the word representation if it exists
-                if (Object.values(map_key).indexOf((base_obj + "_obj")) != -1) {
-                    w.obj = base_obj;
+                if (map_key[charac] == undefined) {
+                    return charac;
                 }
 
-                //add any "is" words
-                if (base_obj == "is") {
-                    is_connectors.push(w);
+                var base_obj = map_key[charac].split("_")[0];
+
+                //word-based object
+                if (map_key[charac].includes("word")) {
+                    var w = new word_obj(base_obj, undefined, c, r);
+
+                    //add the base object to the word representation if it exists
+                    if (Object.values(map_key).indexOf((base_obj + "_obj")) != -1) {
+                        w.obj = base_obj;
+                    }
+
+                    //add any "is" words
+                    if (base_obj == "is") {
+                        is_connectors.push(w);
+                    }
+
+                    //replace character on obj_map
+                    m[r][c] = w;
+
+                    words.push(w);
                 }
+                //physical-based object
+                else if (map_key[charac].includes("obj")) {
+                    var o = new phys_obj(base_obj, c, r);
 
-                //replace character on obj_map
-                m[r][c] = w;
+                    phys.push(o);
 
-                words.push(w);
-            }
-            //physical-based object
-            else if (map_key[charac].includes("obj")) {
-                var o = new phys_obj(base_obj, c, r);
+                    //replace character on obj_map
+                    m[r][c] = o;
 
-                phys.push(o);
-
-                //replace character on obj_map
-                m[r][c] = o;
-
-                //add to the list of objects under a certain name
-                if (!(base_obj in sort_phys)) {
-                    sort_phys[base_obj] = [o];
-                } else {
-                    sort_phys[base_obj].push(o);
+                    //add to the list of objects under a certain name
+                    if (!(base_obj in sort_phys)) {
+                        sort_phys[base_obj] = [o];
+                    } else {
+                        sort_phys[base_obj].push(o);
+                    }
                 }
             }
         }
+        m = state['back_map'];
     }
     return state;
 }
@@ -379,6 +422,84 @@ function interpretRules(state) {
     // res = [state['obj_map'][2][4]]
     return res;
 }
+function testinterpretRules(state) {
+    let res = [];
+
+    //reset the rules (since a word object was changed)
+    state.rules = [];
+    state.rule_objs = [];
+
+    //get all the stateaeters
+    let om = state['obj_map'];
+    let bm = state['back_map'];
+    let is_connectors = state['is_connectors'];
+    let rules = state['rules'];
+    let rule_objs = state['rule_objs'];
+    let sort_phys = state['sort_phys'];
+    let phys = state['phys'];
+    let words = state['words'];
+    let p = state['players'];
+    let am = state['auto_movers'];
+    let w = state['winnables'];
+    let u = state['pushables'];
+    let s = state['stoppables'];
+    let k = state['killers'];
+    let n = state['sinkers'];
+    let o = state['overlaps'];
+    let uo = state['unoverlaps'];
+    let f = state['featured'];
+
+
+    for (var i = 0; i < is_connectors.length; i++) {
+        var is = is_connectors[i];
+        //horizontal pos
+        var wordA = objAtPos(is.x - 1, is.y, om);
+        var wordB = objAtPos(is.x + 1, is.y, om);
+        if (isWord(wordA) && isWord(wordB)) {
+            //add a new rule if not already made
+            var r = wordA.name + "-" + is.name + "-" + wordB.name;
+            if (rules.indexOf(r) == -1) {
+                rules.push(r);
+            }
+
+            //add as a rule object
+            rule_objs.push(wordA);
+            rule_objs.push(is);
+            rule_objs.push(wordB);
+
+            //add group
+            //rule_groups[r] = [wordA, is, wordB];
+        }
+
+        //vertical pos
+        var wordC = objAtPos(is.x, is.y - 1, om);
+        var wordD = objAtPos(is.x, is.y + 1, om);
+        if (isWord(wordC) && isWord(wordD)) {
+            var r = wordC.name + "-" + is.name + "-" + wordD.name;
+            if (rules.indexOf(r) == -1) {
+                rules.push(r);
+            }
+
+            //add as a rule object
+            rule_objs.push(wordC);
+            rule_objs.push(is);
+            rule_objs.push(wordD);
+
+            //add group
+            //rule_groups[r] = [wordC, is, wordD];
+        }
+    }
+    //console.log(rules)
+
+    //interpret sprite changing rules
+    transformation(om, bm, rules, sort_phys, phys);
+
+    //reset the objects
+    res = testresetAll(state);
+    return state;
+    // res = [state['obj_map'][2][4]]
+    return res;
+}
 
 /// OBJECT RULE ASSINGMENT ///
 
@@ -453,6 +574,35 @@ function newState(ascii_map) {
     return s
 }
 
+function map2State(ascii_map, om, bm) {
+    let s = {};
+    s['orig_map'] = []
+    s['obj_map'] = []
+    s['back_map'] = []
+    s['words'] = [];
+    s['phys'] = [];
+    s['is_connectors'] = [];
+    s['sort_phys'] = {};
+    s['rules'] = [];
+    s['rule_objs'] = [];
+    s['players'] = [];
+    s['auto_movers'] = [];
+    s['winnables'] = [];
+    s['pushables'] = [];
+    s['killers'] = [];
+    s['sinkers'] = [];
+    s['featured'] = {};
+    s['overlaps'] = [];
+    s['unoverlaps'] = [];
+
+    s.orig_map = ascii_map;
+    [s.back_map, s.obj_map] = [bm, om];
+    assignMapObjs(s);
+    interpretRules(s);
+
+    return s
+}
+
 //return the map of the state
 function showState(state) {
     return doubleMap2Str(state.obj_map, state.back_map)
@@ -511,6 +661,47 @@ function resetAll(state) {
     setSinks(state);
 
     setOverlaps(state);
+    // res = [state['obj_map'][2][4]]
+    // let res = [...state['back_map'][4]]
+    setFeatures(state);
+    return res
+}
+
+function testresetAll(state) {
+    /*
+    //get all the stateaeters
+    let om = state['obj_map'];
+    let bm = state['back_map'];
+    let rules = state['rules'];
+    let sort_phys = state['sort_phys'];
+    let phys = state['phys'];
+    let words = state['words'];
+    let p = state['players'];
+    let am = state['auto_movers'];
+    let w = state['winnables'];
+    let u = state['pushables'];
+    let s = state['stoppables'];
+    let k = state['killers'];
+    let n = state['sinkers'];
+    let o = state['overlaps'];
+    let uo = state['unoverlaps'];
+    let f = state['featured'];
+    */
+    //reset the objects
+    let res = [];
+    res = state['words'][5]
+
+    resetObjProps(state.phys);
+    setPlayers(state);
+    setAutoMovers(state);
+    setWins(state);
+    setPushes(state);
+     setStops(state);
+    setKills(state);
+    setSinks(state);
+
+       setOverlaps(state);
+    return state;
     // res = [state['obj_map'][2][4]]
     // let res = [...state['back_map'][4]]
     setFeatures(state);
@@ -662,7 +853,7 @@ function setOverlaps(state) {
         if (!p.is_movable && !p.is_stopped) {
             overlaps.push(p);
             bm[p.y][p.x] = p;
-            om[p.y][p.x] = ' ';
+            // om[p.y][p.x] = ' ';
         } else {
             unoverlaps.push(p);
             om[p.y][p.x] = p;
@@ -987,6 +1178,27 @@ function inArr(arr, e) {
 
 ////////////////   KEYBOARD FUNCTIONS  //////////////////
 
+function map2Key(map) {
+    for (let i = 0; i < map.length; i++) {
+        for (let j = 0; j < map[i].length; j++) {
+            if (map[i][j] === ' ') {
+                map[i][j] = ' ';
+            } else if (map[i][j] === '_') {
+                map[i][j] = '_';
+            } else {
+                let name;
+                if (map[i][j]['type'] === 'word') {
+                    name = map[i][j]['name'] + '_word';
+                } else {
+                    name = map[i][j]['name'] + '_obj';
+                }
+                map[i][j] = map_word[name];
+            }
+        }
+    }
+    return map;
+}
+
 function stateNextMove(nextDir, current_state) {
     let ascii_map = showState(current_state);
     let map = ascii_map.split('\n');
@@ -1005,14 +1217,78 @@ function stateNextMove(nextDir, current_state) {
     }
     // let res = splitMap(map_array);
 
-    let state = newState(map_array);
+    current_state['obj_map'] = map2Key(current_state['obj_map']);
+    current_state['back_map'] = map2Key(current_state['back_map']);
+    // return current_state;
+    // let state = newState(map_array);
+    let state = map2State(map_array, current_state['obj_map'], current_state['back_map']);
+    // let state = map2State(current_state['orig_map'], current_state['obj_map'], current_state['back_map']);
     let res = nextMove(nextDir, state)
     return res;
+}
+function teststateNextMove(nextDir, current_state) {
+    let ascii_map = showState(current_state);
+    let map = ascii_map.split('\n');
 
+    let map_array = [];
+    for (let i = 0; i < map.length; i++) {
+        map_array.push(map[i].split(''));
+        // map_array.push([]);
+        // let array = map[i].split('');
+        // for (let j = 0; j < array.length; j++) {
+        //     if (array[j] === '.')
+        //         map_array[i].push('');
+        //     else
+        //         map_array[i].push(array[j]);
+        // }
+    }
+    // let res = splitMap(map_array);
+
+    current_state['obj_map'] = map2Key(current_state['obj_map']);
+    current_state['back_map'] = map2Key(current_state['back_map']);
+    // return current_state;
+    // let state = newState(map_array);
+    let state = map2State(map_array, current_state['obj_map'], current_state['back_map']);
+    // let state = map2State(current_state['orig_map'], current_state['obj_map'], current_state['back_map']);
+    let res = testnextMove(nextDir, state)
+    return res;
 }
 
 // GOTO THE NEXT DIRECTIONAL POINT IN THE SOLUTION STEP
 // THE PROBLEM IS HERE !!
+function testnextMove(nextDir, state) {
+
+    //reset
+    let res = [];
+    var moved_objects = [];
+    moved = false;
+
+    //if directional move, move the players
+    if (nextDir != "space")
+        movePlayers(nextDir, moved_objects, state);
+
+    //move the movers (i.e. X-is-MOVE objects)
+    moveAutoMovers(moved_objects, state);
+    res = [...moved_objects]
+    res = state['words'][5]
+
+    //update the rule set if this object is a rule
+    for (var m = 0; m < moved_objects.length; m++) {
+        //if(inArr(rule_objs, movedObjs[m]))
+        if (moved_objects[m].type == "word") {
+            testinterpretRules(state);
+            // res = interpretRules(state);
+        }
+    }
+    // res = [state['obj_map'][2][4]]
+    // res = [state['obj_map'][2][4]]
+    return state;
+
+    //check if the game has been won
+    wonGame = win(state['players'], state['winnables']);
+    // return state;
+    return {'next_state': state, 'won': wonGame};
+}
 function nextMove(nextDir, state) {
 
     //reset

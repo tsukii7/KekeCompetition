@@ -65,6 +65,8 @@ class KeKeEnv(Env):
         print('baba: (%d, %d)' % (baba['x'], baba['y']))
         # print('player (' + str(baba['x']+', '+baba['y'])+')')
         # res = self.simjs.call('nextMove', action, self.current_state)
+        # res = self.simjs.call('map2State', self.current_state['orig_map'], self.current_state['obj_map'], self.current_state['back_map'])
+        # res = self.simjs.call('teststateNextMove', action, self.current_state)
         res = self.simjs.call('stateNextMove', action, self.current_state)
         # res = self.simjs.call('showState', self.current_state)
         # res = self.simjs.call('movePlayers', action, [],self.current_state)
@@ -99,9 +101,9 @@ class KeKeEnv(Env):
             return res
 
         def get_rule_score(pre_rules, next_rules, weight_add, weight_minus):
-            only_pre = list(set(pre_rules)).difference(set(next_rules))
+            only_pre = list(set(pre_rules).difference(set(next_rules)))
             only_next = list(set(next_rules).difference(set(pre_rules)))
-            return weight_add * only_next - weight_minus * only_pre
+            return weight_add * len(only_next) - weight_minus * len(only_pre)
 
         pre_players = pre_state['players']
         pre_pushables = pre_state['pushables']
