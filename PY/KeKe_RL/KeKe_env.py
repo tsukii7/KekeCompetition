@@ -80,7 +80,9 @@ class KeKeEnv(Env):
 
         reward = -1
         if done:
-            reward = 10000000
+            reward = 99999999
+        elif len(new_state['players']) == 0:
+            reward = -99999999
         else:
             reward = self.getMyHeuristicScore(state, new_state)
         self.current_state = new_state
@@ -155,7 +157,7 @@ class KeKeEnv(Env):
         weight_minus = 3
         score_rules = get_rule_score(pre_rules, next_rules, weight_add, weight_minus)
 
-        weight_winnables = -3
+        weight_winnables = -2
         decrease_winnables = 0.9
         score_winnables = get_exp_score(next_players, next_winnables, weight_winnables, decrease_winnables) - \
                           get_exp_score(pre_players, pre_winnables, weight_winnables, decrease_winnables)
