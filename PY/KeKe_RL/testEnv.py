@@ -1,5 +1,4 @@
-from KeKe_env import KeKeEnv
-
+import gym
 level1 = [
     ['_', '_', '_', '_', '_', '_', '_', '_', '_', '_'],
     ['_', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '_'],
@@ -25,12 +24,15 @@ level15 = [
     ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_"]
 ]
 
-env = KeKeEnv(level1)
+env = gym.make('KeKe-v0')
 init_state = env.reset()
 
+# up, down, left, right, space
+# 0,    1,    2,    3,     4
+# action = ['left', 'up', 'up','right','right', 'down']
 # action = ['up','right','right','up','up','left','left','left','down','down','up','up','right','down','down']
-# action = ['down', 'down', 'right', 'right', 'right', 'up', 'left', 'up']
-action = ['down', 'space']
+# action = ['right','right', 'down']
+action = [3, 3,4]
 for a in action:
     state, reward, done, info = env.step(a)
     env.render()

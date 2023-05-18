@@ -33,24 +33,109 @@ level15 = [
     ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_"]
 ]
 
+'''
+map_key['_'] = "border";
+map_key[' '] = "empty";
+//map_key['.'] = "empty";
+map_key['b'] = "baba_obj";
+map_key['B'] = "baba_word";
+map_key['1'] = "is_word";
+map_key['2'] = "you_word";
+map_key['3'] = "win_word";
+map_key['s'] = "skull_obj";
+map_key['S'] = "skull_word";
+map_key['f'] = "flag_obj";
+map_key['F'] = "flag_word";
+map_key['o'] = "floor_obj";
+map_key['O'] = "floor_word";
+map_key['a'] = "grass_obj";
+map_key['A'] = "grass_word";
+map_key['4'] = "kill_word";
+map_key['l'] = "lava_obj";
+map_key['L'] = "lava_word";
+map_key['5'] = "push_word";
+map_key['r'] = "rock_obj";
+map_key['R'] = "rock_word";
+map_key['6'] = "stop_word";
+map_key['w'] = "wall_obj";
+map_key['W'] = "wall_word";
+map_key['7'] = "move_word";
+map_key['8'] = "hot_word";
+map_key['9'] = "melt_word";
+map_key['k'] = "keke_obj";
+map_key['K'] = "keke_word";
+map_key['g'] = "goop_obj";
+map_key['G'] = "goop_word";
+map_key['0'] = "sink_word";
+map_key['v'] = "love_obj";
+map_key['V'] = "love_word";
+'''
+
 
 class KeKeEnv(Env):
+
+    def initMapKey(self):
+        self.map_key = {
+            '_': 0,  # border
+            ' ': 1,  # empty
+            '.': 1,  # empty
+            'b': 2,  # baba_obj
+            'B': 3,  # baba_word
+            '1': 4,  # is_word
+            '2': 5,  # you_word
+            '3': 6,  # win_word
+            's': 7,  # skull_obj
+            'S': 8,  # skull_word
+            'f': 9,  # flag_obj
+            'F': 10,  # flag_word
+            'o': 11,  # floor_obj
+            'O': 12,  # floor_word
+            'a': 13,  # grass_obj
+            'A': 14,  # grass_word
+            '4': 15,  # kill_word
+            'l': 16,  # lava_obj
+            'L': 17,  # lava_word
+            '5': 18,  # push_word
+            'r': 19,  # rock_obj
+            'R': 20,  # rock_word
+            '6': 21,  # stop_word
+            'w': 22,  # wall_obj
+            'W': 23,  # wall_word
+            '7': 24,  # move_word
+            '8': 25,  # hot_word
+            '9': 26,  # melt_word
+            'k': 27,  # keke_obj
+            'K': 28,  # keke_word
+            'g': 29,  # goop_obj
+            'G': 30,  # goop_word
+            '0': 31,  # sink_word
+            'v': 32,  # love_obj
+            'V': 33  # love_word
+        }
+
     def __init__(self, root_map=None):
+
+        super().__init__()
+        self.initMapKey()
 
         with open("../../JS/Keke_JS/js/simulation_new.js",
                   "r") as simjs_file:
             simjs = simjs_file.read()
         self.simjs = execjs.compile(simjs)
-        self.action_space = spaces.Discrete(5)
+        self.action_space = spaces.Discrete(5)  # up, down, left, right, space
+        # We assume a maximum grid size of 20x20 for simplicity
+        self.observation_space = spaces.Box(low=0, high=len(self.map_key), shape=(10, 10), dtype=int)
+
         self.DEFAULT_DISTANCE = 10
         if root_map is None:
-            root_map = level1
+            root_map = level15
         self.orig_map = root_map
         self.init_state = self.getInitialState()
         self.current_state = self.init_state
 
     def step(self, action):
         # new_state = deepcopy(self.current_state)
+        action = ["up", "down", "left", "right", "space"][action]
         state = self.current_state
         om = state['obj_map']
         bm = state['back_map']
@@ -61,8 +146,11 @@ class KeKeEnv(Env):
         killers = state['killers']
         sinkers = state['sinkers']
         featured = state['featured']
-        baba = self.simjs.call('movePlayers', action, [], self.current_state)[0]
-        print('baba: (%d, %d)' % (baba['x'], baba['y']))
+        baba = self.simjs.call('movePlayers', action, [], self.current_state)
+        print("baba: ", end="")
+        for p in baba:
+            print('(%d, %d)' % (p['x'], p['y']), end=" ")
+        print()
         # print('player (' + str(baba['x']+', '+baba['y'])+')')
         # res = self.simjs.call('nextMove', action, self.current_state)
         # res = self.simjs.call('map2State', self.current_state['orig_map'], self.current_state['obj_map'], self.current_state['back_map'])
@@ -76,7 +164,7 @@ class KeKeEnv(Env):
         # res = self.simjs.call('equals', phys[5], sinkers[0])
         # res = ctx.call('equals', players[0], killers[0])
         new_state = res['next_state']
-        done = res['won']
+        done = res['won'] or len(baba) == 0
 
         reward = -1
         if done:
@@ -86,12 +174,31 @@ class KeKeEnv(Env):
         else:
             reward = self.getMyHeuristicScore(state, new_state)
         self.current_state = new_state
+        self.observation_state = self.stateToObservation()
 
+
+        reward = self.getMyHeuristicScore(state, new_state)
 
         info = {}
         # if self.render:
         #     self.render()
-        return self.current_state, reward, done, info
+        return self.observation_state, reward, done, info
+
+    def stateToObservation(self):
+        ascii_map = self.simjs.call('showState', self.current_state)
+        map_key = self.map_key
+        ascii_list = ascii_map.strip().split('\n')
+        observation_state = []
+        for row in ascii_list:
+            output_row = []
+            for char in row:
+                if char in map_key:
+                    output_row.append(map_key[char])
+                else:
+                    output_row.append(1)
+            observation_state.append(output_row)
+
+        return observation_state
 
     def getMyHeuristicScore(self, pre_state, next_state):
         def get_exp_score(arr1, arr2, initial_weight, decrease_speed):
@@ -177,14 +284,15 @@ class KeKeEnv(Env):
         print(f"score_words={score_words}")
         return ans
 
-    def render(self):
+    def render(self, mode='human', close=False):
         res = self.simjs.call('showState', self.current_state)
         # res = self.simjs.call('doubleMap2Str', self.current_state['obj_map'], self.current_state['back_map'])
         print(res)
 
     def reset(self):
         self.current_state = self.init_state
-        return self.current_state
+        self.observation_state = self.stateToObservation()
+        return self.observation_state
 
     def getInitialState(self):
         self.init_state = self.simjs.call("newState", self.orig_map)
