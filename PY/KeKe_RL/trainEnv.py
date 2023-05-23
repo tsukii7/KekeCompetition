@@ -1,3 +1,5 @@
+import time
+
 from stable_baselines3 import PPO
 from stable_baselines3.common.vec_env import DummyVecEnv
 import gym
@@ -12,10 +14,10 @@ env = DummyVecEnv([lambda: env])
 model = PPO("MlpPolicy", env, verbose=1)
 
 # 训练模型
-model.learn(total_timesteps=100)
+# model.learn(total_timesteps=100)
 
 # 保存模型
-model.save("ppo_baba_is_you.model")
+# model.save("ppo_baba_is_you.model")
 
 print("=====================Training Finished=====================")
 
@@ -24,11 +26,12 @@ model = PPO.load("ppo_baba_is_you.model")
 
 obs = env.reset()
 action_history = []
-for i in range(1000):
-    action, _states = model.predict(obs)
+start = time.time()
+for i in range(100):
+    action = env.action_space.sample()
     action_history.append(["up", "down", "left", "right", "space"][action])
-    obs, rewards, dones, info = env.step(action)
-    env.render()
+    obs, rewards, dones, info = env.step([action])
+    # env.render()
 
     print("reward: %.3f \t done: " % rewards, end="")
     print(str(dones) + "\n")
@@ -38,3 +41,5 @@ for i in range(1000):
 
 print("Total steps: %d" % len(action_history))
 print(action_history)
+end = time.time()
+print("Time elapsed: %.3f" % (end - start))

@@ -20,7 +20,11 @@ level15 = [
 # env = gym.make(env_name)
 # env = DummyVecEnv([lambda : env])
 
-env = KeKeEnv(level15)
+# 加载你的环境
+env = gym.make('KeKe-v0')
+
+# Stable Baselines3 的 PPO 算法需要一个向量化的环境。这里我们使用 DummyVecEnv 作为向量化环境的简单版本。
+env = DummyVecEnv([lambda: env])
 
 
 model = PPO("MlpPolicy",
@@ -38,7 +42,6 @@ model.learn(total_timesteps=1e6)
 
 model.save("./model/LunarLander_PPO.pkl")
 
-env = gym.make(env_name)
 model = PPO.load("./model/LunarLander_PPO.pkl")
 
 state = env.reset()
@@ -50,4 +53,3 @@ while not done:
     score += reward
     env.render()
 env.close()
-score

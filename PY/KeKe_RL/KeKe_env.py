@@ -33,6 +33,19 @@ level15 = [
     ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_"]
 ]
 
+level19 = [
+    ['_', '_', '_', '_', '_', '_', '_', '_', '_', '_'],
+    ['_', ' ', ' ', ' ', ' ', ' ', 'B', '1', '2', '_'],
+    ['_', ' ', 'W', ' ', ' ', ' ', ' ', ' ', ' ', '_'],
+    ['_', ' ', '1', 'w', 'w', 'w', 'w', 'w', ' ', '_'],
+    ['_', ' ', '6', 'w', 'f', ' ', ' ', 'w', ' ', '_'],
+    ['_', ' ', ' ', 'w', ' ', ' ', 'k', 'w', ' ', '_'],
+    ['_', 'F', ' ', 'w', 'w', 'w', 'w', 'w', ' ', '_'],
+    ['_', '1', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '_'],
+    ['_', '3', ' ', ' ', ' ', 'b', 'K', '1', '7', '_'],
+    ['_', '_', '_', '_', '_', '_', '_', '_', '_', '_']
+]
+
 '''
 map_key['_'] = "border";
 map_key[' '] = "empty";
@@ -137,51 +150,39 @@ class KeKeEnv(Env):
         # new_state = deepcopy(self.current_state)
         action = ["up", "down", "left", "right", "space"][action]
         state = self.current_state
-        om = state['obj_map']
-        bm = state['back_map']
-        players = state['players']
-        pushs = state['pushables']
-        phys = state['phys']
-        sort_phys = state['sort_phys']
-        killers = state['killers']
-        sinkers = state['sinkers']
-        featured = state['featured']
-        baba = self.simjs.call('movePlayers', action, [], self.current_state)
-        print("baba: ", end="")
-        for p in baba:
+        # om = state['obj_map']
+        # bm = state['back_map']
+        # players = state['players']
+        # pushs = state['pushables']
+        # phys = state['phys']
+        # sort_phys = state['sort_phys']
+        # killers = state['killers']
+        # sinkers = state['sinkers']
+        # featured = state['featured']
+        # baba = self.simjs.call('movePlayers', action, [], self.current_state)
+
+        # print('player (' + str(baba['x']+', '+baba['y'])+')')
+        # res = self.simjs.call('map2State', self.current_state['orig_map'], self.current_state['obj_map'], self.current_state['back_map'])
+        res = self.simjs.call('stateNextMove', action, self.current_state)
+        new_state = res['next_state']
+        player = new_state['players']
+        print("player: ", end="")
+        for p in player:
             print('(%d, %d)' % (p['x'], p['y']), end=" ")
         print()
-        # print('player (' + str(baba['x']+', '+baba['y'])+')')
-        # res = self.simjs.call('nextMove', action, self.current_state)
-        # res = self.simjs.call('map2State', self.current_state['orig_map'], self.current_state['obj_map'], self.current_state['back_map'])
-        # res = self.simjs.call('teststateNextMove', action, self.current_state)
-        res = self.simjs.call('stateNextMove', action, self.current_state)
-        # res = self.simjs.call('showState', self.current_state)
-        # res = self.simjs.call('movePlayers', action, [],self.current_state)
-        # print('drowned' + str(self.simjs.call('drowned', phys, sinkers)))
-        # print('killed' + str(self.simjs.call('killed', players, killers)))
-        # print('badFeats' + str(self.simjs.call('badFeats', featured, sort_phys)))
-        # res = self.simjs.call('equals', phys[5], sinkers[0])
-        # res = ctx.call('equals', players[0], killers[0])
-        new_state = res['next_state']
-        done = res['won'] or len(baba) == 0
+        done = res['won'] or len(player) == 0
 
         reward = -1
-        if done:
-            reward = 99999999
+        if res['won']:
+            reward = 10000
         elif len(new_state['players']) == 0:
-            reward = -99999999
+            reward = -10000
         else:
             reward = self.getMyHeuristicScore(state, new_state)
         self.current_state = new_state
         self.observation_state = self.stateToObservation()
 
-
-        reward = self.getMyHeuristicScore(state, new_state)
-
         info = {}
-        # if self.render:
-        #     self.render()
         return self.observation_state, reward, done, info
 
     def stateToObservation(self):
@@ -244,7 +245,7 @@ class KeKeEnv(Env):
         weight_killers = 1
         decrease_killers = 0.8
         score_killers = get_exp_score(next_players, next_killers, weight_killers, decrease_killers) - \
-                                get_exp_score(pre_players, pre_killers, weight_killers, decrease_killers)
+                        get_exp_score(pre_players, pre_killers, weight_killers, decrease_killers)
 
         weight_sinkers_players = 1
         decrease_sinkers_players = 0.8
@@ -275,13 +276,13 @@ class KeKeEnv(Env):
                       get_exp_score(pre_players, pre_words, weight_words, decrease_words)
 
         ans = score_players + score_pushables + score_killers + score_sinkers + score_rules + score_winnables + score_words
-        print(f"score_players={score_players}")
-        print(f"score_pushables={score_pushables}")
-        print(f"score_killers_players={score_killers}")
-        print(f"score_sinkers={score_sinkers}")
-        print(f"score_rules={score_rules}")
-        print(f"score_winnables={score_winnables}")
-        print(f"score_words={score_words}")
+        # print(f"score_players={score_players}")
+        # print(f"score_pushables={score_pushables}")
+        # print(f"score_killers_players={score_killers}")
+        # print(f"score_sinkers={score_sinkers}")
+        # print(f"score_rules={score_rules}")
+        # print(f"score_winnables={score_winnables}")
+        # print(f"score_words={score_words}")
         return ans
 
     def render(self, mode='human', close=False):
