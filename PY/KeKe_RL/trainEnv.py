@@ -14,10 +14,10 @@ env = DummyVecEnv([lambda: env])
 model = PPO("MlpPolicy", env, verbose=1)
 
 # 训练模型
-# model.learn(total_timesteps=100)
+model.learn(total_timesteps=100)
 
 # 保存模型
-# model.save("ppo_baba_is_you.model")
+model.save("ppo_baba_is_you.model")
 
 print("=====================Training Finished=====================")
 
@@ -27,7 +27,7 @@ model = PPO.load("ppo_baba_is_you.model")
 obs = env.reset()
 action_history = []
 start = time.time()
-for i in range(100):
+for i in range(10000):
     action = env.action_space.sample()
     action_history.append(["up", "down", "left", "right", "space"][action])
     obs, rewards, dones, info = env.step([action])
