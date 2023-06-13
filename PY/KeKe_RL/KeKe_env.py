@@ -6,7 +6,11 @@ import gymnasium as gymnasium
 from gymnasium import Env
 from gymnasium import spaces
 
-import Util
+import numpy as np
+import random
+from copy import deepcopy
+
+from . import Util
 import time
 
 DIFFICULTY = 1
@@ -258,7 +262,7 @@ class KeKeEnv(Env):
             res = 0
             weight = initial_weight
             for dist in dists:
-                res += weight / (dist + 1)
+                res += weight * (dist + 0.1)
                 weight *= decrease_speed
             return res
 
@@ -323,18 +327,19 @@ class KeKeEnv(Env):
                       get_exp_score(pre_players, pre_words, weight_words, decrease_words)
 
         ans = score_players + score_pushables + score_killers + score_sinkers + score_rules + score_winnables + score_words
-        # print(f"score_players={score_players}")
-        # print(f"score_pushables={score_pushables}")
-        # print(f"score_killers_players={score_killers}")
-        # print(f"score_sinkers={score_sinkers}")
-        # print(f"score_rules={score_rules}")
-        # print(f"score_winnables={score_winnables}")
-        # print(f"score_words={score_words}")
+        print(f"score_players={score_players}")
+        print(f"score_pushables={score_pushables}")
+        print(f"score_killers_players={score_killers}")
+        print(f"score_sinkers={score_sinkers}")
+        print(f"score_rules={score_rules}")
+        print(f"score_winnables={score_winnables}")
+        print(f"score_words={score_words}")
         return ans
 
     def print_map(self, map_arr):
         for row in map_arr:
             print(' '.join(row))
+        print('*****************************')
 
     def render(self, mode='human', close=False):
         res = self.simjs.call('showState', self.current_state)
