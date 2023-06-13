@@ -5,3 +5,5 @@ package-lock.json
 package.json
 Keke_JS/test.js
 *.pyc
+*.0
+PY/KeKe_RL/log/CartPole-v0

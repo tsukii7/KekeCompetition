@@ -1,7 +1,12 @@
 import execjs
-import gym
-from gym import Env
-from gym import spaces
+# import gym
+# from gym import Env
+# from gym import spaces
+import gymnasium as gymnasium
+from gymnasium import Env
+from gymnasium import spaces
+
+
 import numpy as np
 import random
 from copy import deepcopy
@@ -9,7 +14,7 @@ from copy import deepcopy
 from . import Util
 import time
 
-DIFFICULTY = 2
+DIFFICULTY = 1
 count = None
 start_time = None
 
@@ -151,13 +156,14 @@ class KeKeEnv(Env):
 
     def __init__(self, root_map=None):
         super().__init__()
+        self.truncated = False
         self.initMapKey()
 
         with open("../../JS/Keke_JS/js/simulation_new.js",
                   "r") as simjs_file:
             simjs = simjs_file.read()
         self.simjs = execjs.compile(simjs)
-        self.action_space = spaces.Discrete(5)  # up, down, left, right, space
+        self.action_space = gymnasium.spaces.Discrete(5)  # up, down, left, right, space
         # We assume a maximum grid size of 20x20 for simplicity
         self.observation_space = spaces.Box(low=0, high=1, shape=(len(self.map_key), 20, 20), dtype=int)
 
@@ -177,6 +183,8 @@ class KeKeEnv(Env):
         start_time = time.time()
 
     def step(self, action):
+        if time.time() - self.start > 10:
+            self.truncated = True
         # new_state = deepcopy(self.current_state)
         action = ["up", "down", "left", "right", "space"][action]
         state = self.current_state
@@ -200,7 +208,7 @@ class KeKeEnv(Env):
         global count, start_time
         if count < 26624:
             count += 1
-            progress_bar(count, 26624, time.time() - start_time)
+            # progress_bar(count, 26624, time.time() - start_time)
         else:
             print("player: ", end="")
             for p in player:
@@ -212,8 +220,10 @@ class KeKeEnv(Env):
         reward = -1
         if res['won']:
             reward = 10000
+            # print("\nwin")
         elif len(new_state['players']) == 0:
             reward = -10000
+            # print("\nlose")
         else:
             # reward = self.getMyHeuristicScore(state, new_state)
             reward = self.getHeuristicScore(new_state)
@@ -221,7 +231,7 @@ class KeKeEnv(Env):
         self.observation_state = self.stateToObservation()
 
         info = {}
-        return self.observation_state, reward, done, info
+        return self.observation_state, reward, done, self.truncated, info
 
     def stateToObservation(self):
         # ascii_map = self.simjs.call('showState', self.current_state)
@@ -330,12 +340,15 @@ class KeKeEnv(Env):
         res = self.simjs.call('showState', self.current_state)
         # res = self.simjs.call('doubleMap2Str', self.current_state['obj_map'], self.current_state['back_map'])
         print(res)
+        return res
 
-    def reset(self):
+    def reset(self, seed=None):
+        self.start = time.time()
         self.current_state = self.init_state
         self.observation_state = self.stateToObservation()
         self.orig_map = Util.get_map(DIFFICULTY)
-        return self.observation_state
+        self.truncated = False
+        return self.observation_state, {}
 
     def getInitialState(self):
         self.init_state = self.simjs.call("newState", self.orig_map)
