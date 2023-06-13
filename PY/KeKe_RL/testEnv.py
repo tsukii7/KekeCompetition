@@ -1,5 +1,6 @@
-import gym
+import gymnasium as gym
 from stable_baselines3.common.vec_env import DummyVecEnv
+import numpy as np
 
 level1 = [
     ['_', '_', '_', '_', '_', '_', '_', '_', '_', '_'],
@@ -26,21 +27,41 @@ level15 = [
     ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_"]
 ]
 
-env = gym.make('KeKe-v0')
-env = DummyVecEnv([lambda: env])
+action_name = ['up', 'down', 'left', 'right', 'space']
 
-init_state = env.reset()
+env = gym.make('KeKe-v0')
+# env = DummyVecEnv([lambda: env])
+env.reset()
+env.render()
+
+
+def print_map(map_arr):
+    for row in map_arr:
+        print(' '.join(row))
+
+
+if __name__ == '__main__':
+    s = '__________\n_.B.F...._\n_.1.1...._\n_.2b3...._\n_........_\n_....r..._\n_.R......_\n_........_\n_........_\n__________'
+    print('初始化完成')
+
+    done = False
+    while not done:
+        action = int(input('选择动作：[1]up [2]down [3]left [4]right [5]space\n')) - 1
+        print(f'执行动作：{action_name[action]}')
+        state, reward, done, trunc, info = env.step(action)
+        env.render()
+        print('reward: %.3f \t done: %s' % (reward, done))
 
 # up, down, left, right, space
 # 0,    1,    2,    3,     4
 # action = ['left', 'up', 'up','right','right', 'down']
 # action = ['up','right','right','up','up','left','left','left','down','down','up','up','right','down','down']
 # action = ['right','right', 'down']
-action = [3, 3,4]
-for a in action:
-    state, reward, done, info = env.step([a])
-    env.render()
-
-    # print(state)
-    print("reward: %.3f \t done: " % reward, end="")
-    print(str(done) + "\n")
+# action = [3, 3, 4]
+# for a in action:
+#     state, reward, done, info = env.step([a])
+#     env.render()
+#
+#     # print(state)
+#     print("reward: %.3f \t done: " % reward, end="")
+#     print(str(done) + "\n")

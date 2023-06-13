@@ -22,7 +22,7 @@ model = PPO("MlpPolicy", env, verbose=1)
 print("=====================Training Finished=====================")
 
 # 加载模型并在环境中运行
-model = PPO.load("ppo_baba_is_you_originF.model")
+model = PPO.load("model/ppo_baba_is_you_originF.model")
 
 obs = env.reset()
 action_history = []

@@ -6,7 +6,6 @@ import gymnasium as gymnasium
 from gymnasium import Env
 from gymnasium import spaces
 
-
 import numpy as np
 import random
 from copy import deepcopy
@@ -95,6 +94,7 @@ map_key['v'] = "love_obj";
 map_key['V'] = "love_word";
 '''
 
+
 def progress_bar(finish_tasks_number, tasks_number, complete_time):
     """
     进度条
@@ -111,7 +111,9 @@ def progress_bar(finish_tasks_number, tasks_number, complete_time):
     arrow = "->"
     if not finished_label or not unfinished_label:
         arrow = ""
-    print("\r{:.2f}% [{}{}{}] {:.2f}s".format(percentage, finished_label, arrow, unfinished_label, complete_time), end="")
+    print("\r{:.2f}% [{}{}{}] {:.2f}s".format(percentage, finished_label, arrow, unfinished_label, complete_time),
+          end="")
+
 
 class KeKeEnv(Env):
 
@@ -176,8 +178,6 @@ class KeKeEnv(Env):
         self.init_state = self.getInitialState()
         self.current_state = self.init_state
 
-
-
         global count, start_time
         count = 0
         start_time = time.time()
@@ -225,8 +225,8 @@ class KeKeEnv(Env):
             reward = -10000
             # print("\nlose")
         else:
-            # reward = self.getMyHeuristicScore(state, new_state)
-            reward = self.getHeuristicScore(new_state)
+            reward = self.getMyHeuristicScore(state, new_state)
+            # reward = self.getHeuristicScore(new_state)
         self.current_state = new_state
         self.observation_state = self.stateToObservation()
 
@@ -293,18 +293,18 @@ class KeKeEnv(Env):
         weight_pushables = 1
         score_pushables = (len(next_pushables) - len(pre_pushables)) * weight_pushables
 
-        weight_killers = -2.5
+        weight_killers = 2.5
         decrease_killers = 0.85
         score_killers = get_exp_score(next_players, next_killers, weight_killers, decrease_killers) - \
                         get_exp_score(pre_players, pre_killers, weight_killers, decrease_killers)
 
-        weight_sinkers_players = -2.5
+        weight_sinkers_players = 2.5
         decrease_sinkers_players = 0.85
         score_sinkers_players = get_exp_score(next_players, next_sinkers, weight_sinkers_players,
                                               decrease_sinkers_players) - \
                                 get_exp_score(pre_players, pre_sinkers, weight_sinkers_players,
                                               decrease_sinkers_players)
-        weight_sinkers_pushables = 2
+        weight_sinkers_pushables = -3
         decrease_sinkers_pushables = 0.85
         score_sinkers_pushables = get_exp_score(next_pushables, next_sinkers, weight_sinkers_pushables,
                                                 decrease_sinkers_pushables) - \
@@ -316,12 +316,12 @@ class KeKeEnv(Env):
         weight_minus = 2
         score_rules = get_rule_score(pre_rules, next_rules, weight_add, weight_minus)
 
-        weight_winnables = 5
+        weight_winnables = -5
         decrease_winnables = 0.9
         score_winnables = get_exp_score(next_players, next_winnables, weight_winnables, decrease_winnables) - \
                           get_exp_score(pre_players, pre_winnables, weight_winnables, decrease_winnables)
 
-        weight_words = 3
+        weight_words = -1
         decrease_words = 0.8
         score_words = get_exp_score(next_players, next_words, weight_words, decrease_words) - \
                       get_exp_score(pre_players, pre_words, weight_words, decrease_words)
@@ -334,19 +334,26 @@ class KeKeEnv(Env):
         # print(f"score_rules={score_rules}")
         # print(f"score_winnables={score_winnables}")
         # print(f"score_words={score_words}")
-        return ans + 100
+        return ans + 10
+
+    def print_map(self, map_arr):
+        for row in map_arr:
+            print(' '.join(row))
 
     def render(self, mode='human', close=False):
         res = self.simjs.call('showState', self.current_state)
         # res = self.simjs.call('doubleMap2Str', self.current_state['obj_map'], self.current_state['back_map'])
-        print(res)
+        self.print_map(Util.asciiToArray(res))
         return res
 
     def reset(self, seed=None):
         self.start = time.time()
+        # self.orig_map = Util.get_map(DIFFICULTY)
+        self.orig_map = Util.asciiToArray(
+            '__________\n_.B.F...._\n_.1.1...._\n_.2b3...._\n_........_\n_....r..._\n_.R......_\n_........_\n_........_\n__________')
+        self.init_state = self.getInitialState()
         self.current_state = self.init_state
         self.observation_state = self.stateToObservation()
-        self.orig_map = Util.get_map(DIFFICULTY)
         self.truncated = False
         return self.observation_state, {}
 

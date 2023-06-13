@@ -59,18 +59,7 @@ map_key = {
 
 def asciiToArray(input_str):
     # input_str = "__________\n_.....B12_\n_.W......_\n_.1wwwww._\n_.6wf..w._\n_..w..kw._\n_F.wwwww._\n_1......._\n_3...bK17_\n__________"
-
-    rows = input_str.split('\n')
-    result = []
-    for row in rows:
-        row = list(row)
-        for i in range(len(row)):
-            if row[i] == '.':
-                row[i] = ' '
-        chars = list(row)
-        result.append(chars)
-
-    print(result)
+    result = [list(row.replace('.', ' ')) for row in input_str.split('\n')]
     return result
 
 
