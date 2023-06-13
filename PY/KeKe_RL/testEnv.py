@@ -1,4 +1,6 @@
 import gym
+from stable_baselines3.common.vec_env import DummyVecEnv
+
 level1 = [
     ['_', '_', '_', '_', '_', '_', '_', '_', '_', '_'],
     ['_', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '_'],
@@ -25,6 +27,8 @@ level15 = [
 ]
 
 env = gym.make('KeKe-v0')
+env = DummyVecEnv([lambda: env])
+
 init_state = env.reset()
 
 # up, down, left, right, space
@@ -34,7 +38,7 @@ init_state = env.reset()
 # action = ['right','right', 'down']
 action = [3, 3,4]
 for a in action:
-    state, reward, done, info = env.step(a)
+    state, reward, done, info = env.step([a])
     env.render()
 
     # print(state)

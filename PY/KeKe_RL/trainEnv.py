@@ -14,15 +14,15 @@ env = DummyVecEnv([lambda: env])
 model = PPO("MlpPolicy", env, verbose=1)
 
 # 训练模型
-model.learn(total_timesteps=100)
+# model.learn(total_timesteps=25000)
 
 # 保存模型
-model.save("ppo_baba_is_you.model")
+# model.save("ppo_baba_is_you_originF.model")
 
 print("=====================Training Finished=====================")
 
 # 加载模型并在环境中运行
-model = PPO.load("ppo_baba_is_you.model")
+model = PPO.load("ppo_baba_is_you_originF.model")
 
 obs = env.reset()
 action_history = []

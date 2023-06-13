@@ -15,7 +15,8 @@ This version uses the JS implementation originally found on the [Baba is Y'all](
 1. Clone this repository to your local machine
 2. Download and install the package manager [NodeJS](https://nodejs.org/en/download/)
 3. Open a terminal and navigate to the [KekeJS](.) folder
-4. Run the command `npm install` to install the necessary packages found in the [package-lock.json](package-lock.json) file
+4. Run the command `npm ins
+5. tall` to install the necessary packages found in the [package-lock.json](package-lock.json) file
 
 ### Usage
 #### Start the server: 
