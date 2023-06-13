@@ -205,15 +205,15 @@ class KeKeEnv(Env):
         new_state = res['next_state']
         player = new_state['players']
 
-        global count, start_time
-        if count < 26624:
-            count += 1
-            # progress_bar(count, 26624, time.time() - start_time)
-        else:
-            print("player: ", end="")
-            for p in player:
-                print('(%d, %d)' % (p['x'], p['y']), end=" ")
-            print()
+        # global count, start_time
+        # if count < 26624:
+        #     count += 1
+        #     # progress_bar(count, 26624, time.time() - start_time)
+        # else:
+        #     print("player: ", end="")
+        #     for p in player:
+        #         print('(%d, %d)' % (p['x'], p['y']), end=" ")
+        #     print()
 
         done = res['won'] or len(player) == 0
 
@@ -287,24 +287,24 @@ class KeKeEnv(Env):
         next_winnables = next_state['winnables']
         next_words = next_state['words']
 
-        weight_players = 10
+        weight_players = 1
         score_players = (len(next_players) - len(pre_players)) * weight_players
 
-        weight_pushables = 10
+        weight_pushables = 1
         score_pushables = (len(next_pushables) - len(pre_pushables)) * weight_pushables
 
-        weight_killers = -25
+        weight_killers = -2.5
         decrease_killers = 0.85
         score_killers = get_exp_score(next_players, next_killers, weight_killers, decrease_killers) - \
                         get_exp_score(pre_players, pre_killers, weight_killers, decrease_killers)
 
-        weight_sinkers_players = -25
+        weight_sinkers_players = -2.5
         decrease_sinkers_players = 0.85
         score_sinkers_players = get_exp_score(next_players, next_sinkers, weight_sinkers_players,
                                               decrease_sinkers_players) - \
                                 get_exp_score(pre_players, pre_sinkers, weight_sinkers_players,
                                               decrease_sinkers_players)
-        weight_sinkers_pushables = 20
+        weight_sinkers_pushables = 2
         decrease_sinkers_pushables = 0.85
         score_sinkers_pushables = get_exp_score(next_pushables, next_sinkers, weight_sinkers_pushables,
                                                 decrease_sinkers_pushables) - \
@@ -312,16 +312,16 @@ class KeKeEnv(Env):
                                                 decrease_sinkers_pushables)
         score_sinkers = score_sinkers_players + score_sinkers_pushables
 
-        weight_add = 30
-        weight_minus = 20
+        weight_add = 3
+        weight_minus = 2
         score_rules = get_rule_score(pre_rules, next_rules, weight_add, weight_minus)
 
-        weight_winnables = 50
+        weight_winnables = 5
         decrease_winnables = 0.9
         score_winnables = get_exp_score(next_players, next_winnables, weight_winnables, decrease_winnables) - \
                           get_exp_score(pre_players, pre_winnables, weight_winnables, decrease_winnables)
 
-        weight_words = 30
+        weight_words = 3
         decrease_words = 0.8
         score_words = get_exp_score(next_players, next_words, weight_words, decrease_words) - \
                       get_exp_score(pre_players, pre_words, weight_words, decrease_words)
