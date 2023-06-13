@@ -129,8 +129,8 @@ def test_ppo(args=get_args()):
         torch.save(policy.state_dict(), os.path.join(log_path, 'policy.pth'))
 
     def stop_fn(mean_rewards):
-        print(f'\nmean_rewards: {mean_rewards}')
-        print(f'args.reward_threshold: {args.reward_threshold}')
+        # print(f'\nmean_rewards: {mean_rewards}')
+        # print(f'args.reward_threshold: {args.reward_threshold}')
         return mean_rewards < args.reward_threshold
 
     # trainer

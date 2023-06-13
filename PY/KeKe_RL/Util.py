@@ -66,7 +66,7 @@ def asciiToArray(input_str):
 
 def encodeMap(obj_map, back_map):
     # state = [[[0] * 20] * 20] * len(map_key)
-    state = np.zeros((len(map_key), len(obj_map), len(obj_map[0])), dtype=np.uint8)
+    state = np.zeros((len(map_key), 20, 20), dtype=np.uint8)
     for i in range(len(obj_map)):
         for j in range(len(obj_map[i])):
             if type(obj_map[i][j]) == str:

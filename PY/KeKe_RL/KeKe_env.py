@@ -231,7 +231,7 @@ class KeKeEnv(Env):
         self.observation_state = self.stateToObservation()
 
         info = {}
-        return self.observation_state, reward, done, self.truncated, info
+        return np.array(self.observation_state), reward, done, self.truncated, info
 
     def stateToObservation(self):
         # ascii_map = self.simjs.call('showState', self.current_state)
@@ -347,11 +347,11 @@ class KeKeEnv(Env):
         self.print_map(Util.asciiToArray(res))
         return res
 
-    def reset(self, seed=None):
+    def reset(self, **kwargs):
         self.start = time.time()
-        # self.orig_map = Util.get_map(DIFFICULTY)
-        self.orig_map = Util.asciiToArray(
-            '__________\n_aA16aV12_\n_av....aa_\n_aa.a..aa_\n_a..a1.aa_\n_a.aa..aa_\n_a...3.aa_\n_aaaa..aa_\n_aaaaaaaa_\n__________')
+        self.orig_map = Util.get_map(DIFFICULTY)
+        # self.orig_map = Util.asciiToArray(
+        #     '__________\n_aA16aV12_\n_av....aa_\n_aa.a..aa_\n_a..a1.aa_\n_a.aa..aa_\n_a...3.aa_\n_aaaa..aa_\n_aaaaaaaa_\n__________')
         self.init_state = self.getInitialState()
         self.current_state = self.init_state
         self.observation_state = self.stateToObservation()
