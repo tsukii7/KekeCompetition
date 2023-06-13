@@ -41,7 +41,7 @@ def print_map(map_arr):
 
 
 if __name__ == '__main__':
-    s = '__________\n_.B.F...._\n_.1.1...._\n_.2b3...._\n_........_\n_....r..._\n_.R......_\n_........_\n_........_\n__________'
+    s = '__________\n_aA16aV12_\n_av....aa_\n_aa.a..aa_\n_a..a1.aa_\n_a.aa..aa_\n_a...3.aa_\n_aaaa..aa_\n_aaaaaaaa_\n__________'
     print('初始化完成')
 
     done = False

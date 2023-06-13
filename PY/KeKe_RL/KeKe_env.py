@@ -6,11 +6,7 @@ import gymnasium as gymnasium
 from gymnasium import Env
 from gymnasium import spaces
 
-import numpy as np
-import random
-from copy import deepcopy
-
-from . import Util
+import Util
 import time
 
 DIFFICULTY = 1
@@ -334,7 +330,7 @@ class KeKeEnv(Env):
         # print(f"score_rules={score_rules}")
         # print(f"score_winnables={score_winnables}")
         # print(f"score_words={score_words}")
-        return ans + 10
+        return ans
 
     def print_map(self, map_arr):
         for row in map_arr:
@@ -350,7 +346,7 @@ class KeKeEnv(Env):
         self.start = time.time()
         # self.orig_map = Util.get_map(DIFFICULTY)
         self.orig_map = Util.asciiToArray(
-            '__________\n_.B.F...._\n_.1.1...._\n_.2b3...._\n_........_\n_....r..._\n_.R......_\n_........_\n_........_\n__________')
+            '__________\n_aA16aV12_\n_av....aa_\n_aa.a..aa_\n_a..a1.aa_\n_a.aa..aa_\n_a...3.aa_\n_aaaa..aa_\n_aaaaaaaa_\n__________')
         self.init_state = self.getInitialState()
         self.current_state = self.init_state
         self.observation_state = self.stateToObservation()

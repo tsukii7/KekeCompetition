@@ -87,7 +87,6 @@ def encodeMap(obj_map, back_map):
 
     return state
 
-
 def initialize_maps(file_path):
     with open(file_path) as file:
         data = json.load(file)
