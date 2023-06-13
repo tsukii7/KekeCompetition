@@ -167,7 +167,7 @@ class KeKeEnv(Env):
         self.simjs = execjs.compile(simjs)
         self.action_space = gymnasium.spaces.Discrete(5)  # up, down, left, right, space
         # We assume a maximum grid size of 20x20 for simplicity
-        self.observation_space = spaces.Box(low=0, high=1, shape=(len(self.map_key), 20, 20), dtype=int)
+        self.observation_space = spaces.Box(low=0, high=1, shape=(len(self.map_key), 20, 20), dtype=np.uint8)
 
         self.DEFAULT_DISTANCE = 10
         # if root_map is None:
@@ -327,13 +327,13 @@ class KeKeEnv(Env):
                       get_exp_score(pre_players, pre_words, weight_words, decrease_words)
 
         ans = score_players + score_pushables + score_killers + score_sinkers + score_rules + score_winnables + score_words
-        print(f"score_players={score_players}")
-        print(f"score_pushables={score_pushables}")
-        print(f"score_killers_players={score_killers}")
-        print(f"score_sinkers={score_sinkers}")
-        print(f"score_rules={score_rules}")
-        print(f"score_winnables={score_winnables}")
-        print(f"score_words={score_words}")
+        # print(f"score_players={score_players}")
+        # print(f"score_pushables={score_pushables}")
+        # print(f"score_killers_players={score_killers}")
+        # print(f"score_sinkers={score_sinkers}")
+        # print(f"score_rules={score_rules}")
+        # print(f"score_winnables={score_winnables}")
+        # print(f"score_words={score_words}")
         return ans
 
     def print_map(self, map_arr):
@@ -356,7 +356,7 @@ class KeKeEnv(Env):
         self.current_state = self.init_state
         self.observation_state = self.stateToObservation()
         self.truncated = False
-        return self.observation_state, {}
+        return np.array(self.observation_state), {}
 
     def getInitialState(self):
         self.init_state = self.simjs.call("newState", self.orig_map)

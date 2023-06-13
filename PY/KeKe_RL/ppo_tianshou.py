@@ -55,6 +55,7 @@ def get_args():
 
 
 def test_ppo(args=get_args()):
+    print("using device: {}".format(args.device))
     env = gym.make(args.task)
     args.state_shape = env.observation_space.shape or env.observation_space.n
     args.action_shape = env.action_space.shape or env.action_space.n
@@ -128,9 +129,9 @@ def test_ppo(args=get_args()):
         torch.save(policy.state_dict(), os.path.join(log_path, 'policy.pth'))
 
     def stop_fn(mean_rewards):
-        # print(f'\nmean_rewards: {mean_rewards}')
-        # print(f'args.reward_threshold: {args.reward_threshold}')
-        return mean_rewards >= args.reward_threshold
+        print(f'\nmean_rewards: {mean_rewards}')
+        print(f'args.reward_threshold: {args.reward_threshold}')
+        return mean_rewards < args.reward_threshold
 
     # trainer
     result = onpolicy_trainer(
@@ -154,7 +155,8 @@ def test_ppo(args=get_args()):
         env = gym.make(args.task)
         policy.eval()
         collector = Collector(policy, env)
-        result = collector.collect(n_episode=100, render=args.render)
+        result = collector.collect(n_episode=100, render=0.0)
+        # result = collector.collect(n_episode=100, render=1.0)
         rews, lens = result["rews"], result["lens"]
         print(f"Final reward: {rews.mean()}, length: {lens.mean()}")
 
