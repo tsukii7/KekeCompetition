@@ -25,9 +25,9 @@ def get_args():
     parser.add_argument('--buffer-size', type=int, default=20000)
     parser.add_argument('--lr', type=float, default=3e-4)
     parser.add_argument('--gamma', type=float, default=0.99)
-    parser.add_argument('--epoch', type=int, default=2)
-    parser.add_argument('--step-per-epoch', type=int, default=50000)
-    parser.add_argument('--step-per-collect', type=int, default=2000)
+    parser.add_argument('--epoch', type=int, default=6)
+    parser.add_argument('--step-per-epoch', type=int, default=10000)
+    parser.add_argument('--step-per-collect', type=int, default=1000)
     parser.add_argument('--repeat-per-collect', type=int, default=10)
     parser.add_argument('--batch-size', type=int, default=64)
     parser.add_argument('--hidden-sizes', type=int, nargs='*', default=[64, 64])
@@ -154,11 +154,11 @@ def test_ppo(args=get_args()):
         env = gym.make(args.task)
         policy.eval()
         collector = Collector(policy, env)
-        result = collector.collect(n_episode=1, render=args.render)
+        result = collector.collect(n_episode=100, render=args.render)
         rews, lens = result["rews"], result["lens"]
         print(f"Final reward: {rews.mean()}, length: {lens.mean()}")
 
-    assert stop_fn(result['best_reward'])
+        assert stop_fn(result['rews'].mean())
 
 
 if __name__ == '__main__':
