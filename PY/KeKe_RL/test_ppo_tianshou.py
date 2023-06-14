@@ -8,12 +8,14 @@ from tianshou.policy import PPOPolicy
 from tianshou.utils.net.common import ActorCritic, DataParallelNet, Net
 from tianshou.utils.net.discrete import Actor, Critic
 
-
+PATTERN = 'new'
+DIFFICULTY = 2
+EPOCH = 5000
 def get_args():
     parser = argparse.ArgumentParser()
     # parser.add_argument('--task', type=str, default='CartPole-v1')
     parser.add_argument('--task', type=str, default='KeKe-v0')
-    parser.add_argument('--reward-threshold', type=float, default=950)
+    parser.add_argument('--reward-threshold', type=float, default=95)
     parser.add_argument('--seed', type=int, default=1626)
     parser.add_argument('--buffer-size', type=int, default=20000)
     parser.add_argument('--lr', type=float, default=3e-4)
@@ -27,7 +29,7 @@ def get_args():
     parser.add_argument('--batch-size', type=int, default=64)
     parser.add_argument('--hidden-sizes', type=int, nargs='*', default=[64, 64])
     parser.add_argument('--training-num', type=int, default=20)
-    parser.add_argument('--test-num', type=int, default=100)
+    parser.add_argument('--test-num', type=int, default=500)
     parser.add_argument('--logdir', type=str, default='log')
     parser.add_argument('--render', type=float, default=0.)
     # parser.add_argument('--render', type=float, default=0.)
@@ -80,7 +82,8 @@ def test_model(args=get_args()):
     )
 
     # 加载预训练的模型
-    policy.load_state_dict(torch.load('log/KeKe-v0/ppo/policy_diff_all.pth'))
+    policy.load_state_dict(torch.load(f'log/KeKe-v0/ppo/policy_diff_{PATTERN}_{DIFFICULTY}_{EPOCH}.pth'))
+    print(f"Load 'policy_diff_{PATTERN}_{DIFFICULTY}_{EPOCH}.pth'")
 
     # 创建收集器
     test_envs = DummyVectorEnv([lambda: gym.make(args.task) for _ in range(args.test_num)])
@@ -90,7 +93,9 @@ def test_model(args=get_args()):
     result = collector.collect(n_episode=100, render=0.0)
 
     rews, lens = result["rews"], result["lens"]
-    print(f"Final reward: {rews.mean()}, length: {lens.mean()}")
+    print(
+        f"Average reward: {rews.mean()}, action length: {lens.mean()}, solved rate: {collector.buffer.info['won'].mean()*100}%, "
+        f"difficulty: {DIFFICULTY}, test num: {len(collector.buffer.info['won'])}")
 
 
 if __name__ == '__main__':

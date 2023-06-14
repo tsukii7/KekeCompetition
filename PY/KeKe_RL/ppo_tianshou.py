@@ -15,12 +15,14 @@ from tianshou.utils import TensorboardLogger
 from tianshou.utils.net.common import ActorCritic, DataParallelNet, Net
 from tianshou.utils.net.discrete import Actor, Critic
 
+PATTERN = 'new'
+DIFFICULTY = 2
 
 def get_args():
     parser = argparse.ArgumentParser()
     # parser.add_argument('--task', type=str, default='CartPole-v1')
     parser.add_argument('--task', type=str, default='KeKe-v0')
-    parser.add_argument('--reward-threshold', type=float, default=950)
+    parser.add_argument('--reward-threshold', type=float, default=95)
     parser.add_argument('--seed', type=int, default=1626)
     parser.add_argument('--buffer-size', type=int, default=20000)
     parser.add_argument('--lr', type=float, default=3e-4)
@@ -62,7 +64,7 @@ def test_ppo(args=get_args()):
     args.state_shape = env.observation_space.shape or env.observation_space.n
     args.action_shape = env.action_space.shape or env.action_space.n
     if args.reward_threshold is None:
-        default_reward_threshold = {"CartPole-v0": 195}
+        default_reward_threshold = {"KeKe-v0": 95}
         args.reward_threshold = default_reward_threshold.get(
             args.task, env.spec.reward_threshold
         )
@@ -128,10 +130,10 @@ def test_ppo(args=get_args()):
     logger = TensorboardLogger(writer)
 
     def save_best_fn(policy):
-        torch.save(policy.state_dict(), os.path.join(log_path, 'policy.pth'))
+        torch.save(policy.state_dict(), os.path.join(log_path, f'policy_diff_{PATTERN}_{DIFFICULTY}_{args.epoch*args.step_per_epoch}.pth'))
 
     def stop_fn(mean_rewards):
-        # print(f'\nmean_rewards: {mean_rewards}')
+        print(f'\nmean_rewards: {mean_rewards}')
         # print(f'args.reward_threshold: {args.reward_threshold}')
         return mean_rewards >= args.reward_threshold
 
@@ -151,23 +153,25 @@ def test_ppo(args=get_args()):
         logger=logger
     )
 
-    if __name__ == '__main__':
-        pprint.pprint(result)
-        # Let's watch its performance!
-        env = gym.make(args.task)
-        env = DummyVectorEnv([lambda: env])
-        policy.eval()
-        collector = Collector(policy, env)
-        result = collector.collect(n_episode=20, render=0.0)
-        # result = collector.collect(n_episode=100, render=1.0)
-        rews, lens = result["rews"], result["lens"]
-        print(f"Final reward: {rews.mean()}, length: {lens.mean()}")
+    pprint.pprint(result)
 
-        if not stop_fn(result['rews'].mean()):
-            print('stop training! avg_reward: ', result['rews'].mean())
-        else:
-            print('continue training! avg_reward: ', result['rews'].mean())
-        assert stop_fn(result['rews'].mean())
+    # if __name__ == '__main__':
+    #     pprint.pprint(result)
+    #     # Let's watch its performance!
+    #     env = gym.make(args.task)
+    #     env = DummyVectorEnv([lambda: env])
+    #     policy.eval()
+    #     collector = Collector(policy, env)
+    #     result = collector.collect(n_episode=20, render=0.0)
+    #     # result = collector.collect(n_episode=100, render=1.0)
+    #     rews, lens = result["rews"], result["lens"]
+    #     print(f"Final reward: {rews.mean()}, length: {lens.mean()}")
+    #
+    #     if not stop_fn(result['rews'].mean()):
+    #         print('stop training! avg_reward: ', result['rews'].mean())
+    #     else:
+    #         print('continue training! avg_reward: ', result['rews'].mean())
+    #     assert not stop_fn(result['rews'].mean())
 
 
 if __name__ == '__main__':

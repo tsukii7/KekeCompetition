@@ -14,7 +14,8 @@ from . import Util
 import time
 
 # [1]1-5 [2]6-10 [3]11-20 [4]21-40 [5]>40 [else}all
-DIFFICULTY = -1
+PATTERN = 'new'
+DIFFICULTY = 2
 count = None
 start_time = None
 
@@ -220,18 +221,20 @@ class KeKeEnv(Env):
 
         reward = -1
         if res['won']:
-            reward = 10000
+            reward = 100
             # print("\nwin")
         elif len(new_state['players']) == 0:
-            reward = -10000
+            reward = -100
             # print("\nlose")
         else:
-            reward = self.getMyHeuristicScore(state, new_state)
-            # reward = self.getHeuristicScore(new_state)
+            if PATTERN == 'origin':
+                reward = self.getHeuristicScore(new_state)
+            else:
+                reward = self.getMyHeuristicScore(state, new_state)
         self.current_state = new_state
         self.observation_state = self.stateToObservation()
 
-        info = {}
+        info = {'won':res['won']}
         return np.array(self.observation_state), reward, done, self.truncated, info
 
     def stateToObservation(self):
@@ -254,6 +257,7 @@ class KeKeEnv(Env):
         return observation_state
 
     def getMyHeuristicScore(self, pre_state, next_state):
+        # print("getMyHeuristicScore")
         def get_exp_score(arr1, arr2, initial_weight, decrease_speed):
             dists = []
             for i in arr1:
