@@ -13,7 +13,8 @@ from copy import deepcopy
 from . import Util
 import time
 
-DIFFICULTY = 1
+# [1]1-5 [2]6-10 [3]11-20 [4]21-40 [5]>40 [else}all
+DIFFICULTY = -1
 count = None
 start_time = None
 

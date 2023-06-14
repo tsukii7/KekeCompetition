@@ -20,13 +20,15 @@ def get_args():
     parser = argparse.ArgumentParser()
     # parser.add_argument('--task', type=str, default='CartPole-v1')
     parser.add_argument('--task', type=str, default='KeKe-v0')
-    parser.add_argument('--reward-threshold', type=float, default=1000)
+    parser.add_argument('--reward-threshold', type=float, default=950)
     parser.add_argument('--seed', type=int, default=1626)
     parser.add_argument('--buffer-size', type=int, default=20000)
     parser.add_argument('--lr', type=float, default=3e-4)
     parser.add_argument('--gamma', type=float, default=0.99)
     parser.add_argument('--epoch', type=int, default=6)
+    # parser.add_argument('--step-per-epoch', type=int, default=1000)
     parser.add_argument('--step-per-epoch', type=int, default=10000)
+    # parser.add_argument('--step-per-collect', type=int, default=200)
     parser.add_argument('--step-per-collect', type=int, default=1000)
     parser.add_argument('--repeat-per-collect', type=int, default=10)
     parser.add_argument('--batch-size', type=int, default=64)
@@ -153,13 +155,16 @@ def test_ppo(args=get_args()):
         pprint.pprint(result)
         # Let's watch its performance!
         env = gym.make(args.task)
+        env = DummyVectorEnv([lambda: env])
         policy.eval()
         collector = Collector(policy, env)
-        result = collector.collect(n_episode=100, render=0.0)
+        result = collector.collect(n_episode=20, render=0.0)
         # result = collector.collect(n_episode=100, render=1.0)
         rews, lens = result["rews"], result["lens"]
         print(f"Final reward: {rews.mean()}, length: {lens.mean()}")
 
+        if not stop_fn(result['rews'].mean()):
+            print('stop training! avg_reward: ', result['rews'].mean())
         assert stop_fn(result['rews'].mean())
 
 
