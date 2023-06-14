@@ -103,7 +103,7 @@ def test_model(args=get_args()):
     #         next_state, reward, done, trunc, info = env.step(action)
     #         action_history.append(action)
     #         total_reward += reward
-    #         if info['win']:
+    #         if info['won']:
     #             passed_episodes += 1
     #             break
     #         state = next_state

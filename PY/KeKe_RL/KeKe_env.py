@@ -1,10 +1,10 @@
 import execjs
-# import gym
-# from gym import Env
-# from gym import spaces
-import gymnasium as gymnasium
-from gymnasium import Env
-from gymnasium import spaces
+import gym
+from gym import Env
+from gym import spaces
+# import gymnasium as gymnasium
+# from gymnasium import Env
+# from gymnasium import spaces
 
 import numpy as np
 import random
@@ -15,6 +15,7 @@ import time
 
 # [1]1-5 [2]6-10 [3]11-20 [4]21-40 [5]>40 [else}all
 PATTERN = 'new'
+# PATTERN = 'origin'
 DIFFICULTY = 1
 count = None
 start_time = None
@@ -167,7 +168,7 @@ class KeKeEnv(Env):
                   "r") as simjs_file:
             simjs = simjs_file.read()
         self.simjs = execjs.compile(simjs)
-        self.action_space = gymnasium.spaces.Discrete(5)  # up, down, left, right, space
+        self.action_space = spaces.Discrete(5)  # up, down, left, right, space
         # We assume a maximum grid size of 20x20 for simplicity
         self.observation_space = spaces.Box(low=0, high=1, shape=(len(self.map_key), 20, 20), dtype=np.uint8)
 
@@ -235,7 +236,7 @@ class KeKeEnv(Env):
         self.observation_state = self.stateToObservation()
 
         info = {'won':res['won']}
-        return np.array(self.observation_state), reward, done, self.truncated, info
+        return self.observation_state, reward, done,  info
 
     def stateToObservation(self):
         # ascii_map = self.simjs.call('showState', self.current_state)
@@ -300,17 +301,20 @@ class KeKeEnv(Env):
 
         weight_killers = 2.5
         decrease_killers = 0.85
+        # decrease_killers = 1
         score_killers = get_exp_score(next_players, next_killers, weight_killers, decrease_killers) - \
                         get_exp_score(pre_players, pre_killers, weight_killers, decrease_killers)
 
         weight_sinkers_players = 2.5
         decrease_sinkers_players = 0.85
+        # decrease_sinkers_players = 1
         score_sinkers_players = get_exp_score(next_players, next_sinkers, weight_sinkers_players,
                                               decrease_sinkers_players) - \
                                 get_exp_score(pre_players, pre_sinkers, weight_sinkers_players,
                                               decrease_sinkers_players)
         weight_sinkers_pushables = -3
         decrease_sinkers_pushables = 0.85
+        # decrease_sinkers_pushables = 1
         score_sinkers_pushables = get_exp_score(next_pushables, next_sinkers, weight_sinkers_pushables,
                                                 decrease_sinkers_pushables) - \
                                   get_exp_score(pre_pushables, pre_sinkers, weight_sinkers_pushables,
@@ -323,11 +327,13 @@ class KeKeEnv(Env):
 
         weight_winnables = -5
         decrease_winnables = 0.9
+        # decrease_winnables = 1
         score_winnables = get_exp_score(next_players, next_winnables, weight_winnables, decrease_winnables) - \
                           get_exp_score(pre_players, pre_winnables, weight_winnables, decrease_winnables)
 
         weight_words = -1
         decrease_words = 0.8
+        # decrease_words = 1
         score_words = get_exp_score(next_players, next_words, weight_words, decrease_words) - \
                       get_exp_score(pre_players, pre_words, weight_words, decrease_words)
 
@@ -356,12 +362,12 @@ class KeKeEnv(Env):
         self.start = time.time()
         self.orig_map = Util.get_map(DIFFICULTY)
         # self.orig_map = Util.asciiToArray(
-        #     '__________\n_aA16aV12_\n_av....aa_\n_aa.a..aa_\n_a..a1.aa_\n_a.aa..aa_\n_a...3.aa_\n_aaaa..aa_\n_aaaaaaaa_\n__________')
+        #     '__________\n_....B12._\n_....F13._\n_k.b....._\n_....K1.._\n_....fR.._\n_........_\n_........_\n_....r..._\n__________')
         self.init_state = self.getInitialState()
         self.current_state = self.init_state
         self.observation_state = self.stateToObservation()
         self.truncated = False
-        return np.array(self.observation_state), {}
+        return self.observation_state
 
     def getInitialState(self):
         self.init_state = self.simjs.call("newState", self.orig_map)
