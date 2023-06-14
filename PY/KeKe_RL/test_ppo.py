@@ -1,12 +1,17 @@
 import argparse
 
 import gymnasium as gym
+import tianshou
 import torch
 from tianshou.data import Collector
 from tianshou.env import DummyVectorEnv
 from tianshou.policy import PPOPolicy
 from tianshou.utils.net.common import ActorCritic, DataParallelNet, Net
 from tianshou.utils.net.discrete import Actor, Critic
+from tianshou.data import Batch
+import torch
+from tianshou.policy import PPOPolicy
+
 
 PATTERN = 'new'
 DIFFICULTY = 1
@@ -49,9 +54,8 @@ def get_args():
     parser.add_argument('--value-clip', type=int, default=0)
     args = parser.parse_known_args()[0]
     return args
-
-
 def test_model(args=get_args()):
+
     # 创建环境
     env = gym.make(args.task)
     args.state_shape = env.observation_space.shape or env.observation_space.n
@@ -68,8 +72,6 @@ def test_model(args=get_args()):
         critic = Critic(net, device=args.device).to(args.device)
 
     actor_critic = ActorCritic(actor, critic)
-
-    # 创建策略
     dist = torch.distributions.Categorical
     policy = PPOPolicy(
         actor,
@@ -85,19 +87,37 @@ def test_model(args=get_args()):
     policy.load_state_dict(torch.load(f'log/KeKe-v0/ppo/policy_diff_{PATTERN}_{DIFFICULTY}_{EPOCH}.pth'))
     print(f"Load 'policy_diff_{PATTERN}_{DIFFICULTY}_{EPOCH}.pth'")
 
-    # 创建收集器
-    test_envs = DummyVectorEnv([lambda: gym.make(args.task) for _ in range(args.test_num)])
-    collector = Collector(policy, test_envs)
+    passed_episodes = 0
+    action_histories = []
 
-    # 收集测试结果
-    result = collector.collect(n_episode=1, render=1.0)
+    # for _ in range(args.test_num):
+    #     state = env.reset()
+    #     done = False
+    #     total_reward = 0
+    #     action_history = []
+    #
+    #     while not done:
+    #         batch = Batch(obs=state)
+    #         with torch.no_grad():
+    #             action = policy(batch)[0].cpu().numpy()
+    #         next_state, reward, done, trunc, info = env.step(action)
+    #         action_history.append(action)
+    #         total_reward += reward
+    #         if info['win']:
+    #             passed_episodes += 1
+    #             break
+    #         state = next_state
+    #
+    #     action_histories.append(action_history)
 
-    rews, lens = result["rews"], result["lens"]
-    print(
-        f"Average reward: {rews.mean()}, action length: {lens.mean()}, solved rate: {collector.buffer.info['won'].mean()*100}%, "
-        f"difficulty: {DIFFICULTY}, test num: {len(collector.buffer.info['won'])}")
+    policy.eval()
+    # policy.set_eps(0.05)
+    collector = tianshou.data.Collector(policy, env, exploration_noise=False)
+    result = collector.collect(n_episode=1, render=1 / 35)
 
+    pass_rate = passed_episodes / args.test_num
+    print(f"Pass rate: {pass_rate}")
+    print(f"Action histories: {action_histories}")
 
 if __name__ == '__main__':
     test_model()
-

@@ -15,7 +15,7 @@ import time
 
 # [1]1-5 [2]6-10 [3]11-20 [4]21-40 [5]>40 [else}all
 PATTERN = 'new'
-DIFFICULTY = 2
+DIFFICULTY = 1
 count = None
 start_time = None
 
@@ -185,8 +185,8 @@ class KeKeEnv(Env):
         start_time = time.time()
 
     def step(self, action):
-        if time.time() - self.start > 10:
-            self.truncated = True
+        # if time.time() - self.start > 10:
+        #     self.truncated = True
         # new_state = deepcopy(self.current_state)
         action = ["up", "down", "left", "right", "space"][action]
         state = self.current_state
@@ -221,10 +221,10 @@ class KeKeEnv(Env):
 
         reward = -1
         if res['won']:
-            reward = 100
+            reward = 500
             # print("\nwin")
         elif len(new_state['players']) == 0:
-            reward = -100
+            reward = -500
             # print("\nlose")
         else:
             if PATTERN == 'origin':

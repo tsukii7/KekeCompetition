@@ -16,13 +16,13 @@ from tianshou.utils.net.common import ActorCritic, DataParallelNet, Net
 from tianshou.utils.net.discrete import Actor, Critic
 
 PATTERN = 'new'
-DIFFICULTY = 2
+DIFFICULTY = 1
 
 def get_args():
     parser = argparse.ArgumentParser()
     # parser.add_argument('--task', type=str, default='CartPole-v1')
     parser.add_argument('--task', type=str, default='KeKe-v0')
-    parser.add_argument('--reward-threshold', type=float, default=95)
+    parser.add_argument('--reward-threshold', type=float, default=475)
     parser.add_argument('--seed', type=int, default=1626)
     parser.add_argument('--buffer-size', type=int, default=20000)
     parser.add_argument('--lr', type=float, default=3e-4)
@@ -31,7 +31,7 @@ def get_args():
     parser.add_argument('--step-per-epoch', type=int, default=1000)
     # parser.add_argument('--step-per-epoch', type=int, default=10000)
     parser.add_argument('--step-per-collect', type=int, default=200)
-    # parser.add_argument('--step-per-collect', type=int, default=1000)
+    # parser.add_argument('--step-per-collect', type=int, default=10000)
     parser.add_argument('--repeat-per-collect', type=int, default=10)
     parser.add_argument('--batch-size', type=int, default=64)
     parser.add_argument('--hidden-sizes', type=int, nargs='*', default=[64, 64])
