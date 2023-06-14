@@ -25,11 +25,11 @@ def get_args():
     parser.add_argument('--buffer-size', type=int, default=20000)
     parser.add_argument('--lr', type=float, default=3e-4)
     parser.add_argument('--gamma', type=float, default=0.99)
-    parser.add_argument('--epoch', type=int, default=6)
-    # parser.add_argument('--step-per-epoch', type=int, default=1000)
-    parser.add_argument('--step-per-epoch', type=int, default=10000)
-    # parser.add_argument('--step-per-collect', type=int, default=200)
-    parser.add_argument('--step-per-collect', type=int, default=1000)
+    parser.add_argument('--epoch', type=int, default=5)
+    parser.add_argument('--step-per-epoch', type=int, default=1000)
+    # parser.add_argument('--step-per-epoch', type=int, default=10000)
+    parser.add_argument('--step-per-collect', type=int, default=200)
+    # parser.add_argument('--step-per-collect', type=int, default=1000)
     parser.add_argument('--repeat-per-collect', type=int, default=10)
     parser.add_argument('--batch-size', type=int, default=64)
     parser.add_argument('--hidden-sizes', type=int, nargs='*', default=[64, 64])
@@ -133,7 +133,7 @@ def test_ppo(args=get_args()):
     def stop_fn(mean_rewards):
         # print(f'\nmean_rewards: {mean_rewards}')
         # print(f'args.reward_threshold: {args.reward_threshold}')
-        return mean_rewards < args.reward_threshold
+        return mean_rewards >= args.reward_threshold
 
     # trainer
     result = onpolicy_trainer(
@@ -165,6 +165,8 @@ def test_ppo(args=get_args()):
 
         if not stop_fn(result['rews'].mean()):
             print('stop training! avg_reward: ', result['rews'].mean())
+        else:
+            print('continue training! avg_reward: ', result['rews'].mean())
         assert stop_fn(result['rews'].mean())
 
 
