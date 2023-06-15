@@ -17,6 +17,8 @@ import time
 PATTERN = 'new'
 # PATTERN = 'origin'
 DIFFICULTY = 1
+
+DECREASE = False
 count = None
 start_time = None
 
@@ -118,7 +120,7 @@ def progress_bar(finish_tasks_number, tasks_number, complete_time):
           end="")
 
 
-class KeKeEnv(Env):
+class KeKeEnvV1(Env):
 
     def initMapKey(self):
         self.map_key = {
@@ -175,7 +177,8 @@ class KeKeEnv(Env):
         self.DEFAULT_DISTANCE = 10
         # if root_map is None:
         # root_map = level15
-        Util.initialize_maps('./json_levels/new_full_biy_LEVELS.json')
+        # Util.initialize_maps('./json_levels/new_full_biy_LEVELS.json')
+        Util.map_id = -2
         root_map = Util.get_map(DIFFICULTY)
         self.orig_map = root_map
         self.init_state = self.getInitialState()
@@ -219,6 +222,8 @@ class KeKeEnv(Env):
         #     print()
 
         done = res['won'] or len(player) == 0
+        # if done:
+        #     Util.map_id -= 1
 
         reward = -1
         if res['won']:
@@ -301,20 +306,23 @@ class KeKeEnv(Env):
 
         weight_killers = 2.5
         decrease_killers = 0.85
-        # decrease_killers = 1
+        if not DECREASE:
+            decrease_killers = 1
         score_killers = get_exp_score(next_players, next_killers, weight_killers, decrease_killers) - \
                         get_exp_score(pre_players, pre_killers, weight_killers, decrease_killers)
 
         weight_sinkers_players = 2.5
         decrease_sinkers_players = 0.85
-        # decrease_sinkers_players = 1
+        if not DECREASE:
+            decrease_sinkers_players = 1
         score_sinkers_players = get_exp_score(next_players, next_sinkers, weight_sinkers_players,
                                               decrease_sinkers_players) - \
                                 get_exp_score(pre_players, pre_sinkers, weight_sinkers_players,
                                               decrease_sinkers_players)
         weight_sinkers_pushables = -3
         decrease_sinkers_pushables = 0.85
-        # decrease_sinkers_pushables = 1
+        if not DECREASE:
+            decrease_sinkers_pushables = 1
         score_sinkers_pushables = get_exp_score(next_pushables, next_sinkers, weight_sinkers_pushables,
                                                 decrease_sinkers_pushables) - \
                                   get_exp_score(pre_pushables, pre_sinkers, weight_sinkers_pushables,
@@ -327,13 +335,15 @@ class KeKeEnv(Env):
 
         weight_winnables = -5
         decrease_winnables = 0.9
-        # decrease_winnables = 1
+        if not DECREASE:
+            decrease_winnables = 1
         score_winnables = get_exp_score(next_players, next_winnables, weight_winnables, decrease_winnables) - \
                           get_exp_score(pre_players, pre_winnables, weight_winnables, decrease_winnables)
 
         weight_words = -1
         decrease_words = 0.8
-        # decrease_words = 1
+        if not DECREASE:
+            decrease_words = 1
         score_words = get_exp_score(next_players, next_words, weight_words, decrease_words) - \
                       get_exp_score(pre_players, pre_words, weight_words, decrease_words)
 

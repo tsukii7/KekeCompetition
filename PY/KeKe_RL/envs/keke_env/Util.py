@@ -10,6 +10,7 @@ LEVEL_3 = 20
 LEVEL_4 = 40
 
 maps, stage_1, stage_2, stage_3, stage_4, stage_5 = [], [], [], [], [], []
+map_id = -2
 
 map_char = {"border": '_', "empty": '.', "baba_phys": 'b', "baba_word": 'B', "is_word": '1', "you_word": '2',
             "win_word": '3', "skull_phys": 's', "skull_word": 'S', "flag_phys": 'f', "flag_word": 'F',
@@ -90,6 +91,8 @@ def encodeMap(obj_map, back_map):
     return state
 
 def initialize_maps(file_path):
+    global map_id
+    map_id = -2
     with open(file_path) as file:
         data = json.load(file)
         maps, stage_1, stage_2, stage_3, stage_4, stage_5 = [], [], [], [], [], []
@@ -113,19 +116,25 @@ def initialize_maps(file_path):
 
 
 def get_map(difficulty=-1):
-    global maps, stage_1, stage_2, stage_3, stage_4, stage_5
+    global maps, stage_1, stage_2, stage_3, stage_4, stage_5, map_id
     if len(maps) == 0:
         maps, stage_1, stage_2, stage_3, stage_4, stage_5 = initialize_maps('json_levels/new_full_biy_LEVELS.json')
+        print("maps loaded, maps length: , stage_1 length: , stage_2 length: , stage_3 length: , stage_4 length: , stage_5 length: ",
+                len(maps), len(stage_1), len(stage_2), len(stage_3), len(stage_4), len(stage_5))
+
+    map_id += 1
+    # print("map_id: ", map_id)
 
     if difficulty == 1:
-        return random.choice(stage_1)
+        return stage_1[map_id]
     elif difficulty == 2:
-        return random.choice(stage_2)
+        return stage_2[map_id]
     elif difficulty == 3:
-        return random.choice(stage_3)
+        return stage_3[map_id]
     elif difficulty == 4:
-        return random.choice(stage_4)
+        return stage_4[map_id]
     elif difficulty == 5:
-        return random.choice(stage_5)
+        return stage_5[map_id]
     else:
-        return random.choice(maps)
+        # return random.choice(maps)
+        return maps[map_id]
